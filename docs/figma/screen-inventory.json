@@ -1,0 +1,1667 @@
+{
+  "page": "579:228",
+  "starts": [
+    {
+      "nodeId": "923:7164",
+      "name": "00 · Bắt đầu trải nghiệm Workly"
+    },
+    {
+      "nodeId": "584:259",
+      "name": "01 · Đăng ký & thiết lập tài khoản"
+    },
+    {
+      "nodeId": "585:4563",
+      "name": "02 · Trải nghiệm Client"
+    },
+    {
+      "nodeId": "585:4476",
+      "name": "03 · Trải nghiệm Freelancer"
+    },
+    {
+      "nodeId": "923:7180",
+      "name": "04 · Mục lục tất cả 143 màn"
+    }
+  ],
+  "sections": [
+    {
+      "id": "610:3556",
+      "name": "01 · KHỞI ĐỘNG & XÁC THỰC  /  13 SCREENS"
+    },
+    {
+      "id": "612:3560",
+      "name": "02 · TRANG CHỦ & KHÁM PHÁ  /  12 SCREENS"
+    },
+    {
+      "id": "612:3565",
+      "name": "03 · HỒ SƠ & PORTFOLIO  /  10 SCREENS"
+    },
+    {
+      "id": "612:3570",
+      "name": "04 · ĐĂNG & QUẢN LÝ DỰ ÁN  /  10 SCREENS"
+    },
+    {
+      "id": "612:3575",
+      "name": "05 · PROPOSAL — LUỒNG CHÍNH  /  10 SCREENS"
+    },
+    {
+      "id": "612:3580",
+      "name": "06 · QUẢN LÝ & TRAO ĐỔI ĐỀ XUẤT  /  13 SCREENS"
+    },
+    {
+      "id": "612:3585",
+      "name": "07 · HỢP ĐỒNG & MILESTONE  /  18 SCREENS"
+    },
+    {
+      "id": "612:3590",
+      "name": "08 · VÍ, KÝ QUỸ & THANH TOÁN  /  12 SCREENS"
+    },
+    {
+      "id": "612:3595",
+      "name": "09 · RÚT TIỀN, KYC & CHỨNG TỪ  /  16 SCREENS"
+    },
+    {
+      "id": "612:3600",
+      "name": "10 · BÀN GIAO & PHÊ DUYỆT  /  11 SCREENS"
+    },
+    {
+      "id": "612:3605",
+      "name": "11 · TIN NHẮN & THÔNG BÁO  /  07 SCREENS"
+    },
+    {
+      "id": "612:3610",
+      "name": "12 · HOÀN THÀNH & ĐÁNH GIÁ  /  06 SCREENS"
+    },
+    {
+      "id": "612:3615",
+      "name": "13 · CÀI ĐẶT, HỖ TRỢ & HỆ THỐNG  /  05 SCREENS"
+    },
+    {
+      "id": "923:7161",
+      "name": "00 · PROTOTYPE — BẮT ĐẦU TẠI ĐÂY"
+    }
+  ],
+  "screens": [
+    {
+      "id": "584:259",
+      "name": "F01 - Khởi động",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4121",
+      "name": "F02 - Giới thiệu ứng dụng",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "599:3985",
+      "name": "F02b • Onboarding / Hợp tác",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "599:4000",
+      "name": "F02c • Onboarding / Thành công",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4161",
+      "name": "F03 - Chọn vai trò",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4204",
+      "name": "F04 - Đăng ký tài khoản",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4234",
+      "name": "F05 - Thiết lập hồ sơ Freelancer",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4268",
+      "name": "F06 - Xác minh email OTP",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4320",
+      "name": "F07 - Đăng nhập",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4357",
+      "name": "F08 - Đăng nhập bằng Google",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4406",
+      "name": "F09 - Quên mật khẩu",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4440",
+      "name": "F10 - Đặt lại mật khẩu thành công",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "876:6976",
+      "name": "F05C - Thiết lập hồ sơ Client / Doanh nghiệp tùy chọn",
+      "section": "610:3556",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5196",
+      "name": "B08 - Khám phá Freelancer",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5252",
+      "name": "B09 - So sánh Freelancer",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4476",
+      "name": "F11 - Trang chủ Freelancer",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4563",
+      "name": "F12 - Trang chủ Client",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4648",
+      "name": "F13 - Khám phá dự án",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4731",
+      "name": "F14 - Tìm kiếm dự án",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4812",
+      "name": "F15 - Bộ lọc dự án",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4873",
+      "name": "F16 - Kết quả đã lọc",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:4950",
+      "name": "F17 - Chi tiết dự án",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5031",
+      "name": "F18 - Client đăng dự án",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5092",
+      "name": "F19 - Dự án đã lưu",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5144",
+      "name": "F20 - Không có kết quả",
+      "section": "612:3560",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5316",
+      "name": "F21 - Hồ sơ Freelancer",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5411",
+      "name": "F22 - Chỉnh sửa hồ sơ Freelancer",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5470",
+      "name": "F23 - Kỹ năng và kinh nghiệm",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5527",
+      "name": "F24 - Danh sách Portfolio",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5606",
+      "name": "F25 - Chỉnh sửa Portfolio",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5659",
+      "name": "F26 - Xem trước hồ sơ Freelancer",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5717",
+      "name": "F27 - Hồ sơ Client · Có doanh nghiệp",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5764",
+      "name": "F28 - Chỉnh sửa hồ sơ cá nhân Client",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "991:7769",
+      "name": "F27A - Hồ sơ Client · Hoạt động độc lập",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "991:7770",
+      "name": "F28A - Liên kết & cập nhật doanh nghiệp",
+      "section": "612:3565",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5813",
+      "name": "F29 - Dự án của Client",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5899",
+      "name": "F30 - Tạo dự án - Thông tin cơ bản",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:5951",
+      "name": "F31 - Tạo dự án - Mô tả và kỹ năng",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:6049",
+      "name": "F32 - Tạo dự án - Ngân sách và thời hạn",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:6109",
+      "name": "F33 - Tệp đính kèm dự án",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:6187",
+      "name": "F34 - Xem trước dự án",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:6256",
+      "name": "F35 - Đăng dự án thành công",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:6319",
+      "name": "F36 - Quản lý chi tiết dự án",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "812:6433",
+      "name": "F32A - Nhu cầu tuyển theo vai trò",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "812:6434",
+      "name": "F36A - Hợp đồng theo dự án / Client",
+      "section": "612:3570",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7372",
+      "name": "F37 - Bắt đầu ứng tuyển",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7424",
+      "name": "F38 - Thư giới thiệu Proposal",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7456",
+      "name": "F39 - Giá và thời gian đề xuất",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7496",
+      "name": "F40 - Xem trước Proposal",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7537",
+      "name": "F41 - Gửi Proposal thành công",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7572",
+      "name": "F42 - Proposal đã gửi",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7623",
+      "name": "F43 - Proposal Client nhận",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7678",
+      "name": "F44 - Chi tiết Proposal",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7721",
+      "name": "Archive / F45 - So sánh Proposal",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": false
+    },
+    {
+      "id": "585:7775",
+      "name": "F46 - Xác nhận chấp nhận hoặc từ chối Proposal",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "813:6762",
+      "name": "F37A - Chọn vị trí ứng tuyển / Freelancer",
+      "section": "612:3575",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8143",
+      "name": "E01_TạoOffer_Client",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8202",
+      "name": "E02_DuyệtOffer_Freelancer",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8051",
+      "name": "E05_TừChốiProposal_Client",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7841",
+      "name": "E07_ProposalCủaTôi_Freelancer",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7906",
+      "name": "E08_SửaProposal_Freelancer",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7926",
+      "name": "E09_RútProposal_Freelancer",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7952",
+      "name": "E10_MờiFreelancer_Client",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7830",
+      "name": "E11_CâuHỏiSàngLọc_Freelancer",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8119",
+      "name": "E12_ThươngLượngGiá",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7976",
+      "name": "E13_LọcSắpXếp_Client",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:7941",
+      "name": "E14_LờiMời_Freelancer",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8109",
+      "name": "E15_ChatProposal",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8006",
+      "name": "E16_HồSơNhanh_Client",
+      "section": "612:3580",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8213",
+      "name": "F47 - Danh sách Contract",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8271",
+      "name": "F48 - Tạo Contract từ Proposal",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8331",
+      "name": "F49 - Phạm vi và điều khoản Contract",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8385",
+      "name": "F50 - Ngân sách và thời hạn Contract",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8447",
+      "name": "F51 - Phân bổ Milestone",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8528",
+      "name": "F52 - Xem trước Contract",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8597",
+      "name": "F53 - Tạo Contract thành công",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8644",
+      "name": "F54 - Chi tiết Contract",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8709",
+      "name": "F55 - Milestone của Contract",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8786",
+      "name": "F56 - Chi tiết Milestone",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8847",
+      "name": "F57 - Chỉnh sửa Milestone",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:8904",
+      "name": "F58 - Tiến độ Contract",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "751:6131",
+      "name": "F51A - Client lập kế hoạch Milestone / Còn ngân sách",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "751:6132",
+      "name": "F51B - Client thêm Milestone / Đã nhập",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "812:6435",
+      "name": "F54A - Hợp đồng HD-024 / UIUX / Đang triển khai",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "812:6436",
+      "name": "F54B - Hợp đồng HD-025 / Frontend",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "812:6437",
+      "name": "F54C - Hợp đồng HD-026 / Backend",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "816:6668",
+      "name": "F54D - Hợp đồng của tôi / HD-024 / Freelancer",
+      "section": "612:3585",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:10443",
+      "name": "F59_TổngQuanVí_Chính",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:10595",
+      "name": "F60_NạpTiền_Chính",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:10683",
+      "name": "F61_ChọnPhươngThức_Chính",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:10772",
+      "name": "F62_ĐangXửLý_ĐangXửLý",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:10807",
+      "name": "F63_ThànhCông_TừVí",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:10850",
+      "name": "F64_ThấtBại_KhôngĐủSốDư",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:10889",
+      "name": "F65_ThanhToánMilestone_Client_Chính",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:10952",
+      "name": "F66_XácNhậnKýQuỹ_Client_Chính",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11022",
+      "name": "F67_KhoảnĐangKýQuỹ_Client_Chính",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11223",
+      "name": "F68_LịchSử_ChiTiết_NạpTiền",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11108",
+      "name": "F68_LịchSử_DanhSách_Chính",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11276",
+      "name": "F69_NghiệmThu_Client_ChờNghiệmThu",
+      "section": "612:3590",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11342",
+      "name": "F71_RútTiền_Freelancer_Chính",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11433",
+      "name": "F72_XácThực_RútTiền_Chính",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11506",
+      "name": "F73_KếtQuảRútTiền_Freelancer_ĐangXửLý",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11546",
+      "name": "F74_TàiKhoảnNgânHàng_CóDữLiệu",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11593",
+      "name": "F74_TàiKhoảnNgânHàng_FormTrống",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11667",
+      "name": "F76_ThuNhập_Freelancer_Chính",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11774",
+      "name": "F77_ChiTiếtPhí_ToànMànHình",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11853",
+      "name": "F78_ChiTiếtEscrow_Client",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:11951",
+      "name": "F78_ChiTiếtEscrow_Freelancer",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12048",
+      "name": "F79_HoànTiền_ĐangXửLý",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12120",
+      "name": "F80_KYC_Bước1_GiớiThiệu",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12159",
+      "name": "F80_KYC_Bước2_ChụpMặtTrước",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12201",
+      "name": "F80_KYC_Bước3_ChụpMặtSau",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12240",
+      "name": "F80_KYC_Bước4_QuétKhuônMặt",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12275",
+      "name": "F80_KYC_Bước5_XácNhậnThôngTin",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12323",
+      "name": "F81_BiênLai_NạpTiền",
+      "section": "612:3595",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12392",
+      "name": "F69 - Milestone cần thực hiện",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12444",
+      "name": "F70 - Tải sản phẩm bàn giao",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12486",
+      "name": "F71 - Ghi chú và xem trước bàn giao",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12533",
+      "name": "F72 - Gửi sản phẩm thành công",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12575",
+      "name": "F73 - Client xem bàn giao",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12619",
+      "name": "F74 - Phê duyệt sản phẩm",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12668",
+      "name": "F75 - Yêu cầu chỉnh sửa",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12703",
+      "name": "F76 - Chỉnh sửa và gửi lại",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12747",
+      "name": "F77 - Freelancer / Milestone đã duyệt, chờ giải ngân",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "812:6438",
+      "name": "F72A - Bàn giao của tôi / Freelancer / Chờ duyệt",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "812:6439",
+      "name": "F74A - Đã phê duyệt bàn giao / Client",
+      "section": "612:3600",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12794",
+      "name": "F78 - Danh sách hội thoại",
+      "section": "612:3605",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12845",
+      "name": "F79 - Chat cá nhân và nhóm dự án",
+      "section": "612:3605",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12899",
+      "name": "F80 - Gửi tệp trong Chat",
+      "section": "612:3605",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:12951",
+      "name": "F81 - Xem tệp hội thoại",
+      "section": "612:3605",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13000",
+      "name": "F82 - Thành viên, milestone và tệp hội thoại",
+      "section": "612:3605",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13055",
+      "name": "F83 - Trung tâm thông báo",
+      "section": "612:3605",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13106",
+      "name": "F84 - Chi tiết thông báo",
+      "section": "612:3605",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13139",
+      "name": "F85 - Tổng quan Milestone hoàn thành",
+      "section": "612:3610",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13192",
+      "name": "F86 - Xác nhận hoàn thành Contract",
+      "section": "612:3610",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13240",
+      "name": "F87 - Kết thúc Contract thành công",
+      "section": "612:3610",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13282",
+      "name": "F88 - Freelancer đánh giá Client",
+      "section": "612:3610",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13338",
+      "name": "F89 - Client đánh giá Freelancer",
+      "section": "612:3610",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13394",
+      "name": "F90 - Chi tiết đánh giá và xếp hạng",
+      "section": "612:3610",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13466",
+      "name": "F91 - Cài đặt tài khoản và bảo mật",
+      "section": "612:3615",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13520",
+      "name": "F92 - Thông tin cá nhân và mật khẩu",
+      "section": "612:3615",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "581:4111",
+      "name": "SUP-001 • Trung tâm hỗ trợ",
+      "section": "612:3615",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "581:4125",
+      "name": "SUP-002 • Biểu mẫu gửi khiếu nại",
+      "section": "612:3615",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "585:13561",
+      "name": "SYS-001 • Lỗi kết nối (shared)",
+      "section": "612:3615",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "923:7164",
+      "name": "PROTO-START · Bắt đầu trải nghiệm",
+      "section": "923:7161",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "923:7180",
+      "name": "PROTO-INDEX · Mục lục 141 màn",
+      "section": "923:7161",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    },
+    {
+      "id": "944:7198",
+      "name": "PROTO-OVERLAY · Thêm vị trí tuyển dụng",
+      "section": "923:7161",
+      "width": 390,
+      "height": 844,
+      "visible": true
+    }
+  ],
+  "variableIds": [
+    "VariableID:659:4285",
+    "VariableID:591:4113",
+    "VariableID:671:4676",
+    "VariableID:671:4675",
+    "VariableID:591:4117",
+    "VariableID:671:4679",
+    "VariableID:659:4286",
+    "VariableID:671:4673",
+    "VariableID:671:4680",
+    "VariableID:591:4122",
+    "VariableID:591:4118",
+    "VariableID:918:236",
+    "VariableID:591:4116",
+    "VariableID:671:4674",
+    "VariableID:5:4",
+    "VariableID:591:4112",
+    "VariableID:591:4115",
+    "VariableID:5:10",
+    "VariableID:591:4114",
+    "VariableID:671:4677",
+    "VariableID:671:4681",
+    "VariableID:876:6954",
+    "VariableID:876:6955",
+    "VariableID:642:3640",
+    "VariableID:642:3641",
+    "VariableID:642:3638",
+    "VariableID:5:19",
+    "VariableID:5:17",
+    "VariableID:880:7567",
+    "VariableID:5:20",
+    "VariableID:880:7568",
+    "VariableID:876:6958",
+    "VariableID:876:6974",
+    "VariableID:876:6959",
+    "VariableID:876:6972",
+    "VariableID:876:6963",
+    "VariableID:876:6964",
+    "VariableID:876:6965",
+    "VariableID:876:6973",
+    "VariableID:992:7611",
+    "VariableID:876:6960",
+    "VariableID:671:4672",
+    "VariableID:876:6961",
+    "VariableID:650:4281",
+    "VariableID:642:3639",
+    "VariableID:642:3643",
+    "VariableID:659:4291",
+    "VariableID:659:4293",
+    "VariableID:659:4290",
+    "VariableID:659:4295",
+    "VariableID:659:4283",
+    "VariableID:659:4282",
+    "VariableID:659:4284",
+    "VariableID:992:7613",
+    "VariableID:992:7614",
+    "VariableID:992:7615",
+    "VariableID:991:7766",
+    "VariableID:816:6742",
+    "VariableID:897:7101",
+    "VariableID:876:6966",
+    "VariableID:876:6967",
+    "VariableID:876:6968",
+    "VariableID:876:6969",
+    "VariableID:876:6970",
+    "VariableID:876:6971",
+    "VariableID:897:7102",
+    "VariableID:671:4678",
+    "VariableID:06a6fac560f57cceb4f246c6099d5a692e7328ee/58148:228",
+    "VariableID:43032e10066acf5980a0d2bd6cb4f705dcf8f49f/58148:229",
+    "VariableID:5:8",
+    "VariableID:5:9",
+    "VariableID:991:7765",
+    "VariableID:991:7767",
+    "VariableID:991:7768",
+    "VariableID:5:14",
+    "VariableID:993:7545",
+    "VariableID:993:7543",
+    "VariableID:993:7528",
+    "VariableID:993:7531",
+    "VariableID:993:7534",
+    "VariableID:993:7537",
+    "VariableID:993:7539",
+    "VariableID:993:7541",
+    "VariableID:993:7546",
+    "VariableID:183:742",
+    "VariableID:183:751",
+    "VariableID:183:721",
+    "VariableID:183:743",
+    "VariableID:183:748",
+    "VariableID:183:719",
+    "VariableID:5:3",
+    "VariableID:5:5",
+    "VariableID:816:6740",
+    "VariableID:376:236",
+    "VariableID:183:738",
+    "VariableID:183:736",
+    "VariableID:944:7297",
+    "VariableID:944:7197",
+    "VariableID:5:22",
+    "VariableID:5:23",
+    "VariableID:183:726",
+    "VariableID:183:749",
+    "VariableID:183:729",
+    "VariableID:5:16",
+    "VariableID:816:6741",
+    "VariableID:992:7616",
+    "VariableID:944:7296",
+    "VariableID:812:6442",
+    "VariableID:812:6443",
+    "VariableID:813:6763",
+    "VariableID:992:7617",
+    "VariableID:5:24",
+    "VariableID:992:7618",
+    "VariableID:954:7226",
+    "VariableID:516:3576",
+    "VariableID:183:741",
+    "VariableID:183:739",
+    "VariableID:183:734",
+    "VariableID:183:735",
+    "VariableID:516:3579",
+    "VariableID:516:3582",
+    "VariableID:516:3585",
+    "VariableID:516:3588",
+    "VariableID:516:3591",
+    "VariableID:516:3573",
+    "VariableID:516:3574",
+    "VariableID:516:3561",
+    "VariableID:516:3560",
+    "VariableID:183:733",
+    "VariableID:516:3567",
+    "VariableID:516:3566",
+    "VariableID:516:3565",
+    "VariableID:516:3568",
+    "VariableID:516:3570",
+    "VariableID:516:3571",
+    "VariableID:516:3572",
+    "VariableID:183:723",
+    "VariableID:954:7227",
+    "VariableID:183:737",
+    "VariableID:183:727",
+    "VariableID:523:3688",
+    "VariableID:523:3689",
+    "VariableID:516:3559",
+    "VariableID:516:3562",
+    "VariableID:523:3685",
+    "VariableID:523:3684",
+    "VariableID:516:3575",
+    "VariableID:5:13",
+    "VariableID:992:7619",
+    "VariableID:497:2912",
+    "VariableID:497:2913",
+    "VariableID:497:2914",
+    "VariableID:497:2915",
+    "VariableID:497:2916",
+    "VariableID:497:2919",
+    "VariableID:183:740",
+    "VariableID:463:1062",
+    "VariableID:463:1056",
+    "VariableID:918:238",
+    "VariableID:463:1057",
+    "VariableID:463:1058",
+    "VariableID:463:1059",
+    "VariableID:463:1060",
+    "VariableID:463:1061",
+    "VariableID:463:1063",
+    "VariableID:463:1065",
+    "VariableID:463:1064",
+    "VariableID:463:1066",
+    "VariableID:471:1496",
+    "VariableID:471:1497",
+    "VariableID:5:26",
+    "VariableID:a1edb055efed94c66ee20fd2e7e9de8521565506/55067:103",
+    "VariableID:456d41a4999f543955ca6b9f406c1295615b4e04/55067:100",
+    "VariableID:5:7",
+    "VariableID:5:30",
+    "VariableID:5:32",
+    "VariableID:183:747",
+    "VariableID:483:2074",
+    "VariableID:510:3440",
+    "VariableID:510:3441",
+    "VariableID:183:732",
+    "VariableID:510:3434",
+    "VariableID:510:3435",
+    "VariableID:510:3436",
+    "VariableID:510:3433",
+    "VariableID:487:2215",
+    "VariableID:487:2210",
+    "VariableID:487:2201",
+    "VariableID:487:2198",
+    "VariableID:487:2202",
+    "VariableID:487:2199",
+    "VariableID:487:2203",
+    "VariableID:487:2200",
+    "VariableID:487:2211",
+    "VariableID:487:2212",
+    "VariableID:487:2213",
+    "VariableID:487:2214",
+    "VariableID:487:2220",
+    "VariableID:487:2221",
+    "VariableID:487:2222",
+    "VariableID:487:2223",
+    "VariableID:992:7620",
+    "VariableID:183:724",
+    "VariableID:992:7621",
+    "VariableID:5:15",
+    "VariableID:51961387fff97362eed799d88af807ab8030f7c4/58146:1250",
+    "VariableID:992:7622",
+    "VariableID:370:261",
+    "VariableID:370:265",
+    "VariableID:370:263",
+    "VariableID:370:264",
+    "VariableID:370:262",
+    "VariableID:376:235",
+    "VariableID:376:233",
+    "VariableID:774:6236",
+    "VariableID:774:6234",
+    "VariableID:774:6235",
+    "VariableID:774:6237",
+    "VariableID:376:234",
+    "VariableID:774:6238",
+    "VariableID:376:231",
+    "VariableID:376:230",
+    "VariableID:376:232",
+    "VariableID:183:728",
+    "VariableID:376:228",
+    "VariableID:183:725",
+    "VariableID:376:237",
+    "VariableID:183:731",
+    "VariableID:774:6239",
+    "VariableID:376:334",
+    "VariableID:376:335",
+    "VariableID:376:336",
+    "VariableID:370:332",
+    "VariableID:370:336",
+    "VariableID:422:242",
+    "VariableID:370:334",
+    "VariableID:370:335",
+    "VariableID:370:333",
+    "VariableID:376:242",
+    "VariableID:376:246",
+    "VariableID:376:247",
+    "VariableID:376:248",
+    "VariableID:376:249",
+    "VariableID:376:250",
+    "VariableID:376:251",
+    "VariableID:422:240",
+    "VariableID:422:239",
+    "VariableID:422:241",
+    "VariableID:422:228",
+    "VariableID:422:232",
+    "VariableID:422:236",
+    "VariableID:422:238",
+    "VariableID:422:235",
+    "VariableID:918:230",
+    "VariableID:918:239",
+    "VariableID:918:240",
+    "VariableID:918:247",
+    "VariableID:918:241",
+    "VariableID:918:248",
+    "VariableID:918:242",
+    "VariableID:918:243",
+    "VariableID:918:244",
+    "VariableID:918:245",
+    "VariableID:918:246",
+    "VariableID:5:6",
+    "VariableID:992:7623",
+    "VariableID:43e2fa808c95da8ac12fd3eddae33367c25249ed/57299:22455",
+    "VariableID:992:7624",
+    "VariableID:992:7625",
+    "VariableID:820:6693",
+    "VariableID:953:7226",
+    "VariableID:953:7227",
+    "VariableID:820:6694",
+    "VariableID:820:6696",
+    "VariableID:820:6695",
+    "VariableID:838:6701",
+    "VariableID:d2e9e262e437336d54e8e740f8af30755a666af2/4245:248",
+    "VariableID:2669a52b8e7217f9819767cb22af92e9332d8148/57299:22433",
+    "VariableID:836:6729",
+    "VariableID:836:6730",
+    "VariableID:836:6731",
+    "VariableID:836:6726",
+    "VariableID:836:6725",
+    "VariableID:836:6727",
+    "VariableID:946:7228",
+    "VariableID:946:7226",
+    "VariableID:836:6728",
+    "VariableID:946:7227",
+    "VariableID:918:249",
+    "VariableID:918:250",
+    "VariableID:836:6699",
+    "VariableID:836:6702",
+    "VariableID:836:6703",
+    "VariableID:836:6697",
+    "VariableID:836:6698",
+    "VariableID:836:6704",
+    "VariableID:836:6705",
+    "VariableID:836:6706",
+    "VariableID:836:6707",
+    "VariableID:836:6708",
+    "VariableID:836:6709",
+    "VariableID:836:6710",
+    "VariableID:836:6711",
+    "VariableID:836:6712",
+    "VariableID:836:6723",
+    "VariableID:836:6713",
+    "VariableID:836:6714",
+    "VariableID:836:6724",
+    "VariableID:836:6715",
+    "VariableID:836:6721",
+    "VariableID:836:6722",
+    "VariableID:838:6702",
+    "VariableID:5:12",
+    "VariableID:836:6716",
+    "VariableID:836:6717",
+    "VariableID:836:6718",
+    "VariableID:836:6719",
+    "VariableID:836:6700",
+    "VariableID:992:7626",
+    "VariableID:15bb1c0f339146e931cf0dc15f89ed57dcbd907e/564:255",
+    "VariableID:bf56bec2b771c86fd7a7a6598ab82eb0c690ca2f/564:263",
+    "VariableID:c0b711f5aefb9ac2b0509ec6f7c07ad5362611fe/564:242",
+    "VariableID:15d41e10759196590418df58d5bb77642991e569/564:248",
+    "VariableID:30982ce9825390a29c3cbec5b4cc7b50ba69b46b/564:231",
+    "VariableID:578f74c4745d8d1f6b70268aeacdabe1bf263ce4/564:229",
+    "VariableID:872f2351d47ba3cf4d92a4271e304b850f2b0500/5612:266",
+    "VariableID:edd55837be22ce3194312ad6ffd5e84061fba000/564:230",
+    "VariableID:eddfeaed561cbfd41b52cbcbc5758fa036951267/5612:265",
+    "VariableID:9e82491aff6fe809fe71856da5612db502221455/564:246",
+    "VariableID:34f184ba91e9ebb52258b767a603f5c2c97956a2/5613:371",
+    "VariableID:836:6701",
+    "VariableID:836:6720",
+    "VariableID:5:25",
+    "VariableID:591:4120",
+    "VariableID:846:6891",
+    "VariableID:846:6900",
+    "VariableID:846:6901",
+    "VariableID:846:6892",
+    "VariableID:846:6893",
+    "VariableID:846:6894",
+    "VariableID:846:6895",
+    "VariableID:846:6896",
+    "VariableID:846:6911",
+    "VariableID:846:6910",
+    "VariableID:846:6909",
+    "VariableID:846:6908",
+    "VariableID:846:6907",
+    "VariableID:846:6906",
+    "VariableID:846:6905",
+    "VariableID:591:4119",
+    "VariableID:846:6904",
+    "VariableID:846:6903",
+    "VariableID:846:6902",
+    "VariableID:846:6883",
+    "VariableID:846:6884",
+    "VariableID:846:6885",
+    "VariableID:846:6886",
+    "VariableID:846:6887",
+    "VariableID:850:6833",
+    "VariableID:857:6889",
+    "VariableID:857:6886",
+    "VariableID:857:6887",
+    "VariableID:857:6888",
+    "VariableID:857:6910",
+    "VariableID:857:6909",
+    "VariableID:857:6907",
+    "VariableID:857:6905",
+    "VariableID:857:6893",
+    "VariableID:857:6894",
+    "VariableID:857:6911",
+    "VariableID:857:6912",
+    "VariableID:857:6906",
+    "VariableID:857:6904",
+    "VariableID:857:6915",
+    "VariableID:857:6914",
+    "VariableID:857:6895",
+    "VariableID:857:6896",
+    "VariableID:857:6917",
+    "VariableID:857:6916",
+    "VariableID:642:3642",
+    "VariableID:659:4294",
+    "VariableID:659:4292",
+    "VariableID:918:237"
+  ],
+  "textStyleIds": [
+    "S:6882a1182ba2a38b5bd1b1db5412d61b580335e0,",
+    "S:a4e92a3131e60ef7377b09d4ae428a2d70738080,",
+    "S:21801d31e961125fafae6a90406692ccd6179b7b,",
+    "S:906aa3522a7a2d1c4b216a434d26caf92060cf03,",
+    "S:b598b660e5d8894ca65d49cb9abf7deb16ffbb72,",
+    "S:d79d0acf13ed1f5b64b5e386bf5e8ad01bd9ea2c,",
+    "S:f428b9465080a2ae9016215e82818c8100849265,",
+    "S:27dc4e73f417f43cbe5504191ec7ca0275895b20,",
+    "S:035b4cdf2d27b9673a6b9ad8b06648192a68873e,",
+    "S:a490ff2e588b94ca2903c3eb587bd3ac994157a5,",
+    "S:28e9c05f06d0cf9ce232a9f9b95118adc489d979,",
+    "S:bea352483976ef56e9a665e76e02798bce6cd920,",
+    "S:d775ab50a80c1765f22b66023a7513cbc6df6064,",
+    "S:b7fe67d8fb3215c951b80efee5a93a7d84e22c44,",
+    "S:1b8f27e4ea7cf4425ae967f3be214d5d61712500,"
+  ],
+  "fonts": {
+    "Plus Jakarta Sans": 5797,
+    "Inter": 9
+  }
+}

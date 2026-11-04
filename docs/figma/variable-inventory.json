@@ -1,0 +1,1822 @@
+[
+  {
+    "id": "VariableID:659:4285",
+    "name": "Deep",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:591:4113",
+    "name": "Surface",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:671:4676",
+    "name": "Inset",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:671:4675",
+    "name": "Gap",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:591:4117",
+    "name": "Primary",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:671:4679",
+    "name": "Radius",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:659:4286",
+    "name": "OnDeep",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:671:4673",
+    "name": "XS",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:671:4680",
+    "name": "Pill",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:591:4122",
+    "name": "Cyan",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:591:4118",
+    "name": "Primary Dark",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:918:236",
+    "name": "FeedbackVisible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:591:4116",
+    "name": "Text Secondary",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:671:4674",
+    "name": "Small",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:5:4",
+    "name": "Brand/Primary/600",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:591:4112",
+    "name": "Background",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:591:4115",
+    "name": "Text Primary",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:10",
+    "name": "Neutral/Slate/900",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:591:4114",
+    "name": "Surface Subtle",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:671:4677",
+    "name": "Page",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:671:4681",
+    "name": "Border",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:876:6954",
+    "name": "RoleSelected",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6955",
+    "name": "RolePending",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:642:3640",
+    "name": "Inset",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:642:3641",
+    "name": "Side",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:642:3638",
+    "name": "Zero",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:5:19",
+    "name": "Neutral/Slate/50",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:17",
+    "name": "Neutral/Slate/200",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:880:7567",
+    "name": "Consent",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:5:20",
+    "name": "Neutral/White",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:880:7568",
+    "name": "ConsentPending",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6958",
+    "name": "OTPForm",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6974",
+    "name": "OTPResend",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:876:6959",
+    "name": "OTPVerified",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6972",
+    "name": "OTPAction",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:876:6963",
+    "name": "RecoveryEmail",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6964",
+    "name": "RecoverySent",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6965",
+    "name": "RecoveryNew",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6973",
+    "name": "RecoveryAction",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:992:7611",
+    "name": "Client identity / Independent",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6960",
+    "name": "Company",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:671:4672",
+    "name": "Zero",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:876:6961",
+    "name": "LogoUploaded",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:650:4281",
+    "name": "Bar Radius",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:642:3639",
+    "name": "Gap",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:642:3643",
+    "name": "Pill",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:659:4291",
+    "name": "Inset",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:659:4293",
+    "name": "Radius",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:659:4290",
+    "name": "Gap",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:659:4295",
+    "name": "Pill",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:659:4283",
+    "name": "Lime",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:659:4282",
+    "name": "Cream",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:659:4284",
+    "name": "Peach",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:992:7613",
+    "name": "Client identity / Project context 2",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:992:7614",
+    "name": "Client identity / Project context 3",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:992:7615",
+    "name": "Client identity / Project context 4",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:991:7766",
+    "name": "Client identity / OwnerContext",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:816:6742",
+    "name": "Recruitment/application",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:897:7101",
+    "name": "Profile / Technologies configured",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6966",
+    "name": "TechFigma",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6967",
+    "name": "TechReact",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6968",
+    "name": "TechJava",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6969",
+    "name": "TechPHP",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6970",
+    "name": "TechFlutter",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:876:6971",
+    "name": "TechJS",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:897:7102",
+    "name": "Profile / Technologies empty",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:671:4678",
+    "name": "Large",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:5:8",
+    "name": "Brand/Surface/100",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:9",
+    "name": "Brand/Border/200",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:991:7765",
+    "name": "Client identity / OwnerName",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:991:7767",
+    "name": "Client identity / CompanyName",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:991:7768",
+    "name": "Client identity / CompanyWebsite",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:5:14",
+    "name": "Neutral/Slate/500",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:993:7545",
+    "name": "Client company form / Title",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:993:7543",
+    "name": "Client company form / Show required error",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:993:7528",
+    "name": "Client company form / Name",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:993:7531",
+    "name": "Client company form / Industry",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:993:7534",
+    "name": "Client company form / Address",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:993:7537",
+    "name": "Client company form / Website",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:993:7539",
+    "name": "Client company form / Tax",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:993:7541",
+    "name": "Client company form / About",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:993:7546",
+    "name": "Client company form / Save label",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:183:742",
+    "name": "spacing/12",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:183:751",
+    "name": "radius/999",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:183:721",
+    "name": "color/soft",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:183:743",
+    "name": "spacing/16",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:183:748",
+    "name": "radius/12",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:183:719",
+    "name": "color/primary",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:3",
+    "name": "Brand/Primary/500",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:5",
+    "name": "Brand/Primary/700",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:816:6740",
+    "name": "Recruitment/badge",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:376:236",
+    "name": "Payment/VNPAYBackground",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:183:738",
+    "name": "color/card",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:183:736",
+    "name": "color/border",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:944:7297",
+    "name": "Hiring summary 684:5537",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:944:7197",
+    "name": "Additional hiring role visible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:5:22",
+    "name": "Semantic/Success/Border",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:23",
+    "name": "Semantic/Success/Text",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:183:726",
+    "name": "color/escrowBg",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:183:749",
+    "name": "radius/16",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:183:729",
+    "name": "color/processingBg",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:16",
+    "name": "Neutral/Slate/300",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:816:6741",
+    "name": "Recruitment/reference",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:992:7616",
+    "name": "Client identity / Project context 5",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:944:7296",
+    "name": "Hiring summary 812:6635",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:812:6442",
+    "name": "Recruitment/status",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:812:6443",
+    "name": "Recruitment/button",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:813:6763",
+    "name": "Application/SelectedRole",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:992:7617",
+    "name": "Client identity / Project context 6",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:5:24",
+    "name": "Semantic/Warning/Background",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:992:7618",
+    "name": "Client identity / Project context 7",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:954:7226",
+    "name": "Offer editor title",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:516:3576",
+    "name": "E01/Row0/Visible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:183:741",
+    "name": "spacing/8",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:183:739",
+    "name": "spacing/0",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:183:734",
+    "name": "color/text",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:183:735",
+    "name": "color/muted",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:516:3579",
+    "name": "E01/Row1/Visible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3582",
+    "name": "E01/Row2/Visible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3585",
+    "name": "E01/Row3/Visible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3588",
+    "name": "E01/Row4/Visible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3591",
+    "name": "E01/Row5/Visible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3573",
+    "name": "E01/AddReady",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3574",
+    "name": "E01/AddBlocked",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3561",
+    "name": "E01/ValidTotal",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3560",
+    "name": "E01/OverBudget",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:183:733",
+    "name": "color/errorText",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:516:3567",
+    "name": "E01/StartPicker",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3566",
+    "name": "E01/EndNormal",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3565",
+    "name": "E01/EndError",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3568",
+    "name": "E01/EndPicker",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3570",
+    "name": "E01/RevisionText",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:516:3571",
+    "name": "E01/Attachment",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:516:3572",
+    "name": "E01/DraftToast",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:183:723",
+    "name": "color/successBg",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:954:7227",
+    "name": "Offer editor primary label",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:183:737",
+    "name": "color/screen",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:183:727",
+    "name": "color/escrowText",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:523:3688",
+    "name": "E02/MinuteText",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:523:3689",
+    "name": "E02/SecondText",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:516:3559",
+    "name": "E01/TotalText",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:516:3562",
+    "name": "E01/Start",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:523:3685",
+    "name": "E02/End",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:523:3684",
+    "name": "E02/CountLabel",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:516:3575",
+    "name": "E01/Notes",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:5:13",
+    "name": "Neutral/Slate/600",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:992:7619",
+    "name": "Client identity / Project context 8",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:497:2912",
+    "name": "E05/ReasonOff0",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:497:2913",
+    "name": "E05/ReasonOff1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:497:2914",
+    "name": "E05/ReasonOff2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:497:2915",
+    "name": "E05/ReasonOff3",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:497:2916",
+    "name": "E05/ReasonOff4",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:497:2919",
+    "name": "E05/Disabled",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:183:740",
+    "name": "spacing/4",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:463:1062",
+    "name": "E07/SearchVisible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:463:1056",
+    "name": "E07/Tab1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:918:238",
+    "name": "ProposalStatus",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:463:1057",
+    "name": "E07/Tab2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:463:1058",
+    "name": "E07/Tab3",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:463:1059",
+    "name": "E07/Tab4",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:463:1060",
+    "name": "E07/Tab5",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:463:1061",
+    "name": "E07/Tab6",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:463:1063",
+    "name": "E07/Draft1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:463:1065",
+    "name": "E07/Menu1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:463:1064",
+    "name": "E07/Draft2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:463:1066",
+    "name": "E07/Menu2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:471:1496",
+    "name": "E08/Ready",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:471:1497",
+    "name": "E08/Disabled",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:5:26",
+    "name": "Semantic/Warning/Text",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:7",
+    "name": "Brand/Surface/50",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:30",
+    "name": "Semantic/Danger/Background",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:5:32",
+    "name": "Semantic/Danger/Text",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:183:747",
+    "name": "radius/8",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:483:2074",
+    "name": "E10/ShowBar",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:510:3440",
+    "name": "E12/MinuteText",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:510:3441",
+    "name": "E12/SecondText",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:183:732",
+    "name": "color/errorBg",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:510:3434",
+    "name": "E12/Pending",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:510:3435",
+    "name": "E12/Declined",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:510:3436",
+    "name": "E12/Expired",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:510:3433",
+    "name": "E12/NewOffer",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2215",
+    "name": "E13/SortLabel",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:487:2210",
+    "name": "E13/SortVisible1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2201",
+    "name": "E13/Visible1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2198",
+    "name": "E13/NotShort1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2202",
+    "name": "E13/Visible2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2199",
+    "name": "E13/NotShort2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2203",
+    "name": "E13/Visible3",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2200",
+    "name": "E13/NotShort3",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2211",
+    "name": "E13/SortVisible2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2212",
+    "name": "E13/SortVisible3",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2213",
+    "name": "E13/SortVisible4",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2214",
+    "name": "E13/SortVisible5",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2220",
+    "name": "E13/FilterOff0",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2221",
+    "name": "E13/FilterOff1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2222",
+    "name": "E13/FilterOff2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:487:2223",
+    "name": "E13/FilterOff3",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:992:7620",
+    "name": "Client identity / Project context 9",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:183:724",
+    "name": "color/successText",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:992:7621",
+    "name": "Client identity / Project context 10",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:5:15",
+    "name": "Neutral/Slate/400",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:992:7622",
+    "name": "Client identity / Project context 11",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:370:261",
+    "name": "Deposit/Money",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:370:265",
+    "name": "Deposit/Hint",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:370:263",
+    "name": "Deposit/ButtonBackground",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:370:264",
+    "name": "Deposit/ButtonText",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:370:262",
+    "name": "Deposit/Keyboard",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:376:235",
+    "name": "Payment/MoMoBackground",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:376:233",
+    "name": "Payment/MoMoBorder",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:774:6236",
+    "name": "Payment/RadioMoMoOpacity",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:774:6234",
+    "name": "Payment/ZaloPayBackground",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:774:6235",
+    "name": "Payment/ZaloPayBorder",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:774:6237",
+    "name": "Payment/RadioZaloPayOpacity",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:376:234",
+    "name": "Payment/VNPAYBorder",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:774:6238",
+    "name": "Payment/RadioVNPAYOpacity",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:376:231",
+    "name": "Payment/ButtonBackground",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:376:230",
+    "name": "Payment/Label",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:376:232",
+    "name": "Payment/ButtonText",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:183:728",
+    "name": "color/processing",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:376:228",
+    "name": "Payment/Method",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:183:725",
+    "name": "color/escrow",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:376:237",
+    "name": "Deposit/NewBalance",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:183:731",
+    "name": "color/error",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:774:6239",
+    "name": "Payment/FailureReason",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:376:334",
+    "name": "Escrow/CheckboxColor",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:376:335",
+    "name": "Escrow/ButtonBackground",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:376:336",
+    "name": "Escrow/ButtonText",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:370:332",
+    "name": "Withdrawal/Money",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:370:336",
+    "name": "Withdrawal/Hint",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:422:242",
+    "name": "Bank/ReceivingAccount",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:370:334",
+    "name": "Withdrawal/ButtonBackground",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:370:335",
+    "name": "Withdrawal/ButtonText",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:370:333",
+    "name": "Withdrawal/Keyboard",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:376:242",
+    "name": "Withdrawal/Context",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:376:246",
+    "name": "OTP/RútTiền/Digit1",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:376:247",
+    "name": "OTP/RútTiền/Digit2",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:376:248",
+    "name": "OTP/RútTiền/Digit3",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:376:249",
+    "name": "OTP/RútTiền/Digit4",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:376:250",
+    "name": "OTP/RútTiền/Digit5",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:376:251",
+    "name": "OTP/RútTiền/Digit6",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:422:240",
+    "name": "Bank/AddedCode",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:422:239",
+    "name": "Bank/AddedName",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:422:241",
+    "name": "Bank/AddedMask",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:422:228",
+    "name": "Bank/SelectedName",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:422:232",
+    "name": "Bank/AccountDisplay",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:422:236",
+    "name": "Bank/Owner",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:422:238",
+    "name": "Bank/Hint",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:422:235",
+    "name": "Bank/KeyboardVisible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:918:230",
+    "name": "KycConsent",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:918:239",
+    "name": "ReceiptTitle",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:240",
+    "name": "ReceiptAmount",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:247",
+    "name": "ReceiptStatus",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:241",
+    "name": "ReceiptCode",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:248",
+    "name": "ReceiptTime",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:242",
+    "name": "ReceiptType",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:243",
+    "name": "ReceiptSender",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:244",
+    "name": "ReceiptRecipient",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:245",
+    "name": "ReceiptMethod",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:246",
+    "name": "ReceiptFee",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:5:6",
+    "name": "Brand/Primary/800",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:992:7623",
+    "name": "Client identity / Project context 12",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:992:7624",
+    "name": "Client identity / Project context 13",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:992:7625",
+    "name": "Client identity / Project context 14",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:820:6693",
+    "name": "Delivery/HD-024/short",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:953:7226",
+    "name": "Delivery revision requested / HD-024",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:953:7227",
+    "name": "Delivery ready for approval / HD-024",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:820:6694",
+    "name": "Delivery/HD-024/action",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:820:6696",
+    "name": "Delivery/HD-024/detail",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:820:6695",
+    "name": "Delivery/HD-024/title",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:838:6701",
+    "name": "UI/UnreadLabel",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6729",
+    "name": "UI/FilterAll",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6730",
+    "name": "UI/FilterDirect",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6731",
+    "name": "UI/FilterGroups",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6726",
+    "name": "UI/ListGroups",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6725",
+    "name": "UI/Unread",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6727",
+    "name": "UI/ListDirect",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:946:7228",
+    "name": "RecipientInitial",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:946:7226",
+    "name": "RecipientName",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6728",
+    "name": "UI/ListProposals",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:946:7227",
+    "name": "PreThreadTitle",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:249",
+    "name": "NavSecond",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:918:250",
+    "name": "NavThird",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6699",
+    "name": "Conversation/IsGroup",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6702",
+    "name": "Conversation/Header",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6703",
+    "name": "Conversation/Subheader",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6697",
+    "name": "Conversation/Approved",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6698",
+    "name": "Conversation/Member",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6704",
+    "name": "Conversation/PanelTitle",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6705",
+    "name": "Conversation/PanelScope",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6706",
+    "name": "Conversation/PanelStatus",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6707",
+    "name": "Conversation/PanelProgress",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6708",
+    "name": "Conversation/ProgressWidth",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:836:6709",
+    "name": "Conversation/Sender",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6710",
+    "name": "Conversation/Received",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6711",
+    "name": "Conversation/Own",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6712",
+    "name": "Conversation/Event",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6723",
+    "name": "UI/AttachmentSent",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6713",
+    "name": "Conversation/LastSender",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6714",
+    "name": "Conversation/LastMessage",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6724",
+    "name": "UI/DemoMessageSent",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6715",
+    "name": "Conversation/Destination",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6721",
+    "name": "Conversation/FileName",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6722",
+    "name": "Conversation/FileMeta",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:838:6702",
+    "name": "UI/FileNote",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:5:12",
+    "name": "Neutral/Slate/700",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:836:6716",
+    "name": "Conversation/Scope",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6717",
+    "name": "Conversation/InfoTitle",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6718",
+    "name": "Conversation/InfoScope",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6719",
+    "name": "Conversation/InfoHint",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6700",
+    "name": "Conversation/IsPrivate",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:992:7626",
+    "name": "Client identity / Project context 15",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:836:6701",
+    "name": "Conversation/IsPre",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:836:6720",
+    "name": "Conversation/InfoAction",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:5:25",
+    "name": "Semantic/Warning/Border",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:591:4120",
+    "name": "Warning",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:846:6891",
+    "name": "FScore",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:846:6900",
+    "name": "CScore",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:846:6901",
+    "name": "ProfileScore",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:846:6892",
+    "name": "CStar1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:846:6893",
+    "name": "CStar2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:846:6894",
+    "name": "CStar3",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:846:6895",
+    "name": "CStar4",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:846:6896",
+    "name": "CStar5",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:846:6911",
+    "name": "Width5",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:846:6910",
+    "name": "Count5",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:846:6909",
+    "name": "Width4",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:846:6908",
+    "name": "Count4",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:846:6907",
+    "name": "Width3",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:846:6906",
+    "name": "Count3",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:846:6905",
+    "name": "Width2",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:591:4119",
+    "name": "Coral",
+    "type": "COLOR"
+  },
+  {
+    "id": "VariableID:846:6904",
+    "name": "Count2",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:846:6903",
+    "name": "Width1",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:846:6902",
+    "name": "Count1",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:846:6883",
+    "name": "FStar1",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:846:6884",
+    "name": "FStar2",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:846:6885",
+    "name": "FStar3",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:846:6886",
+    "name": "FStar4",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:846:6887",
+    "name": "FStar5",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:850:6833",
+    "name": "ReturnLabel",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:857:6889",
+    "name": "PrivacyOpen",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6886",
+    "name": "Info",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6887",
+    "name": "Password",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6888",
+    "name": "Saved",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6910",
+    "name": "SavedMessage",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:857:6909",
+    "name": "AccountAction",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:857:6907",
+    "name": "FAQ",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6905",
+    "name": "FormVisible",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6893",
+    "name": "ScopeContract",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6894",
+    "name": "ScopeAccount",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6911",
+    "name": "ScopeTitle",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:857:6912",
+    "name": "ScopeSubtitle",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:857:6906",
+    "name": "Evidence",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6904",
+    "name": "ReportSent",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6915",
+    "name": "TopicTitle",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:857:6914",
+    "name": "ReportAction",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:857:6895",
+    "name": "ScopePicker",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6896",
+    "name": "ViewerClient",
+    "type": "BOOLEAN"
+  },
+  {
+    "id": "VariableID:857:6917",
+    "name": "OfflineBadge",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:857:6916",
+    "name": "OfflineStatus",
+    "type": "STRING"
+  },
+  {
+    "id": "VariableID:642:3642",
+    "name": "Radius",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:659:4294",
+    "name": "TileRadius",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:659:4292",
+    "name": "Side",
+    "type": "FLOAT"
+  },
+  {
+    "id": "VariableID:918:237",
+    "name": "FeedbackText",
+    "type": "STRING"
+  }
+]

@@ -1,0 +1,758 @@
+{
+  "id": "612:3620",
+  "name": "14 · UI COMPONENTS / VARIANTS  /  15 COMPONENT SETS",
+  "type": "SECTION",
+  "count": 125,
+  "children": [
+    {
+      "id": "612:3621",
+      "name": "Workflow phase / color accent",
+      "type": "FRAME",
+      "count": 0
+    },
+    {
+      "id": "612:3622",
+      "name": "WORKFLOW / SECTION TITLE",
+      "type": "TEXT",
+      "count": 0
+    },
+    {
+      "id": "612:3623",
+      "name": "WORKFLOW / ROLE AND DESCRIPTION",
+      "type": "TEXT",
+      "count": 0
+    },
+    {
+      "id": "612:3624",
+      "name": "SCREEN COUNT",
+      "type": "TEXT",
+      "count": 0
+    },
+    {
+      "id": "593:4119",
+      "name": "Emerald 2026 / Button",
+      "type": "COMPONENT_SET",
+      "count": 4
+    },
+    {
+      "id": "593:4124",
+      "name": "Emerald 2026 / Category Chip",
+      "type": "COMPONENT_SET",
+      "count": 2
+    },
+    {
+      "id": "623:3633",
+      "name": "Marketplace / Jobs / Auto-slide Carousel",
+      "type": "COMPONENT_SET",
+      "count": 4
+    },
+    {
+      "id": "623:3754",
+      "name": "Marketplace / Talent / Auto-slide Carousel",
+      "type": "COMPONENT_SET",
+      "count": 4
+    },
+    {
+      "id": "642:3648",
+      "name": "Emerald 2026 / Navigation / Icon / Home",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "642:3652",
+      "name": "Emerald 2026 / Navigation / Icon / Search",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "642:3655",
+      "name": "Emerald 2026 / Navigation / Icon / Chat",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "642:3659",
+      "name": "Emerald 2026 / Navigation / Icon / Profile",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "642:3662",
+      "name": "Emerald 2026 / Navigation / Icon / Back",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "642:3666",
+      "name": "Emerald 2026 / Navigation / Icon / Work",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "642:3670",
+      "name": "Emerald 2026 / Navigation / Icon / Projects",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "642:3674",
+      "name": "Emerald 2026 / Navigation / Icon / Talent",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "642:3677",
+      "name": "Emerald 2026 / Navigation / Icon / Close",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "642:3688",
+      "name": "Emerald 2026 / Navigation / Tab Item",
+      "type": "COMPONENT_SET",
+      "count": 2
+    },
+    {
+      "id": "642:4099",
+      "name": "Emerald 2026 / Navigation / Bottom Bar",
+      "type": "COMPONENT_SET",
+      "count": 10
+    },
+    {
+      "id": "642:4100",
+      "name": "Emerald 2026 / Navigation / App Bar",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "642:4106",
+      "name": "Navigation / Role preview",
+      "type": "FRAME",
+      "count": 2
+    },
+    {
+      "id": "648:3994",
+      "name": "Emerald 2026 / Navigation / Status Icons",
+      "type": "COMPONENT",
+      "count": 6
+    },
+    {
+      "id": "659:4301",
+      "name": "Marketplace / Banner / Icon / Arrow up right",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "659:4310",
+      "name": "Marketplace / Banner / CTA",
+      "type": "COMPONENT_SET",
+      "count": 2
+    },
+    {
+      "id": "659:4311",
+      "name": "Marketplace / Banner / Jobs / Discover",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "659:4327",
+      "name": "Marketplace / Banner / Jobs / Development",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "659:4340",
+      "name": "Marketplace / Banner / Jobs / Design",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "659:4355",
+      "name": "Marketplace / Banner / Talent / Discover",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "659:4368",
+      "name": "Marketplace / Banner / Talent / Development",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "659:4381",
+      "name": "Marketplace / Banner / Talent / Design",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "659:4394",
+      "name": "Marketplace / Banner review / Advertising",
+      "type": "FRAME",
+      "count": 4
+    },
+    {
+      "id": "670:4671",
+      "name": "Profile / Assets / Company images",
+      "type": "FRAME",
+      "count": 4
+    },
+    {
+      "id": "670:4678",
+      "name": "Profile / Technology / mysql",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "670:4685",
+      "name": "Profile / Technology / java",
+      "type": "COMPONENT",
+      "count": 5
+    },
+    {
+      "id": "670:4689",
+      "name": "Profile / Technology / javascript",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "670:4699",
+      "name": "Profile / Technology / php",
+      "type": "COMPONENT",
+      "count": 8
+    },
+    {
+      "id": "670:4706",
+      "name": "Profile / Technology / flutter",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "670:4711",
+      "name": "Profile / Technology / react",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "670:4718",
+      "name": "Profile / Technology / figma",
+      "type": "COMPONENT",
+      "count": 5
+    },
+    {
+      "id": "670:4723",
+      "name": "Profile / Technology / python",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "671:4685",
+      "name": "Profile / Icon / layers",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "671:4689",
+      "name": "Profile / Icon / mobile",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "671:4693",
+      "name": "Profile / Icon / camera",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "671:4696",
+      "name": "Profile / Icon / edit",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "671:4701",
+      "name": "Profile / Icon / image",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "671:4704",
+      "name": "Profile / Icon / check",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "671:4707",
+      "name": "Profile / Icon / plus",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "671:4711",
+      "name": "Profile / Icon / map",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "671:4714",
+      "name": "Profile / Icon / external",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "671:4715",
+      "name": "Profile / Skill Chip",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "671:4739",
+      "name": "Profile / Skill Tile",
+      "type": "COMPONENT_SET",
+      "count": 2
+    },
+    {
+      "id": "672:4686",
+      "name": "Profile / Freelancer Identity",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "672:4713",
+      "name": "Profile / Portfolio Card",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "675:5387",
+      "name": "Profile / Client / Company",
+      "type": "COMPONENT_SET",
+      "count": 2
+    },
+    {
+      "id": "675:5388",
+      "name": "Profile / Client / Editor",
+      "type": "COMPONENT_SET",
+      "count": 2
+    },
+    {
+      "id": "682:5195",
+      "name": "Projects / Creation Stepper",
+      "type": "COMPONENT_SET",
+      "count": 4
+    },
+    {
+      "id": "682:5196",
+      "name": "Projects / Attachment Row",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "682:5204",
+      "name": "Projects / Project Summary",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "682:5225",
+      "name": "Projects / Success / Glowing Check",
+      "type": "COMPONENT",
+      "count": 5
+    },
+    {
+      "id": "682:5232",
+      "name": "Projects / Component review",
+      "type": "FRAME",
+      "count": 5
+    },
+    {
+      "id": "684:5335",
+      "name": "Projects / Shortlisted Candidate",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "692:5452",
+      "name": "Projects / Cover Image Editor",
+      "type": "COMPONENT_SET",
+      "count": 2
+    },
+    {
+      "id": "692:5484",
+      "name": "Projects / Cover editor / States review",
+      "type": "FRAME",
+      "count": 2
+    },
+    {
+      "id": "700:5517",
+      "name": "Navigation / Integrated Header",
+      "type": "COMPONENT_SET",
+      "count": 3
+    },
+    {
+      "id": "700:5518",
+      "name": "Navigation / Integrated Header / Review",
+      "type": "FRAME",
+      "count": 4
+    },
+    {
+      "id": "715:5517",
+      "name": "Proposal / Creation Stepper",
+      "type": "COMPONENT_SET",
+      "count": 3
+    },
+    {
+      "id": "715:5518",
+      "name": "Proposal / Timeline Step",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "715:5526",
+      "name": "Proposal / Quote Summary",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "715:5536",
+      "name": "Proposal / Candidate Card",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "715:5558",
+      "name": "Proposal / Portfolio Attachment",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "715:5630",
+      "name": "Proposal / Decision Confirmation",
+      "type": "COMPONENT_SET",
+      "count": 2
+    },
+    {
+      "id": "715:5633",
+      "name": "Proposal / Components / Review",
+      "type": "FRAME",
+      "count": 7
+    },
+    {
+      "id": "717:6187",
+      "name": "Proposal / Comparison Tile",
+      "type": "COMPONENT",
+      "count": 7
+    },
+    {
+      "id": "719:5842",
+      "name": "Proposal / Preview document / Full content",
+      "type": "FRAME",
+      "count": 14
+    },
+    {
+      "id": "732:5855",
+      "name": "Proposal / Project Context",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "735:5917",
+      "name": "Project cover / Cà phê Việt / Editable illustration",
+      "type": "FRAME",
+      "count": 6
+    },
+    {
+      "id": "739:5950",
+      "name": "Contracts / Milestone Card",
+      "type": "COMPONENT_SET",
+      "count": 3
+    },
+    {
+      "id": "758:6204",
+      "name": "Contracts / Allocation / Branch Summary",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "774:6257",
+      "name": "Wallet / Icon / History",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "784:6251",
+      "name": "Wallet / Brand / MoMo / Official",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "784:6258",
+      "name": "Wallet / Brand / Zalopay / Official",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "784:6316",
+      "name": "Wallet / Brand / VNPAY / Official",
+      "type": "COMPONENT",
+      "count": 53
+    },
+    {
+      "id": "796:6336",
+      "name": "Wallet / Receipt / Success Hero",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "806:6323",
+      "name": "Delivery / Project Context",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "806:6368",
+      "name": "Delivery / Attachment / PDF",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "806:6375",
+      "name": "Delivery / Attachment / Figma",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "806:6468",
+      "name": "Delivery / Approval Confirmation",
+      "type": "COMPONENT",
+      "count": 10
+    },
+    {
+      "id": "812:6444",
+      "name": "Collaboration / Contract Summary",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "827:6733",
+      "name": "Projects / Creation Stepper / Five steps",
+      "type": "COMPONENT_SET",
+      "count": 5
+    },
+    {
+      "id": "836:6734",
+      "name": "Messaging / Icon / Send",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "836:6739",
+      "name": "Messaging / Icon / More",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "836:6740",
+      "name": "Messaging / Thread Row",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "836:6752",
+      "name": "Messaging / Milestone Panel",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "836:6762",
+      "name": "Messaging / Bubble / Received",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "836:6766",
+      "name": "Messaging / Bubble / Sent",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "836:6770",
+      "name": "Messaging / Notification Row",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "836:6780",
+      "name": "Messaging / Conversation Header",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "846:6797",
+      "name": "Completion / Icon / Trophy",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "846:6800",
+      "name": "Completion / Rating selector",
+      "type": "COMPONENT",
+      "count": 5
+    },
+    {
+      "id": "846:6826",
+      "name": "Completion / Ring / Complete",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "846:6873",
+      "name": "Completion / Phase stepper",
+      "type": "COMPONENT_SET",
+      "count": 3
+    },
+    {
+      "id": "846:6874",
+      "name": "Completion / Paid milestone",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "847:6809",
+      "name": "Completion / Review tag",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "857:6832",
+      "name": "System / Icon / User",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "857:6835",
+      "name": "System / Icon / Moon",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "857:6838",
+      "name": "System / Icon / Mail",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "857:6842",
+      "name": "System / Icon / Chevron right",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "857:6845",
+      "name": "System / Toggle",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "857:6858",
+      "name": "System / Settings row",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "857:6877",
+      "name": "System / Help topic",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "857:6882",
+      "name": "System / Topic choice",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "865:6912",
+      "name": "System / Icon 24 / Shield",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "865:6915",
+      "name": "System / Icon 24 / Headset",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "875:6921",
+      "name": "Auth / Official Google G",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "876:6921",
+      "name": "Auth / Workly mark",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "876:6924",
+      "name": "Auth / Icon / Company",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "876:6927",
+      "name": "Auth / Role choice",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "876:6940",
+      "name": "Auth / Technology choice",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "880:7570",
+      "name": "Auth / Continue with Google",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "880:7574",
+      "name": "Auth / OTP digit",
+      "type": "COMPONENT",
+      "count": 1
+    },
+    {
+      "id": "919:7337",
+      "name": "Prototype / Dismissible feedback",
+      "type": "COMPONENT",
+      "count": 2
+    },
+    {
+      "id": "970:7226",
+      "name": "Auth / Alternative divider",
+      "type": "COMPONENT",
+      "count": 3
+    },
+    {
+      "id": "991:7773",
+      "name": "Client / Personal identity",
+      "type": "COMPONENT",
+      "count": 4
+    },
+    {
+      "id": "991:7820",
+      "name": "Client / Company affiliation",
+      "type": "COMPONENT_SET",
+      "count": 2
+    },
+    {
+      "id": "992:7668",
+      "name": "Project / Client owner identity",
+      "type": "COMPONENT",
+      "count": 4
+    }
+  ]
+}

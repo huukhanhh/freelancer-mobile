@@ -1,0 +1,302 @@
+[
+  {
+    "id": "S:6882a1182ba2a38b5bd1b1db5412d61b580335e0,",
+    "name": "Emerald 2026 / Display",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 32,
+    "lineHeight": {
+      "unit": "PERCENT",
+      "value": 139.9999976158142
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:a4e92a3131e60ef7377b09d4ae428a2d70738080,",
+    "name": "Emerald 2026 / Body",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Regular",
+      "variationSettings": {
+        "wght": 400
+      }
+    },
+    "fontSize": 14,
+    "lineHeight": {
+      "unit": "PERCENT",
+      "value": 139.9999976158142
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:21801d31e961125fafae6a90406692ccd6179b7b,",
+    "name": "Emerald 2026 / Heading 3",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 18,
+    "lineHeight": {
+      "unit": "PERCENT",
+      "value": 139.9999976158142
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:906aa3522a7a2d1c4b216a434d26caf92060cf03,",
+    "name": "Emerald 2026 / Label",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Medium",
+      "variationSettings": {
+        "wght": 500
+      }
+    },
+    "fontSize": 13,
+    "lineHeight": {
+      "unit": "PERCENT",
+      "value": 139.9999976158142
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:b598b660e5d8894ca65d49cb9abf7deb16ffbb72,",
+    "name": "Emerald 2026 / Caption",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Regular",
+      "variationSettings": {
+        "wght": 400
+      }
+    },
+    "fontSize": 11,
+    "lineHeight": {
+      "unit": "PERCENT",
+      "value": 139.9999976158142
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:d79d0acf13ed1f5b64b5e386bf5e8ad01bd9ea2c,",
+    "name": "Emerald 2026 / Heading 2",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 21,
+    "lineHeight": {
+      "unit": "PERCENT",
+      "value": 139.9999976158142
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:f428b9465080a2ae9016215e82818c8100849265,",
+    "name": "Emerald 2026 / Heading 1",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 25,
+    "lineHeight": {
+      "unit": "PERCENT",
+      "value": 139.9999976158142
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:27dc4e73f417f43cbe5504191ec7ca0275895b20,",
+    "name": "Emerald 2026 / Navigation / Label",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Medium",
+      "variationSettings": {
+        "wght": 500
+      }
+    },
+    "fontSize": 11,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 16
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:035b4cdf2d27b9673a6b9ad8b06648192a68873e,",
+    "name": "Emerald 2026 / Banner / Advertising Headline",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 26,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 30
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": -2
+    }
+  },
+  {
+    "id": "S:a490ff2e588b94ca2903c3eb587bd3ac994157a5,",
+    "name": "Emerald 2026 / Banner / CTA",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 11,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 16
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:28e9c05f06d0cf9ce232a9f9b95118adc489d979,",
+    "name": "Emerald 2026 / Profile / Name",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 22,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 28
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:bea352483976ef56e9a665e76e02798bce6cd920,",
+    "name": "Emerald 2026 / Wallet / Transaction Amount",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 14,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 20
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:d775ab50a80c1765f22b66023a7513cbc6df6064,",
+    "name": "Emerald 2026 / Navigation / Title",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 16,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 24
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  },
+  {
+    "id": "S:b7fe67d8fb3215c951b80efee5a93a7d84e22c44,",
+    "name": "Emerald 2026 / Banner / Eyebrow",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 9,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 12
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 8
+    }
+  },
+  {
+    "id": "S:1b8f27e4ea7cf4425ae967f3be214d5d61712500,",
+    "name": "Emerald 2026 / Banner / Heading",
+    "fontName": {
+      "family": "Plus Jakarta Sans",
+      "style": "Bold",
+      "variationSettings": {
+        "wght": 700
+      }
+    },
+    "fontSize": 22,
+    "lineHeight": {
+      "unit": "PIXELS",
+      "value": 26
+    },
+    "letterSpacing": {
+      "unit": "PERCENT",
+      "value": 0
+    }
+  }
+]
