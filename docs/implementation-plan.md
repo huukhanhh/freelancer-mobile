@@ -1,11 +1,11 @@
 # Giai đoạn 5 — Kế hoạch frontend
 
-Trạng thái: chờ người dùng duyệt cấu trúc foundation. Không triển khai hàng loạt screens trong lượt hiện tại.
+Trạng thái: người dùng đã duyệt cấu trúc monorepo (Flutter root + backend/). Cập nhật hiện tại chỉ tổ chức thư mục/tài liệu/CI; chưa bắt đầu batch màn hình.
 Màn chuẩn: docs/figma/screen-inventory.json, page 579:228; 143 màn sản phẩm hiển thị. Từng module chia batch nhỏ theo flow, mặc định 2–4 màn liên quan; đọc lại thiết kế trực tiếp trước mỗi batch.
 
 ## Branch và phụ thuộc
 
-Các branch module dưới đây là kế hoạch; chỉ tạo khi bắt đầu module từ develop đã tích hợp foundation sau review. Baseline develop hiện chưa có foundation cho đến khi người dùng duyệt tích hợp. Không tự merge main.
+Các branch module dưới đây là kế hoạch; chỉ tạo khi bắt đầu module từ develop hiện tại. Foundation đã được đưa vào main qua PR #1 và develop đã đồng bộ fast-forward. Người dùng cho phép tự tạo/merge PR sau khi các kiểm tra đạt, theo work branch -> develop -> main; không cần chờ accept thủ công. Không tạo lịch sử hoạt động giả.
 
 | Thứ tự | Module / section | Branch riêng | Phụ thuộc | Tiêu chí nghiệm thu riêng |
 |---|---|---|---|---|
@@ -34,8 +34,8 @@ Messaging primitives có thể được làm sớm khi proposal cần consumer, 
 4. Đối chiếu layout tại 390 × 844, viewport hẹp, safe area, keyboard và chữ tiếng Việt; không dùng screenshot làm UI.
 5. Test hành vi có ý nghĩa: state chuyển tiếp, validation/budget, stale async response, routing/role/back. Kiểm tra UI đủ trạng thái đã có thiết kế, không test chỉ phản chiếu implementation.
 6. dart format --set-exit-if-changed, flutter analyze và flutter test phải đạt; báo Android/device/UI/golden/integration còn chưa chạy.
-7. Review staged diff/secrets/build files, Conventional Commit rồi push branch. Mở review khi có yêu cầu; không tự merge main.
+7. Review staged diff/secrets/build files, Conventional Commit rồi push branch. Tạo PR vào develop, kiểm tra diff/CI rồi tự merge theo quyền đã cấp; khi cập nhật main, tạo PR develop -> main và kiểm tra trước khi merge. Không bypass branch protection hoặc báo review giả.
 
 ## Checkpoint ngay sau lượt hiện tại
 
-Người dùng duyệt cấu trúc, state management, repository boundary, handoff và baseline Git. Sau khi duyệt mới tích hợp foundation vào develop và bắt đầu batch Auth đầu tiên; không tự thực hiện trong lượt này.
+Cấu trúc monorepo đã được duyệt. Sau cập nhật này, task tiếp theo cần chốt framework/database nếu làm BE hoặc chọn batch Auth đầu tiên nếu làm FE. Không tự triển khai các module trong task tổ chức cấu trúc. BE/AI hiện chỉ có ranh giới và tài liệu, không có runtime/test được giả định là đã chạy.

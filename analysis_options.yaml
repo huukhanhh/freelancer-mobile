@@ -3,6 +3,7 @@ analyzer:
   exclude:
     - .tools/**
     - .local/**
+    - backend/**
     - .pub-cache/**
     - build/**
     - android/**
