@@ -1,0 +1,336 @@
+[
+  {
+    "id": "593:4119",
+    "name": "Emerald 2026 / Button",
+    "definitions": {
+      "Label#593:4": {
+        "type": "TEXT",
+        "defaultValue": "Tiếp tục"
+      },
+      "Style": {
+        "type": "VARIANT",
+        "defaultValue": "Primary",
+        "variantOptions": [
+          "Primary",
+          "Warm",
+          "Secondary",
+          "Dark"
+        ]
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default"
+        ]
+      }
+    },
+    "variants": [
+      {
+        "id": "593:4111",
+        "name": "Style=Primary, State=Default",
+        "width": 59,
+        "height": 52
+      },
+      {
+        "id": "593:4113",
+        "name": "Style=Warm, State=Default",
+        "width": 59,
+        "height": 52
+      },
+      {
+        "id": "593:4115",
+        "name": "Style=Secondary, State=Default",
+        "width": 59,
+        "height": 52
+      },
+      {
+        "id": "593:4117",
+        "name": "Style=Dark, State=Default",
+        "width": 59,
+        "height": 52
+      }
+    ]
+  },
+  {
+    "id": "642:3688",
+    "name": "Emerald 2026 / Navigation / Tab Item",
+    "definitions": {
+      "Icon#642:10": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "642:3648",
+        "preferredValues": []
+      },
+      "Label#642:11": {
+        "type": "TEXT",
+        "defaultValue": "Trang chủ"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Selected"
+        ]
+      }
+    },
+    "variants": [
+      {
+        "id": "642:3678",
+        "name": "State=Default",
+        "width": 73.19999694824219,
+        "height": 64
+      },
+      {
+        "id": "642:3683",
+        "name": "State=Selected",
+        "width": 73.19999694824219,
+        "height": 64
+      }
+    ]
+  },
+  {
+    "id": "642:4099",
+    "name": "Emerald 2026 / Navigation / Bottom Bar",
+    "definitions": {
+      "Role": {
+        "type": "VARIANT",
+        "defaultValue": "Freelancer",
+        "variantOptions": [
+          "Freelancer",
+          "Client"
+        ]
+      },
+      "Active": {
+        "type": "VARIANT",
+        "defaultValue": "Home",
+        "variantOptions": [
+          "Home",
+          "Discover",
+          "Work",
+          "Messages",
+          "Profile",
+          "Projects",
+          "Talent"
+        ]
+      }
+    },
+    "variants": [
+      {
+        "id": "642:3689",
+        "name": "Role=Freelancer, Active=Home",
+        "width": 390,
+        "height": 106
+      },
+      {
+        "id": "642:3730",
+        "name": "Role=Freelancer, Active=Discover",
+        "width": 390,
+        "height": 106
+      },
+      {
+        "id": "642:3771",
+        "name": "Role=Freelancer, Active=Work",
+        "width": 390,
+        "height": 106
+      },
+      {
+        "id": "642:3812",
+        "name": "Role=Freelancer, Active=Messages",
+        "width": 390,
+        "height": 106
+      },
+      {
+        "id": "642:3853",
+        "name": "Role=Freelancer, Active=Profile",
+        "width": 390,
+        "height": 106
+      },
+      {
+        "id": "642:3894",
+        "name": "Role=Client, Active=Home",
+        "width": 390,
+        "height": 106
+      },
+      {
+        "id": "642:3935",
+        "name": "Role=Client, Active=Projects",
+        "width": 390,
+        "height": 106
+      },
+      {
+        "id": "642:3976",
+        "name": "Role=Client, Active=Talent",
+        "width": 390,
+        "height": 106
+      },
+      {
+        "id": "642:4017",
+        "name": "Role=Client, Active=Messages",
+        "width": 390,
+        "height": 106
+      },
+      {
+        "id": "642:4058",
+        "name": "Role=Client, Active=Profile",
+        "width": 390,
+        "height": 106
+      }
+    ]
+  },
+  {
+    "id": "700:5517",
+    "name": "Navigation / Integrated Header",
+    "definitions": {
+      "Title#700:0": {
+        "type": "TEXT",
+        "defaultValue": "Điều hướng"
+      },
+      "Show trailing#700:4": {
+        "type": "BOOLEAN",
+        "defaultValue": false
+      },
+      "Trailing icon#700:8": {
+        "type": "INSTANCE_SWAP",
+        "defaultValue": "642:3652",
+        "preferredValues": []
+      },
+      "Mode": {
+        "type": "VARIANT",
+        "defaultValue": "Context",
+        "variantOptions": [
+          "Context",
+          "Title",
+          "Back only"
+        ]
+      }
+    },
+    "variants": [
+      {
+        "id": "700:5487",
+        "name": "Mode=Context",
+        "width": 390,
+        "height": 44
+      },
+      {
+        "id": "700:5497",
+        "name": "Mode=Title",
+        "width": 390,
+        "height": 52
+      },
+      {
+        "id": "700:5507",
+        "name": "Mode=Back only",
+        "width": 390,
+        "height": 44
+      }
+    ]
+  },
+  {
+    "id": "739:5950",
+    "name": "Contracts / Milestone Card",
+    "definitions": {
+      "Title#739:0": {
+        "type": "TEXT",
+        "defaultValue": "MS-01 · Nghiên cứu & Wireframe"
+      },
+      "Amount#739:4": {
+        "type": "TEXT",
+        "defaultValue": "4.000.000đ"
+      },
+      "Due#739:8": {
+        "type": "TEXT",
+        "defaultValue": "Hạn 10/11/2026"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Planned",
+        "variantOptions": [
+          "Planned",
+          "Active",
+          "Complete"
+        ]
+      }
+    },
+    "variants": [
+      {
+        "id": "739:5917",
+        "name": "State=Planned",
+        "width": 350,
+        "height": 146
+      },
+      {
+        "id": "739:5928",
+        "name": "State=Active",
+        "width": 350,
+        "height": 146
+      },
+      {
+        "id": "739:5939",
+        "name": "State=Complete",
+        "width": 350,
+        "height": 146
+      }
+    ]
+  },
+  {
+    "id": "593:4124",
+    "name": "Emerald 2026 / Category Chip",
+    "definitions": {
+      "Label#593:7": {
+        "type": "TEXT",
+        "defaultValue": "Thiết kế UI/UX"
+      },
+      "State": {
+        "type": "VARIANT",
+        "defaultValue": "Default",
+        "variantOptions": [
+          "Default",
+          "Selected"
+        ]
+      }
+    },
+    "variants": [
+      {
+        "id": "593:4120",
+        "name": "State=Default",
+        "width": 80,
+        "height": 40
+      },
+      {
+        "id": "593:4122",
+        "name": "State=Selected",
+        "width": 80,
+        "height": 40
+      }
+    ]
+  },
+  {
+    "id": "991:7820",
+    "name": "Client / Company affiliation",
+    "definitions": {
+      "Association": {
+        "type": "VARIANT",
+        "defaultValue": "Independent",
+        "variantOptions": [
+          "Independent",
+          "Linked"
+        ]
+      }
+    },
+    "variants": [
+      {
+        "id": "991:7790",
+        "name": "Association=Independent",
+        "width": 350,
+        "height": 238
+      },
+      {
+        "id": "991:7803",
+        "name": "Association=Linked",
+        "width": 350,
+        "height": 363
+      }
+    ]
+  }
+]
