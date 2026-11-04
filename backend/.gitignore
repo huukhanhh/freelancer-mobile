@@ -1,0 +1,16 @@
+# Backend-specific outputs; runtime dependencies are not selected yet.
+node_modules/
+dist/
+build/
+coverage/
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+target/
+bin/
+obj/
+.env
+.env.*
+!.env.example

@@ -27,3 +27,26 @@ pub get reports four newer transitive versions outside current constraints; no f
 Web build warning: compiler expected packages/cupertino_icons/CupertinoIcons but only found MaterialIcons. go_router brings cupertino_ui transitively; the foundation does not render Cupertino icons. No Figma icon was substituted with CupertinoIcons. If a verified module needs that font, add/package it then; otherwise keep using exact Figma assets. The warning remains open and must be reevaluated when product navigation is implemented. MaterialIcons tree-shaking is informational.
 
 No claim of Android readiness or full Figma screen fidelity is made by this foundation verification. Only the reusable button has been rendered for visual inspection; product flows and assets await per-module work.
+
+## Monorepo structure update — 05/11/2026
+
+Scope: keep Flutter at root; add backend structure, FE/BE/API documentation,
+PR template and Flutter CI; exclude backend/ from the Flutter analyzer.
+No Flutter product views, backend runtime, database or AI provider were added.
+
+- flutter pub get --enforce-lockfile: passed, no lockfile changes.
+- scripts/check.ps1: passed; format 15 files/0 changes, analyze no issues (34.8s),
+  all 6 existing Flutter tests passed (2s).
+- One-off scoped validation: 22 text files checked for local Markdown links and
+  trailing whitespace; workflow YAML parsed; action revisions pinned to verified
+  commit SHAs; existing Figma JSON parsed successfully.
+- backend/.env and generated dependency/build paths are ignored;
+  backend/.env.example is trackable and contains no credentials.
+- Scoped secret-pattern scan: no matching credential/private-key patterns.
+- Backend install/start/test and AI checks: not applicable; runtime/stack absent.
+- Web/Android builds were not rerun for this documentation/CI-only change.
+  The earlier Android limitations and Web font warning still apply.
+
+GitHub CI runs the same real Flutter gate on PRs; consult each PR's check run for
+the remote result. A local pass is not reported as a GitHub CI pass. No backend
+always-green placeholder job or artificial review approval is created.
