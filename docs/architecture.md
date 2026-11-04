@@ -20,6 +20,7 @@ Token code hiện chỉ là tập tối thiểu Emerald/Profile/Button có sourc
 Plus Jakarta Sans variable TTF đi kèm OFL, từ Google Fonts; FontWeight chọn trục weight trên toolchain hiện tại. Inter và các ảnh/icon còn lại được lấy theo module. Không dùng font qua mạng runtime.
 WorklyButton chỉ có 4 style Default đã thấy trong 593:4119. Các shared widget khác tạo khi có consumer thật; không tạo disabled/loading UI chưa được đối chiếu.
 
-## Backend tương lai
+## Monorepo và Backend
 
-Thêm API repository, DTO và mapping trong data khi có API contract. Inject client/cấu hình vào composition root. UI dùng model domain và state ViewModel. Lỗi kỹ thuật được chuyển thành trạng thái thân thiện sau khi thiết kế/contract được xác nhận. Chưa cài dio/http, secure storage, auth provider, payment hoặc KYC SDK.
+Flutter giữ ở root; Backend modular monolith nằm trong backend/ với dependencies/config/test/deployment riêng. Chưa chọn framework/database; chưa có runtime BE. Xem backend/README.md và docs/backend/README.md.
+Thêm API repository, DTO và mapping trong data khi có contract ở docs/api/. Inject client/cấu hình vào composition root. UI dùng model domain và state ViewModel; không truy cập database hoặc provider AI trực tiếp. AI server boundary ở backend/src/modules/ai/, UI theo use case ở lib/features/. Chưa cài dio/http, secure storage, auth provider, payment, KYC hoặc AI SDK.

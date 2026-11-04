@@ -1,12 +1,12 @@
-# Workly — Flutter frontend
+# Workly — Flutter + Backend monorepo
 
-Nền tảng Flutter cho [freelancer-mobile](https://github.com/huukhanhh/freelancer-mobile), từ [Figma page ALL SCREENS • Client & Freelancer](https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=579-228).
+Monorepo [freelancer-mobile](https://github.com/huukhanhh/freelancer-mobile): Flutter ở root, Backend trong backend/, API contract dùng chung ở docs/api/. Nguồn UI: [Figma page ALL SCREENS • Client & Freelancer](https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=579-228).
 
 ## Trạng thái
 
 Đã khởi tạo kiến trúc, go_router, theme/token Emerald, shared button, font Plus Jakarta Sans cục bộ, repository abstraction và session mock/ViewModel. **Chưa triển khai màn sản phẩm.**
 Ứng dụng mở route kỹ thuật /bootstrap với nền trống có chủ đích để chờ duyệt cấu trúc; đây không phải F01. Flutter launcher icon/web icon hiện là template SDK, phải thay bằng asset Figma đúng nguồn trong module khởi động.
-Android applicationId com.example.workly là placeholder phát triển, chưa dùng để phát hành. Chưa có backend, auth thật, thanh toán, camera/KYC hoặc upload thật.
+Android applicationId com.example.workly là placeholder phát triển, chưa dùng để phát hành. Backend hiện có khung thư mục/tài liệu, chưa có runtime, database hoặc API. Chưa có auth thật, thanh toán, camera/KYC hoặc upload thật.
 
 ## Công cụ
 
@@ -44,11 +44,26 @@ test/                        bootstrap integration và session lifecycle
 docs/figma/                  inventory, token, styles, navigation evidence
 scripts/                     Flutter wrapper và quality gate
 android/, web/               platform scaffold
+backend/                    Backend độc lập; chưa chọn framework/database
+  src/modules/ai/           ranh giới AI phía server, chưa tích hợp provider
+  src/common/               tiện ích kỹ thuật BE
+  src/config/               cấu hình BE
+  src/database/             hạ tầng lưu trữ BE
+  migrations/, tests/       quy tắc migration/test khi có runtime
+docs/frontend/              mục lục tài liệu FE hiện có
+docs/backend/               tài liệu Backend
+docs/api/                   API contract dùng chung, chưa có endpoint
+.github/workflows/          CI Flutter; CI BE thêm khi có runtime
 ```
 
 Views nghe ViewModel bằng ListenableBuilder. ViewModel gọi repository interface; AppDependencies.mock() nối mock implementation. Khi có backend, thêm implementation/DTO mapping trong data và thay ở composition root; không đổi view để gọi HTTP trực tiếp.
 Mock mặc định anonymous; fixtures Client/Freelancer có ID mock-client-001/mock-freelancer-001. State kỹ thuật idle/loading/ready/failure đã có, UI tương ứng chờ nguồn thiết kế.
 go_router là package runtime bổ sung duy nhất; state management dùng Flutter SDK. pubspec.lock phải commit cho ứng dụng. [Tài liệu go_router](https://pub.dev/packages/go_router).
+
+## Backend và AI
+
+[Backend README](backend/README.md) mô tả modular monolith và module map. Dependencies, lockfile, cấu hình và lệnh chạy BE đặt trong backend/ sau khi chọn stack; không dùng chung pubspec.yaml với Flutter. Hiện không có lệnh start/test BE vì chưa có runtime.
+FE gọi Backend API theo [contract](docs/api/README.md); Backend truy cập database và gọi provider AI. Giao diện AI nằm trong lib/features/ theo use case, provider/key/logic phía server nằm trong backend/src/modules/ai/. Chưa triển khai AI hoặc tự tạo API giả.
 
 ## Tài liệu và Git
 
@@ -58,5 +73,7 @@ go_router là package runtime bổ sung duy nhất; state management dùng Flutt
 - [Môi trường](docs/environment-report.md)
 - [Kết quả kiểm tra](docs/verification.md)
 - [Quy tắc agent](AGENTS.md)
+- [Tài liệu FE](docs/frontend/README.md), [BE](docs/backend/README.md), [API](docs/api/README.md)
+- [Quy trình PR và tự merge sau kiểm tra](docs/git-workflow.md)
 
-main/develop là baseline khởi tạo, không tự merge foundation vào main. Thực hiện module theo branch riêng sau khi duyệt foundation. Các tệp Figma có sẵn ở root được giữ nguyên và không đưa vào commit ứng dụng. Không dùng git add . ở workspace này.
+main chứa cập nhật đã kiểm tra, develop tích hợp công việc. Mỗi thay đổi đi qua branch riêng và PR; người dùng đã cho phép tự merge PR sau khi kiểm tra đạt, không cần chờ accept thủ công. Lịch sử phản ánh thay đổi thật, không tạo commit rỗng/PR giả để tăng số lượng. Các tệp Figma có sẵn ở root được giữ nguyên và không đưa vào commit ứng dụng. Không dùng git add . ở workspace này.
