@@ -1406,6 +1406,604 @@
         "height": "24.4563",
         "viewBox": "0 0 27.3875 24.4563"
       }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgGenuineWorkspacePhoto",
+      "path": "assets/discovery/585-4648-imgGenuineWorkspacePhoto.png",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 75218,
+      "sha256": "3976cb1a00897f110bede6fe36db29f8b436fede90ebe0ba34260ff63d7592e3",
+      "intrinsic": {
+        "width": 1584,
+        "height": 672,
+        "format": "JPEG"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgGenuineWorkspacePhoto1",
+      "path": "assets/discovery/585-4648-imgGenuineWorkspacePhoto1.png",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 170356,
+      "sha256": "2556cad2258f8d0b56bc131032d491c3f0acc9800a6482fbc600aa31d624a84e",
+      "intrinsic": {
+        "width": 1584,
+        "height": 672,
+        "format": "JPEG"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgGenuineWorkspacePhoto2",
+      "path": "assets/discovery/585-4648-imgGenuineWorkspacePhoto2.png",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 110170,
+      "sha256": "598f84f43cdf564502e30a3bf4e0a53674c04657b2508654442c802f2287bafd",
+      "intrinsic": {
+        "width": 1584,
+        "height": 672,
+        "format": "JPEG"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgLucideBack",
+      "path": "assets/discovery/585-4648-imgLucideBack.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 354,
+      "sha256": "60801278f174671e84b2c43d6af53876de79815b3b0914e60299563178903f24",
+      "intrinsic": {
+        "width": "23",
+        "height": "23",
+        "viewBox": "0 0 23 23"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgLucideSearch",
+      "path": "assets/discovery/585-4648-imgLucideSearch.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 641,
+      "sha256": "4edbecf02820c389d4296074c6239e98a24e99d79ac2d97d1ada97f774b68a3b",
+      "intrinsic": {
+        "width": "22",
+        "height": "22",
+        "viewBox": "0 0 22 22"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgLucideFilter",
+      "path": "assets/discovery/585-4648-imgLucideFilter.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 378,
+      "sha256": "b4b3285d1ca246e1a23c6554f4f98b74ea6706be0da5558ff6d76fd916d87a6f",
+      "intrinsic": {
+        "width": "20",
+        "height": "20",
+        "viewBox": "0 0 20 20"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgEmerald2026NavigationIconHome",
+      "path": "assets/discovery/585-4648-imgEmerald2026NavigationIconHome.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 372,
+      "sha256": "45c286dbe8ec8ee53d9ee65b1b2e4cb9a6f49a211201f3241671af2ff56100fe",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgIcon",
+      "path": "assets/discovery/585-4648-imgIcon.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 533,
+      "sha256": "ae3943fdf074d29d529a4d6a9454b6bf3c80e99fc5597304e57de538a862d0db",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgIcon1",
+      "path": "assets/discovery/585-4648-imgIcon1.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 781,
+      "sha256": "74766109df60c3878f604c2995cb8d0174fbbb38928686a4cb77d8ec896e5496",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgIcon2",
+      "path": "assets/discovery/585-4648-imgIcon2.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 708,
+      "sha256": "0272be45a1fffce2883f68c6a7489e5b835760c1a890896c899d6b10b05a4d26",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgIcon3",
+      "path": "assets/discovery/585-4648-imgIcon3.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 544,
+      "sha256": "b972887a1f9b6f0646be9dfe5b93fb550fdb448e6a80de49e727923f656d8e27",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4648",
+      "slot": "imgNavigationVectorSystemStatus",
+      "path": "assets/discovery/585-4648-imgNavigationVectorSystemStatus.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4648",
+      "bytes": 2189,
+      "sha256": "036fac91305959385c8f6ecb9594138e1a9915df59a40634af730998b1b2b011",
+      "intrinsic": {
+        "width": "74",
+        "height": "14",
+        "viewBox": "0 0 74 14"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgGenuineWorkspacePhoto",
+      "path": "assets/discovery/585-4731-imgGenuineWorkspacePhoto.png",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 170356,
+      "sha256": "2556cad2258f8d0b56bc131032d491c3f0acc9800a6482fbc600aa31d624a84e",
+      "intrinsic": {
+        "width": 1584,
+        "height": 672,
+        "format": "JPEG"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgLucideBack",
+      "path": "assets/discovery/585-4731-imgLucideBack.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 354,
+      "sha256": "60801278f174671e84b2c43d6af53876de79815b3b0914e60299563178903f24",
+      "intrinsic": {
+        "width": "23",
+        "height": "23",
+        "viewBox": "0 0 23 23"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgLucideSearch",
+      "path": "assets/discovery/585-4731-imgLucideSearch.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 641,
+      "sha256": "4edbecf02820c389d4296074c6239e98a24e99d79ac2d97d1ada97f774b68a3b",
+      "intrinsic": {
+        "width": "22",
+        "height": "22",
+        "viewBox": "0 0 22 22"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgLucideFilter",
+      "path": "assets/discovery/585-4731-imgLucideFilter.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 378,
+      "sha256": "b4b3285d1ca246e1a23c6554f4f98b74ea6706be0da5558ff6d76fd916d87a6f",
+      "intrinsic": {
+        "width": "20",
+        "height": "20",
+        "viewBox": "0 0 20 20"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgLucideClock",
+      "path": "assets/discovery/585-4731-imgLucideClock.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 591,
+      "sha256": "5f856bb21c6a5c0de6dd68cc522c48167a1f5107a50f976af5602e03d8e3acbb",
+      "intrinsic": {
+        "width": "20",
+        "height": "20",
+        "viewBox": "0 0 20 20"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgEmerald2026NavigationIconHome",
+      "path": "assets/discovery/585-4731-imgEmerald2026NavigationIconHome.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 372,
+      "sha256": "45c286dbe8ec8ee53d9ee65b1b2e4cb9a6f49a211201f3241671af2ff56100fe",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgIcon",
+      "path": "assets/discovery/585-4731-imgIcon.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 533,
+      "sha256": "ae3943fdf074d29d529a4d6a9454b6bf3c80e99fc5597304e57de538a862d0db",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgIcon1",
+      "path": "assets/discovery/585-4731-imgIcon1.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 781,
+      "sha256": "74766109df60c3878f604c2995cb8d0174fbbb38928686a4cb77d8ec896e5496",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgIcon2",
+      "path": "assets/discovery/585-4731-imgIcon2.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 708,
+      "sha256": "0272be45a1fffce2883f68c6a7489e5b835760c1a890896c899d6b10b05a4d26",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgIcon3",
+      "path": "assets/discovery/585-4731-imgIcon3.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 544,
+      "sha256": "b972887a1f9b6f0646be9dfe5b93fb550fdb448e6a80de49e727923f656d8e27",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4731",
+      "slot": "imgNavigationVectorSystemStatus",
+      "path": "assets/discovery/585-4731-imgNavigationVectorSystemStatus.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4731",
+      "bytes": 2189,
+      "sha256": "036fac91305959385c8f6ecb9594138e1a9915df59a40634af730998b1b2b011",
+      "intrinsic": {
+        "width": "74",
+        "height": "14",
+        "viewBox": "0 0 74 14"
+      }
+    },
+    {
+      "nodeId": "585:4812",
+      "slot": "imgNavigationVectorSystemStatus",
+      "path": "assets/discovery/585-4812-imgNavigationVectorSystemStatus.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4812",
+      "bytes": 2169,
+      "sha256": "ba03a75301afd6f004452b0637d598248ebc6202bcd53c3d8650208065a6b08c",
+      "intrinsic": {
+        "width": "74",
+        "height": "14",
+        "viewBox": "0 0 74 14"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgGenuineWorkspacePhoto",
+      "path": "assets/discovery/585-4873-imgGenuineWorkspacePhoto.png",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 111103,
+      "sha256": "45611c4fdc3ddbde6b901ab92e1e144d4dde9b694c311cba43a301affd737203",
+      "intrinsic": {
+        "width": 1376,
+        "height": 768,
+        "format": "JPEG"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgGenuineWorkspacePhoto1",
+      "path": "assets/discovery/585-4873-imgGenuineWorkspacePhoto1.png",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 75218,
+      "sha256": "3976cb1a00897f110bede6fe36db29f8b436fede90ebe0ba34260ff63d7592e3",
+      "intrinsic": {
+        "width": 1584,
+        "height": 672,
+        "format": "JPEG"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgGenuineWorkspacePhoto2",
+      "path": "assets/discovery/585-4873-imgGenuineWorkspacePhoto2.png",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 129349,
+      "sha256": "f0bf0975c7821ca1b0d03d80fe2828f7daafcef14713f7b90959af884abe201f",
+      "intrinsic": {
+        "width": 1376,
+        "height": 768,
+        "format": "JPEG"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgLucideBack",
+      "path": "assets/discovery/585-4873-imgLucideBack.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 354,
+      "sha256": "60801278f174671e84b2c43d6af53876de79815b3b0914e60299563178903f24",
+      "intrinsic": {
+        "width": "23",
+        "height": "23",
+        "viewBox": "0 0 23 23"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgLucideSearch",
+      "path": "assets/discovery/585-4873-imgLucideSearch.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 641,
+      "sha256": "4edbecf02820c389d4296074c6239e98a24e99d79ac2d97d1ada97f774b68a3b",
+      "intrinsic": {
+        "width": "22",
+        "height": "22",
+        "viewBox": "0 0 22 22"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgLucideFilter",
+      "path": "assets/discovery/585-4873-imgLucideFilter.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 378,
+      "sha256": "b4b3285d1ca246e1a23c6554f4f98b74ea6706be0da5558ff6d76fd916d87a6f",
+      "intrinsic": {
+        "width": "20",
+        "height": "20",
+        "viewBox": "0 0 20 20"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgLucideSort",
+      "path": "assets/discovery/585-4873-imgLucideSort.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 433,
+      "sha256": "66f3556c8316603b6fc84851ab9d70c173592c0af41a24d8fcc9ea39c3618db2",
+      "intrinsic": {
+        "width": "22",
+        "height": "22",
+        "viewBox": "0 0 22 22"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgEmerald2026NavigationIconHome",
+      "path": "assets/discovery/585-4873-imgEmerald2026NavigationIconHome.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 372,
+      "sha256": "45c286dbe8ec8ee53d9ee65b1b2e4cb9a6f49a211201f3241671af2ff56100fe",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgIcon",
+      "path": "assets/discovery/585-4873-imgIcon.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 533,
+      "sha256": "ae3943fdf074d29d529a4d6a9454b6bf3c80e99fc5597304e57de538a862d0db",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgIcon1",
+      "path": "assets/discovery/585-4873-imgIcon1.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 781,
+      "sha256": "74766109df60c3878f604c2995cb8d0174fbbb38928686a4cb77d8ec896e5496",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgIcon2",
+      "path": "assets/discovery/585-4873-imgIcon2.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 708,
+      "sha256": "0272be45a1fffce2883f68c6a7489e5b835760c1a890896c899d6b10b05a4d26",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgIcon3",
+      "path": "assets/discovery/585-4873-imgIcon3.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 544,
+      "sha256": "b972887a1f9b6f0646be9dfe5b93fb550fdb448e6a80de49e727923f656d8e27",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:4873",
+      "slot": "imgNavigationVectorSystemStatus",
+      "path": "assets/discovery/585-4873-imgNavigationVectorSystemStatus.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-4873",
+      "bytes": 2189,
+      "sha256": "a9176a0a19b6a5f1e805369123a2cc9f4edf0b10b1610c0a3411688cb453239d",
+      "intrinsic": {
+        "width": "74",
+        "height": "14",
+        "viewBox": "0 0 74 14"
+      }
+    },
+    {
+      "nodeId": "585:5144",
+      "slot": "imgEditorialRealPhotography",
+      "path": "assets/discovery/585-5144-imgEditorialRealPhotography.png",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-5144",
+      "bytes": 134167,
+      "sha256": "8faba1e70cab8e61e4e7fa6bad1ca2b288907de0231bb3ce48d9fd92ca87cd4f",
+      "intrinsic": {
+        "width": 1376,
+        "height": 768,
+        "format": "JPEG"
+      }
+    },
+    {
+      "nodeId": "585:5144",
+      "slot": "imgLucideBack",
+      "path": "assets/discovery/585-5144-imgLucideBack.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-5144",
+      "bytes": 355,
+      "sha256": "43e0338b5fd7db29d6902600686a6a1840c37e8ffe026f923603f409a161eba2",
+      "intrinsic": {
+        "width": "23",
+        "height": "23",
+        "viewBox": "0 0 23 23"
+      }
+    },
+    {
+      "nodeId": "585:5144",
+      "slot": "imgLucideSearch",
+      "path": "assets/discovery/585-5144-imgLucideSearch.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-5144",
+      "bytes": 629,
+      "sha256": "20eb8090884d496221e2582dd932431a29cf7ec7716e3539b17d5687bba2766e",
+      "intrinsic": {
+        "width": "28",
+        "height": "28",
+        "viewBox": "0 0 28 28"
+      }
+    },
+    {
+      "nodeId": "585:5144",
+      "slot": "imgEmerald2026NavigationIconHome",
+      "path": "assets/discovery/585-5144-imgEmerald2026NavigationIconHome.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-5144",
+      "bytes": 372,
+      "sha256": "45c286dbe8ec8ee53d9ee65b1b2e4cb9a6f49a211201f3241671af2ff56100fe",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:5144",
+      "slot": "imgIcon",
+      "path": "assets/discovery/585-5144-imgIcon.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-5144",
+      "bytes": 533,
+      "sha256": "ae3943fdf074d29d529a4d6a9454b6bf3c80e99fc5597304e57de538a862d0db",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:5144",
+      "slot": "imgIcon1",
+      "path": "assets/discovery/585-5144-imgIcon1.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-5144",
+      "bytes": 781,
+      "sha256": "74766109df60c3878f604c2995cb8d0174fbbb38928686a4cb77d8ec896e5496",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:5144",
+      "slot": "imgIcon2",
+      "path": "assets/discovery/585-5144-imgIcon2.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-5144",
+      "bytes": 708,
+      "sha256": "0272be45a1fffce2883f68c6a7489e5b835760c1a890896c899d6b10b05a4d26",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:5144",
+      "slot": "imgIcon3",
+      "path": "assets/discovery/585-5144-imgIcon3.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-5144",
+      "bytes": 544,
+      "sha256": "b972887a1f9b6f0646be9dfe5b93fb550fdb448e6a80de49e727923f656d8e27",
+      "intrinsic": {
+        "width": "24",
+        "height": "24",
+        "viewBox": "0 0 24 24"
+      }
+    },
+    {
+      "nodeId": "585:5144",
+      "slot": "imgNavigationVectorSystemStatus",
+      "path": "assets/discovery/585-5144-imgNavigationVectorSystemStatus.svg",
+      "source": "https://www.figma.com/design/LdYars6BFgIu9VdgWeP9dT/FreelancerV1?node-id=585-5144",
+      "bytes": 2189,
+      "sha256": "a9176a0a19b6a5f1e805369123a2cc9f4edf0b10b1610c0a3411688cb453239d",
+      "intrinsic": {
+        "width": "74",
+        "height": "14",
+        "viewBox": "0 0 74 14"
+      }
     }
   ]
 }

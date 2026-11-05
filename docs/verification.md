@@ -142,3 +142,40 @@ through Flutter's device screenshot command, not Windows UI automation.
 
 flutter run produced an x86_64-only APK for this emulator. A subsequent generic
 debug APK build passed in 63.4s; ABI metadata was checked separately before delivery.
+
+## Job discovery batch — 2026-11-05
+
+- Live high-fidelity contexts/screenshots and source exits read for F13/F14/F15/
+  F16/F20, approved page only. 46 new local exports extend the manifest to 154;
+  hashes/nonempty metadata verified. Noto Sans Symbols 2 + OFL renders source
+  heart characters without missing-glyph boxes; source photos/SVGs stay local.
+- JobRepository/24 deterministic fixtures and DiscoveryViewModel now power typed
+  search/history/clear, budget/category/technology/billing/remote/verified filters,
+  actual counts, chip removal, newest ordering and saved IDs. Home/Find work route
+  consumers are connected for Freelancer, with role guards and viewer reset.
+- Source default filter combination matches 3 current fixtures. The source's
+  sample 24 is not hardcoded as a false result count. No backend query semantics
+  are claimed; local choices and slider mapping are in discovery-handoff.md.
+- Five source-size previews rendered and inspected. Narrow/keyboard/scroll cases
+  passed at 390x844 and 320x568 with 0/250px keyboard insets. Card geometry, source
+  glyph fallback and accessible favorite semantics were corrected during QA.
+- Final scripts/check.ps1 passed: format 52 files/0 changes, analyze no issues
+  (26.4s), all 39 tests passed (51s). This includes the existing auth/lifecycle tests
+  plus real query/empty/suggestions, filter/apply/favorites/navigation, Client guard,
+  failure retry, stale completion/disposal and responsive checks.
+- A discovery routing regression redirected valid complete-profile users home;
+  the guard is now scoped to home/setup. A semantics test fixture now disposes
+  its handle before framework invariants; no test or analyzer rule was disabled.
+- Final generic flutter build apk --debug --no-pub passed in 55.0s. Artifact
+  build/app/outputs/flutter-apk/app-debug.apk is 186251172 bytes, verified to contain
+  arm64-v8a, armeabi-v7a and x86_64. Build outputs stay ignored.
+- Ran that existing APK via flutter run --use-application-binary on Pixel_3,
+  Android 16/API 36: install 9.1s, engine normal/Impeller OpenGLES, sync 231ms,
+  exit 0. Updated-device screenshot saved in .local/android-current.png and inspected.
+  Interactive discovery flows have widget evidence; they have not all been driven
+  on the actual emulator. No physical phone test or full Android readiness claim.
+- Auth commit 7b50404 was pushed to develop; GitHub Actions run 41999904861
+  completed successfully. New discovery commit/publication is a separate check.
+- F13/F16 and both homes remain partial: card detail and most tab modules are
+  absent. Overall: 16 connected frames, 4 partial, 123 unimplemented. Full FE is
+  unfinished. Backend, Firebase, CI and the 157 original untracked files unchanged.

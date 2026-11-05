@@ -35,7 +35,7 @@ class MockMarketplaceRepository implements MarketplaceRepository {
         ]
       : const [
           MarketplaceListing(
-            id: 'job-demo-1',
+            id: 'job-demo-4',
             title: 'GreenPay · Vị trí UI/UX',
             subtitle: 'Quốc Huy Demo · Client độc lập',
             price: '12.000.000₫',
@@ -43,7 +43,7 @@ class MockMarketplaceRepository implements MarketplaceRepository {
             imageSlot: 'imgAdvertisementHeroPhotograph2',
           ),
           MarketplaceListing(
-            id: 'job-demo-2',
+            id: 'job-demo-5',
             title: 'React Dashboard',
             subtitle: 'Mộc Studio · Remote',
             price: '8.000.000₫',
@@ -51,7 +51,7 @@ class MockMarketplaceRepository implements MarketplaceRepository {
             imageSlot: 'imgAdvertisementHeroPhotograph',
           ),
           MarketplaceListing(
-            id: 'job-demo-3',
+            id: 'job-demo-6',
             title: 'Landing Page thương mại',
             subtitle: 'Lumi Agency · 3 ngày',
             price: '4.500.000₫',

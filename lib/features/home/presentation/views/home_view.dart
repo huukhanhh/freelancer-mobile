@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:workly/core/assets/figma_assets.dart';
 import 'package:workly/core/theme/design_tokens.dart';
+import 'package:workly/core/widgets/role_bottom_bar.dart';
 import 'package:workly/features/auth/presentation/widgets/auth_components.dart';
 import 'package:workly/features/home/domain/marketplace_repository.dart';
 import 'package:workly/features/home/presentation/view_models/home_view_model.dart';
@@ -349,7 +350,7 @@ class HomeView extends StatelessWidget {
                 ],
               ),
             ),
-            _BottomBar(
+            RoleBottomBar(
               client: client,
               node: node,
               onTab: onTab,
@@ -649,112 +650,6 @@ class _ListingCard extends StatelessWidget {
           ],
         ),
       ),
-    ),
-  );
-}
-
-class _BottomBar extends StatelessWidget {
-  const _BottomBar({
-    required this.client,
-    required this.node,
-    required this.preview,
-    this.onTab,
-  });
-  final bool client, preview;
-  final String node;
-  final ValueChanged<int>? onTab;
-  @override
-  Widget build(BuildContext context) => DecoratedBox(
-    decoration: const BoxDecoration(
-      color: Colors.white,
-      borderRadius: BorderRadius.vertical(top: Radius.circular(24)),
-      border: Border.fromBorderSide(
-        BorderSide(color: EmeraldColors.surfaceSubtle),
-      ),
-    ),
-    child: Column(
-      children: [
-        Padding(
-          padding: const EdgeInsets.fromLTRB(12, 8, 12, 0),
-          child: Row(
-            children: [
-              for (var i = 0; i < 5; i++)
-                Expanded(
-                  child: InkWell(
-                    onTap: onTab == null ? null : () => onTab!(i),
-                    child: SizedBox(
-                      height: 64,
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Container(
-                            width: 56,
-                            height: 32,
-                            alignment: Alignment.center,
-                            decoration: BoxDecoration(
-                              color: i == 0
-                                  ? EmeraldColors.surfaceSubtle
-                                  : null,
-                              borderRadius: BorderRadius.circular(999),
-                            ),
-                            child: FigmaAsset(
-                              node,
-                              i == 0
-                                  ? 'imgEmerald2026NavigationIconHome'
-                                  : 'imgIcon${i == 1 ? '' : i - 1}',
-                              width: 24,
-                              height: 24,
-                            ),
-                          ),
-                          const SizedBox(height: 4),
-                          Text(
-                            (client
-                                ? [
-                                    'Trang chủ',
-                                    'Dự án',
-                                    'Freelancer',
-                                    'Tin nhắn',
-                                    'Cá nhân',
-                                  ]
-                                : [
-                                    'Trang chủ',
-                                    'Tìm việc',
-                                    'Công việc',
-                                    'Tin nhắn',
-                                    'Cá nhân',
-                                  ])[i],
-                            style: authText(
-                              11,
-                              weight: FontWeight.w500,
-                              color: i == 0
-                                  ? EmeraldColors.primaryDark
-                                  : EmeraldColors.textSecondary,
-                            ).copyWith(height: 16 / 11),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                ),
-            ],
-          ),
-        ),
-        SizedBox(
-          height: math.max(34, MediaQuery.viewPaddingOf(context).bottom),
-          child: preview
-              ? Center(
-                  child: Container(
-                    width: 134,
-                    height: 5,
-                    decoration: BoxDecoration(
-                      color: EmeraldColors.textPrimary,
-                      borderRadius: BorderRadius.circular(3),
-                    ),
-                  ),
-                )
-              : null,
-        ),
-      ],
     ),
   );
 }

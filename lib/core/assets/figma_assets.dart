@@ -4,6 +4,69 @@ import 'package:flutter_svg/flutter_svg.dart';
 /// Exact local exports from approved page 579:228. See docs/frontend/assets.json.
 abstract final class FigmaAssets {
   static const slots = <String, String>{
+    '585:5144/imgEditorialRealPhotography':
+        'assets/discovery/585-5144-imgEditorialRealPhotography.png',
+    '585:5144/imgLucideBack': 'assets/discovery/585-5144-imgLucideBack.svg',
+    '585:5144/imgLucideSearch': 'assets/discovery/585-5144-imgLucideSearch.svg',
+    '585:5144/imgEmerald2026NavigationIconHome':
+        'assets/discovery/585-5144-imgEmerald2026NavigationIconHome.svg',
+    '585:5144/imgIcon': 'assets/discovery/585-5144-imgIcon.svg',
+    '585:5144/imgIcon1': 'assets/discovery/585-5144-imgIcon1.svg',
+    '585:5144/imgIcon2': 'assets/discovery/585-5144-imgIcon2.svg',
+    '585:5144/imgIcon3': 'assets/discovery/585-5144-imgIcon3.svg',
+    '585:5144/imgNavigationVectorSystemStatus':
+        'assets/discovery/585-5144-imgNavigationVectorSystemStatus.svg',
+    '585:4648/imgGenuineWorkspacePhoto':
+        'assets/discovery/585-4648-imgGenuineWorkspacePhoto.png',
+    '585:4648/imgGenuineWorkspacePhoto1':
+        'assets/discovery/585-4648-imgGenuineWorkspacePhoto1.png',
+    '585:4648/imgGenuineWorkspacePhoto2':
+        'assets/discovery/585-4648-imgGenuineWorkspacePhoto2.png',
+    '585:4648/imgLucideBack': 'assets/discovery/585-4648-imgLucideBack.svg',
+    '585:4648/imgLucideSearch': 'assets/discovery/585-4648-imgLucideSearch.svg',
+    '585:4648/imgLucideFilter': 'assets/discovery/585-4648-imgLucideFilter.svg',
+    '585:4648/imgEmerald2026NavigationIconHome':
+        'assets/discovery/585-4648-imgEmerald2026NavigationIconHome.svg',
+    '585:4648/imgIcon': 'assets/discovery/585-4648-imgIcon.svg',
+    '585:4648/imgIcon1': 'assets/discovery/585-4648-imgIcon1.svg',
+    '585:4648/imgIcon2': 'assets/discovery/585-4648-imgIcon2.svg',
+    '585:4648/imgIcon3': 'assets/discovery/585-4648-imgIcon3.svg',
+    '585:4648/imgNavigationVectorSystemStatus':
+        'assets/discovery/585-4648-imgNavigationVectorSystemStatus.svg',
+    '585:4731/imgGenuineWorkspacePhoto':
+        'assets/discovery/585-4731-imgGenuineWorkspacePhoto.png',
+    '585:4731/imgLucideBack': 'assets/discovery/585-4731-imgLucideBack.svg',
+    '585:4731/imgLucideSearch': 'assets/discovery/585-4731-imgLucideSearch.svg',
+    '585:4731/imgLucideFilter': 'assets/discovery/585-4731-imgLucideFilter.svg',
+    '585:4731/imgLucideClock': 'assets/discovery/585-4731-imgLucideClock.svg',
+    '585:4731/imgEmerald2026NavigationIconHome':
+        'assets/discovery/585-4731-imgEmerald2026NavigationIconHome.svg',
+    '585:4731/imgIcon': 'assets/discovery/585-4731-imgIcon.svg',
+    '585:4731/imgIcon1': 'assets/discovery/585-4731-imgIcon1.svg',
+    '585:4731/imgIcon2': 'assets/discovery/585-4731-imgIcon2.svg',
+    '585:4731/imgIcon3': 'assets/discovery/585-4731-imgIcon3.svg',
+    '585:4731/imgNavigationVectorSystemStatus':
+        'assets/discovery/585-4731-imgNavigationVectorSystemStatus.svg',
+    '585:4812/imgNavigationVectorSystemStatus':
+        'assets/discovery/585-4812-imgNavigationVectorSystemStatus.svg',
+    '585:4873/imgGenuineWorkspacePhoto':
+        'assets/discovery/585-4873-imgGenuineWorkspacePhoto.png',
+    '585:4873/imgGenuineWorkspacePhoto1':
+        'assets/discovery/585-4873-imgGenuineWorkspacePhoto1.png',
+    '585:4873/imgGenuineWorkspacePhoto2':
+        'assets/discovery/585-4873-imgGenuineWorkspacePhoto2.png',
+    '585:4873/imgLucideBack': 'assets/discovery/585-4873-imgLucideBack.svg',
+    '585:4873/imgLucideSearch': 'assets/discovery/585-4873-imgLucideSearch.svg',
+    '585:4873/imgLucideFilter': 'assets/discovery/585-4873-imgLucideFilter.svg',
+    '585:4873/imgLucideSort': 'assets/discovery/585-4873-imgLucideSort.svg',
+    '585:4873/imgEmerald2026NavigationIconHome':
+        'assets/discovery/585-4873-imgEmerald2026NavigationIconHome.svg',
+    '585:4873/imgIcon': 'assets/discovery/585-4873-imgIcon.svg',
+    '585:4873/imgIcon1': 'assets/discovery/585-4873-imgIcon1.svg',
+    '585:4873/imgIcon2': 'assets/discovery/585-4873-imgIcon2.svg',
+    '585:4873/imgIcon3': 'assets/discovery/585-4873-imgIcon3.svg',
+    '585:4873/imgNavigationVectorSystemStatus':
+        'assets/discovery/585-4873-imgNavigationVectorSystemStatus.svg',
     '670:4711/imgGroup': 'assets/auth/react-source-group.svg',
     '585:4476/imgPersonRealPhotograph':
         'assets/home/585-4476-imgPersonRealPhotograph.png',

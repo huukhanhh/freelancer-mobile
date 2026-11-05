@@ -11,11 +11,14 @@ class WorklyButton extends StatelessWidget {
     required this.label,
     required this.onPressed,
     this.style = WorklyButtonStyle.primary,
+    this.height = ButtonTokens.height,
+    this.labelSize = ButtonTokens.labelSize,
     super.key,
   });
   final String label;
   final VoidCallback onPressed;
   final WorklyButtonStyle style;
+  final double height, labelSize;
   @override
   Widget build(BuildContext context) {
     final colors = switch (style) {
@@ -26,7 +29,7 @@ class WorklyButton extends StatelessWidget {
     };
     final secondary = style == WorklyButtonStyle.secondary;
     return SizedBox(
-      height: ButtonTokens.height,
+      height: height,
       child: DecoratedBox(
         decoration: BoxDecoration(
           color: secondary ? EmeraldColors.surfaceSubtle : null,
@@ -43,7 +46,7 @@ class WorklyButton extends StatelessWidget {
         child: TextButton(
           onPressed: onPressed,
           style: TextButton.styleFrom(
-            minimumSize: const Size(0, ButtonTokens.height),
+            minimumSize: Size(0, height),
             padding: EdgeInsets.zero,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(ButtonTokens.radius),
@@ -51,9 +54,9 @@ class WorklyButton extends StatelessWidget {
             foregroundColor: secondary
                 ? EmeraldColors.primaryDark
                 : EmeraldColors.surface,
-            textStyle: const TextStyle(
+            textStyle: TextStyle(
               fontFamily: AppTheme.fontFamily,
-              fontSize: ButtonTokens.labelSize,
+              fontSize: labelSize,
               fontWeight: FontWeight.w700,
             ),
           ),

@@ -4,7 +4,7 @@ Monorepo [freelancer-mobile](https://github.com/huukhanhh/freelancer-mobile): Fl
 
 ## Trạng thái
 
-Đã triển khai nhóm 13 frame khởi động/xác thực theo Figma: onboarding, đăng ký/OTP, đăng nhập, Google mock, chọn vai trò, hồ sơ Client/Freelancer và khôi phục mật khẩu. App mở /auth/splash. Hai trang chủ đã có UI/assets/fixtures/carousel; search/filter/listing và các tab nghiệp vụ còn chờ module tương ứng. **FE chưa hoàn thiện: 13 frame đã nối, 2 partial, 128 chưa triển khai.**
+Đã triển khai nhóm 13 frame khởi động/xác thực theo Figma: onboarding, đăng ký/OTP, đăng nhập, Google mock, chọn vai trò, hồ sơ Client/Freelancer và khôi phục mật khẩu. App mở /auth/splash. Tìm kiếm, lịch sử, bộ lọc, kết quả/empty và lưu công việc đã nối từ trang chủ Freelancer. **FE chưa hoàn thiện: 16 frame đã nối, 4 partial, 123 chưa triển khai.** Hai home và danh sách/kết quả còn thiếu detail/những tab nghiệp vụ tương ứng.
 Xem [tiến độ](docs/frontend/progress.md), [hướng dẫn demo](docs/frontend/demo.md), [auth handoff](docs/frontend/auth-handoff.md) và [kiểm tra](docs/verification.md). Launcher/web icon vẫn là template SDK; /bootstrap chỉ còn là route kỹ thuật phụ.
 Android applicationId com.example.workly là placeholder phát triển, chưa dùng để phát hành. Backend hiện có khung thư mục/tài liệu, chưa có runtime, database hoặc API. Chưa có auth thật, thanh toán, camera/KYC hoặc upload thật.
 
@@ -36,13 +36,14 @@ lib/
   features/
     auth/                      onboarding, forms, role/profile setup, recovery
     home/                      role home UI và marketplace fixtures (partial)
+    discovery/                 jobs/search/filter/results/empty + mock state
     foundation/presentation/views/   host kỹ thuật phụ
     session/
       domain/                UserSession, UserRole, SessionRepository
       data/                  MockSessionRepository
       presentation/view_models/     SessionViewModel
 assets/fonts/                font variable và OFL license
-assets/auth/, assets/home/   ảnh/SVG Figma local; provenance trong docs/frontend/assets.json
+assets/auth/, assets/home/, assets/discovery/  ảnh/SVG Figma local; provenance trong docs/frontend/assets.json
 test/                        auth flows, role guards, forms/layout và session lifecycle
 docs/figma/                  inventory, token, styles, navigation evidence
 scripts/                     Flutter wrapper và quality gate

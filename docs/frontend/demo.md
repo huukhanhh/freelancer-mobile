@@ -37,10 +37,24 @@ first login, select a role and finish the profile. Google continuation is a loca
 Minh Anh Demo fixture; it makes no Google request. Company logo is a mock toggle.
 OTP and recovery grants expire after five minutes; resend renews OTP.
 
+## Job discovery demo
+
+Use freelancer@workly.example with WorklyDemo123! to reach the Freelancer home.
+Search/quick filter/categories/skills/banner and Find work open the source discovery
+views. Search Flutter/React/Figma for matching fixtures; Python shows the source
+empty screen. Suggested keywords or Explore recover from empty. Clear recent
+history, toggle ♡/♥, reset filters and apply budget/category/technology/billing/
+remote/verified restrictions. Counts come from the matching fixture data.
+The seed contains 24 jobs; source-default filter choices currently match 3.
+Saved IDs persist across navigation in this process, not across restarts/viewers.
+Job card details, saved-list screen, Client talent/project flows and remaining
+tabs are pending, as listed in discovery-handoff.md. No sorting menu is invented.
+
 Recovery changes the local fixture password for the current process. No message
 is sent. All accounts/profiles/onboarding state reset on restart. Homes currently
-show source UI, fixtures and carousel; search/filter/categories/details/other tabs
-are still inactive. Logout command is tested, but its settings/profile UI is not
+show source UI, fixtures and carousel. Freelancer search/filter/categories/explore
+are connected; details/other tabs and Client discovery are still inactive.
+Logout command is tested, but its settings/profile UI is not
 implemented yet. The overall frontend is unfinished.
 
 Do not interpret mock authentication as authorization or store real passwords.

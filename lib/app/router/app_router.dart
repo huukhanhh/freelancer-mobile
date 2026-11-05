@@ -15,6 +15,9 @@ import 'package:workly/features/home/domain/marketplace_repository.dart';
 import 'package:workly/features/home/presentation/views/home_view.dart';
 import 'package:workly/features/home/presentation/view_models/home_view_model.dart';
 import 'package:workly/features/session/domain/user_session.dart';
+import 'package:workly/features/discovery/presentation/view_models/discovery_view_model.dart';
+import 'package:workly/features/discovery/presentation/views/job_discovery_view.dart';
+import 'package:workly/features/discovery/presentation/views/job_filter_view.dart';
 
 abstract final class AppRoutes {
   static const bootstrap = '/bootstrap';
@@ -27,6 +30,11 @@ abstract final class AppRoutes {
       profile = '/auth/profile';
   static const recovery = '/auth/recovery', recovered = '/auth/recovered';
   static const clientHome = '/home/client', freelancerHome = '/home/freelancer';
+  static const jobs = '/discovery/jobs',
+      jobSearch = '/discovery/search',
+      jobFilter = '/discovery/filter',
+      jobResults = '/discovery/results',
+      jobEmpty = '/discovery/empty';
   static String onboarding(int step) => '/auth/onboarding/$step';
 }
 
@@ -39,11 +47,29 @@ String signedInDestination(SessionViewModel session) {
       : AppRoutes.freelancerHome;
 }
 
+Page<void> _discoveryPage(GoRouterState state, Widget child) =>
+    CustomTransitionPage<void>(
+      key: state.pageKey,
+      transitionDuration: const Duration(milliseconds: 200),
+      reverseTransitionDuration: const Duration(milliseconds: 200),
+      child: child,
+      transitionsBuilder: (context, animation, secondary, child) =>
+          MediaQuery.disableAnimationsOf(context)
+          ? child
+          : FadeTransition(
+              opacity: animation.drive(
+                CurveTween(curve: const Cubic(0, 0, .58, 1)),
+              ),
+              child: child,
+            ),
+    );
+
 GoRouter createAppRouter(
   SessionViewModel session,
   AuthFlowViewModel auth,
   MarketplaceRepository marketplace, {
   String initialLocation = AppRoutes.splash,
+  DiscoveryViewModel? discovery,
 }) => GoRouter(
   initialLocation: initialLocation,
   refreshListenable: Listenable.merge([session, auth]),
@@ -59,11 +85,16 @@ GoRouter createAppRouter(
           : AppRoutes.onboarding(0);
     }
     final home = path.startsWith('/home/');
+    final jobRoute = path.startsWith('/discovery/');
     final setup = path == AppRoutes.role || path == AppRoutes.profile;
-    if ((home || setup) && session.status == SessionStatus.ready) {
+    if ((home || setup || jobRoute) && session.status == SessionStatus.ready) {
       final user = session.session;
       if (user == null) return AppRoutes.login;
-      if (home || user.profileComplete) {
+      if (jobRoute &&
+          (!user.profileComplete || user.role != UserRole.freelancer)) {
+        return signedInDestination(session);
+      }
+      if (home || (setup && user.profileComplete)) {
         final target = signedInDestination(session);
         if (path != target) return target;
       }
@@ -77,6 +108,81 @@ GoRouter createAppRouter(
     return null;
   },
   routes: [
+    if (discovery != null) ...[
+      for (final entry in [
+        (AppRoutes.jobs, JobDiscoveryMode.browse),
+        (AppRoutes.jobSearch, JobDiscoveryMode.search),
+        (AppRoutes.jobResults, JobDiscoveryMode.results),
+      ])
+        GoRoute(
+          path: entry.$1,
+          name: 'discovery.${entry.$2.name}',
+          pageBuilder: (context, state) => _discoveryPage(
+            state,
+            JobDiscoveryView(
+              model: discovery,
+              mode: entry.$2,
+              onBack: () => context.go(
+                entry.$2 == JobDiscoveryMode.browse
+                    ? AppRoutes.freelancerHome
+                    : entry.$2 == JobDiscoveryMode.search
+                    ? AppRoutes.jobs
+                    : AppRoutes.jobSearch,
+              ),
+              onHome: () => context.go(AppRoutes.freelancerHome),
+              onSearch: () => context.push(AppRoutes.jobSearch),
+              onFilter: () => context.push(AppRoutes.jobFilter),
+              onResults: () => context.go(
+                discovery.results.isEmpty
+                    ? AppRoutes.jobEmpty
+                    : AppRoutes.jobResults,
+              ),
+            ),
+          ),
+        ),
+      GoRoute(
+        path: AppRoutes.jobFilter,
+        name: 'discovery.filter',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          JobFilterView(
+            model: discovery,
+            onBack: () {
+              if (context.canPop()) {
+                context.pop();
+              } else {
+                context.go(AppRoutes.jobSearch);
+              }
+            },
+            onApply: () => context.go(
+              discovery.results.isEmpty
+                  ? AppRoutes.jobEmpty
+                  : AppRoutes.jobResults,
+            ),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.jobEmpty,
+        name: 'discovery.empty',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          EmptyDiscoveryView(
+            onBack: () => context.go(AppRoutes.jobSearch),
+            onHome: () => context.go(AppRoutes.freelancerHome),
+            onSearch: (keyword) {
+              discovery.search(keyword);
+              context.go(
+                discovery.results.isEmpty
+                    ? AppRoutes.jobEmpty
+                    : AppRoutes.jobResults,
+              );
+            },
+            onExplore: () => context.go(AppRoutes.jobs),
+          ),
+        ),
+      ),
+    ],
     GoRoute(path: '/', redirect: (_, _) => AppRoutes.splash),
     GoRoute(
       path: AppRoutes.bootstrap,
@@ -228,6 +334,53 @@ GoRouter createAppRouter(
                   user: session.session!,
                   repository: marketplace,
                 ),
+                onSearch:
+                    discovery == null ||
+                        session.session!.role != UserRole.freelancer
+                    ? null
+                    : () => context.push(AppRoutes.jobSearch),
+                onFilter:
+                    discovery == null ||
+                        session.session!.role != UserRole.freelancer
+                    ? null
+                    : () => context.push(AppRoutes.jobFilter),
+                onExplore:
+                    discovery == null ||
+                        session.session!.role != UserRole.freelancer
+                    ? null
+                    : () => context.go(AppRoutes.jobs),
+                onCategory:
+                    discovery == null ||
+                        session.session!.role != UserRole.freelancer
+                    ? null
+                    : (value) {
+                        if ([
+                          'React',
+                          'Flutter',
+                          'Python',
+                          'Figma',
+                        ].contains(value)) {
+                          discovery.search(value);
+                        } else {
+                          discovery.category(value);
+                        }
+                        context.go(
+                          discovery.results.isEmpty
+                              ? AppRoutes.jobEmpty
+                              : AppRoutes.jobResults,
+                        );
+                      },
+                onTab:
+                    discovery == null ||
+                        session.session!.role != UserRole.freelancer
+                    ? null
+                    : (index) {
+                        if (index == 0) {
+                          context.go(AppRoutes.freelancerHome);
+                        } else if (index == 1) {
+                          context.go(AppRoutes.jobs);
+                        }
+                      },
               ),
       ),
   ],
