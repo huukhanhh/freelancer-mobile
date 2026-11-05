@@ -50,3 +50,36 @@ No Flutter product views, backend runtime, database or AI provider were added.
 GitHub CI runs the same real Flutter gate on PRs; consult each PR's check run for
 the remote result. A local pass is not reported as a GitHub CI pass. No backend
 always-green placeholder job or artificial review approval is created.
+
+## Flutter FE master-task checkpoint — 2026-11-05
+
+- Audited develop at daf056d; no pre-existing tracked modifications. Preserved
+  all 157 old untracked design files. develop branch API reported protected=false.
+- Figma plugin installed=true after the user reinstalled it; no Figma MCP tool
+  calls were exposed in the active execution inventory. File read/permission,
+  fresh screenshots, assets and prototype guards remain unverified in this session.
+- Screen inventory: 143 unique visible product references validated against the
+  saved MCP inventory. Proposed route keys are planning identifiers, not live routes.
+- Added offline AuthenticationRepository/MockSessionRepository commands,
+  AuthenticationViewModel/validation, synthetic demo accounts and 8 new tests.
+  Existing tests retained. No Firebase dependency, backend/ change or CI change.
+- Final scripts/check.ps1: format 20 files/0 changes; analyze no issues (39.9s);
+  all 14 tests passed (2s). First constructor lint was corrected, not suppressed.
+- Changed documentation local links and staged whitespace checked.
+- **flutter build apk --debug passed**: Gradle assembleDebug 565.6s; output
+  build/app/outputs/flutter-apk/app-debug.apk, 160020943 bytes. It builds the
+  current technical bootstrap host/data layer, not a completed product UI.
+- Gradle automatically downloaded NDK 28.2.13676358, Android Build-Tools 36.0.0
+  and CMake 3.22.1 using already-accepted SDK license files. No license acceptance
+  command, PATH edit or manual system configuration was performed.
+- flutter doctor still reported missing Android cmdline-tools and unknown full
+  license status before the build. Do not equate those warnings with APK failure:
+  the actual Gradle build succeeded. SDK diagnostics still need follow-up.
+- flutter devices found Windows/Chrome/Edge only; no Android phone/emulator run.
+- No new product screen visual/responsive/flow verification was possible without
+  live Figma context. Product-screen completion remains **0/143**. The original
+  widget test verifies technical app startup only; login UI is not connected.
+- Web build not repeated because no visual UI/dependency change was made.
+
+Continuation: docs/frontend/progress.md. Do not declare FE complete from this
+checkpoint, and do not commit the APK, SDK/Gradle caches or old design artifacts.

@@ -4,6 +4,15 @@ Repository: https://github.com/huukhanhh/freelancer-mobile
 
 ## Branches and integration
 
+### Active Flutter master-task override (2026-11-05)
+
+The latest user task supersedes the PR policy below for current FE work:
+continue on develop, commit checked cohesive changes, push origin/develop after
+modules/groups. Do not create per-screen PRs/branches and do not merge main.
+Existing CI remains unchanged. Direct push was checked: develop is unprotected
+at the start of this task; respect any later protection change without bypassing it.
+Preserve the older policy below as context for work outside this FE override.
+
 - main: checked updates published through PRs.
 - develop: integration branch; start each scoped change here.
 - codex/feat/<module> or codex/chore/<scope>: one cohesive work branch per feature/task.

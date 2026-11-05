@@ -23,4 +23,7 @@ WorklyButton chỉ có 4 style Default đã thấy trong 593:4119. Các shared w
 ## Monorepo và Backend
 
 Flutter giữ ở root; Backend modular monolith nằm trong backend/ với dependencies/config/test/deployment riêng. Chưa chọn framework/database; chưa có runtime BE. Xem backend/README.md và docs/backend/README.md.
+Master task FE sau đó nêu hướng Backend dự kiến là Firebase. Đây là hướng adapter cho data layer, chưa phải cấu hình triển khai: chưa kết nối/cài Firebase hoặc sửa backend/ trong task FE.
 Thêm API repository, DTO và mapping trong data khi có contract ở docs/api/. Inject client/cấu hình vào composition root. UI dùng model domain và state ViewModel; không truy cập database hoặc provider AI trực tiếp. AI server boundary ở backend/src/modules/ai/, UI theo use case ở lib/features/. Chưa cài dio/http, secure storage, auth provider, payment, KYC hoặc AI SDK.
+
+AuthenticationRepository mở rộng SessionRepository cho signIn/signOut; MockSessionRepository giữ một store in-memory chung cho cả hai contract. AppDependencies inject implementation qua interface; AuthenticationViewModel cung cấp command/validation trước khi nối login UI. Không tạo một store auth thứ hai hoặc dùng Firebase trong view. Các fixture demo và loading/error controls mô tả ở docs/frontend/demo.md.

@@ -1,11 +1,11 @@
 # Giai đoạn 5 — Kế hoạch frontend
 
-Trạng thái: người dùng đã duyệt cấu trúc monorepo (Flutter root + backend/). Cập nhật hiện tại chỉ tổ chức thư mục/tài liệu/CI; chưa bắt đầu batch màn hình.
+Trạng thái: master task mới cho phép triển khai toàn bộ FE mock theo batch; giữ nguyên backend/. Đã audit workspace, lập inventory 143 màn và triển khai mock authentication data/ViewModel; chưa có màn sản phẩm hoàn thành. Figma đã được cài lại nhưng các công cụ MCP đọc design chưa được cung cấp cho phiên đang chạy; không tự vẽ UI từ metadata.
 Màn chuẩn: docs/figma/screen-inventory.json, page 579:228; 143 màn sản phẩm hiển thị. Từng module chia batch nhỏ theo flow, mặc định 2–4 màn liên quan; đọc lại thiết kế trực tiếp trước mỗi batch.
 
 ## Branch và phụ thuộc
 
-Các branch module dưới đây là kế hoạch; chỉ tạo khi bắt đầu module từ develop hiện tại. Foundation đã được đưa vào main qua PR #1 và develop đã đồng bộ fast-forward. Người dùng cho phép tự tạo/merge PR sau khi các kiểm tra đạt, theo work branch -> develop -> main; không cần chờ accept thủ công. Không tạo lịch sử hoạt động giả.
+Override của master task: làm việc trực tiếp trên develop, commit theo nhóm thay đổi có ý nghĩa rồi push origin/develop sau kiểm tra; không tạo PR cho mỗi màn và không merge main. Branch riêng trong bảng dưới là kế hoạch cũ, không tạo trong lượt FE này. Foundation/monorepo đã có trên main/develop; bảo toàn lịch sử.
 
 | Thứ tự | Module / section | Branch riêng | Phụ thuộc | Tiêu chí nghiệm thu riêng |
 |---|---|---|---|---|
@@ -34,8 +34,9 @@ Messaging primitives có thể được làm sớm khi proposal cần consumer, 
 4. Đối chiếu layout tại 390 × 844, viewport hẹp, safe area, keyboard và chữ tiếng Việt; không dùng screenshot làm UI.
 5. Test hành vi có ý nghĩa: state chuyển tiếp, validation/budget, stale async response, routing/role/back. Kiểm tra UI đủ trạng thái đã có thiết kế, không test chỉ phản chiếu implementation.
 6. dart format --set-exit-if-changed, flutter analyze và flutter test phải đạt; báo Android/device/UI/golden/integration còn chưa chạy.
-7. Review staged diff/secrets/build files, Conventional Commit rồi push branch. Tạo PR vào develop, kiểm tra diff/CI rồi tự merge theo quyền đã cấp; khi cập nhật main, tạo PR develop -> main và kiểm tra trước khi merge. Không bypass branch protection hoặc báo review giả.
+7. Review staged diff/secrets/build files, Conventional Commit rồi push origin/develop theo master task hiện tại. Không merge main, không sửa workflow CI khi không bị cản trở; không bypass branch protection hoặc báo review giả.
 
 ## Checkpoint ngay sau lượt hiện tại
 
-Cấu trúc monorepo đã được duyệt. Sau cập nhật này, task tiếp theo cần chốt framework/database nếu làm BE hoặc chọn batch Auth đầu tiên nếu làm FE. Không tự triển khai các module trong task tổ chức cấu trúc. BE/AI hiện chỉ có ranh giới và tài liệu, không có runtime/test được giả định là đã chạy.
+Tiếp tục từ docs/frontend/progress.md và docs/frontend/screen-inventory.md. Khi Figma MCP có trong phiên: tạo session, đọc F01/F02/F02b/F02c và assets/screenshot, rồi xây UI thật và thay /bootstrap. Tiếp tục login/register/OTP/role/profile setup, home/role shell và các module theo phụ thuộc; không dừng sau màn đầu nếu công cụ và nguồn đủ.
+Backend dự kiến Firebase theo master task mới; hiện chỉ giữ repository interface sẵn sàng cho adapter tương lai, không cài Firebase SDK/kết nối production hoặc sửa backend/.

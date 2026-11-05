@@ -58,6 +58,7 @@ docs/api/                   API contract dùng chung, chưa có endpoint
 
 Views nghe ViewModel bằng ListenableBuilder. ViewModel gọi repository interface; AppDependencies.mock() nối mock implementation. Khi có backend, thêm implementation/DTO mapping trong data và thay ở composition root; không đổi view để gọi HTTP trực tiếp.
 Mock mặc định anonymous; fixtures Client/Freelancer có ID mock-client-001/mock-freelancer-001. State kỹ thuật idle/loading/ready/failure đã có, UI tương ứng chờ nguồn thiết kế.
+Mock authentication đã có signIn/signOut, validation và hai tài khoản tổng hợp trong docs/frontend/demo.md; UI đăng nhập chưa nối vào app. Checkpoint FE mới: 14 test đạt và Android debug APK build thành công; chưa chạy trên điện thoại và chưa có màn sản phẩm hoàn thành. Xem docs/verification.md để phân biệt kết quả build với các cảnh báo SDK còn lại.
 go_router là package runtime bổ sung duy nhất; state management dùng Flutter SDK. pubspec.lock phải commit cho ứng dụng. [Tài liệu go_router](https://pub.dev/packages/go_router).
 
 ## Backend và AI
@@ -74,6 +75,7 @@ FE gọi Backend API theo [contract](docs/api/README.md); Backend truy cập dat
 - [Kết quả kiểm tra](docs/verification.md)
 - [Quy tắc agent](AGENTS.md)
 - [Tài liệu FE](docs/frontend/README.md), [BE](docs/backend/README.md), [API](docs/api/README.md)
+- [Tiến độ master task FE](docs/frontend/progress.md), [inventory 143 màn](docs/frontend/screen-inventory.md), [tài khoản demo](docs/frontend/demo.md)
 - [Quy trình PR và tự merge sau kiểm tra](docs/git-workflow.md)
 
-main chứa cập nhật đã kiểm tra, develop tích hợp công việc. Mỗi thay đổi đi qua branch riêng và PR; người dùng đã cho phép tự merge PR sau khi kiểm tra đạt, không cần chờ accept thủ công. Lịch sử phản ánh thay đổi thật, không tạo commit rỗng/PR giả để tăng số lượng. Các tệp Figma có sẵn ở root được giữ nguyên và không đưa vào commit ứng dụng. Không dùng git add . ở workspace này.
+Master task FE mới: tiếp tục commit/push trực tiếp develop sau kiểm tra, không tạo PR từng màn và không merge main. Quy trình PR trước đó được lưu trong docs/git-workflow.md nhưng không áp vào task FE hiện tại. Lịch sử phản ánh thay đổi thật, không tạo commit rỗng/PR giả để tăng số lượng. Các tệp Figma có sẵn ở root được giữ nguyên và không đưa vào commit ứng dụng. Không dùng git add . ở workspace này.
