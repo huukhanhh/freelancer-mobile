@@ -1,3 +1,6 @@
+import 'package:workly/features/talent/presentation/view_models/talent_view_model.dart';
+import 'package:workly/features/talent/presentation/views/talent_views.dart';
+import 'package:workly/features/projects/presentation/views/client_project_view.dart';
 import 'package:workly/features/profiles/presentation/view_models/profile_view_model.dart';
 import 'package:workly/features/profiles/presentation/views/profile_views.dart';
 import 'package:workly/features/discovery/presentation/views/saved_jobs_view.dart';
@@ -7,6 +10,7 @@ import 'package:workly/features/proposals/presentation/view_models/proposal_view
 import 'package:workly/features/proposals/presentation/views/proposal_flow_view.dart';
 import 'package:workly/features/proposals/presentation/views/my_proposals_view.dart';
 import 'package:flutter/material.dart';
+import 'package:workly/core/theme/design_tokens.dart';
 import 'package:go_router/go_router.dart';
 import 'package:workly/features/foundation/presentation/views/bootstrap_view.dart';
 import 'package:workly/features/session/presentation/view_models/session_view_model.dart';
@@ -28,6 +32,11 @@ import 'package:workly/features/discovery/presentation/views/job_discovery_view.
 import 'package:workly/features/discovery/presentation/views/job_filter_view.dart';
 
 abstract final class AppRoutes {
+  static const talentBrowse = '/talent/browse',
+      talentCompare = '/talent/compare',
+      talentInvite = '/talent/invite',
+      clientProject = '/client/projects/greenpay';
+  static String talentProfile(String id) => '/talent/profile/$id';
   static const freelancerProfile = '/profiles/freelancer',
       profileEdit = '/profiles/freelancer/edit',
       profileSkills = '/profiles/freelancer/skills',
@@ -95,6 +104,7 @@ GoRouter createAppRouter(
   ProjectsViewModel? projects,
   ProposalViewModel? proposals,
   ProfileViewModel? profile,
+  TalentViewModel? talent,
 }) => GoRouter(
   initialLocation: initialLocation,
   refreshListenable: Listenable.merge([session, auth, ?projects]),
@@ -115,10 +125,17 @@ GoRouter createAppRouter(
         path.startsWith('/projects/') ||
         path.startsWith('/proposals/') ||
         path.startsWith('/profiles/');
+    final clientRoute =
+        path.startsWith('/talent/') || path.startsWith('/client/');
     final setup = path == AppRoutes.role || path == AppRoutes.profile;
-    if ((home || setup || jobRoute) && session.status == SessionStatus.ready) {
+    if ((home || setup || jobRoute || clientRoute) &&
+        session.status == SessionStatus.ready) {
       final user = session.session;
       if (user == null) return AppRoutes.login;
+      if (clientRoute &&
+          (!user.profileComplete || user.role != UserRole.client)) {
+        return signedInDestination(session);
+      }
       if (jobRoute &&
           (!user.profileComplete || user.role != UserRole.freelancer)) {
         return signedInDestination(session);
@@ -137,6 +154,108 @@ GoRouter createAppRouter(
     return null;
   },
   routes: [
+    if (talent != null) ...[
+      GoRoute(
+        path: AppRoutes.talentBrowse,
+        name: 'talent.browse',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          TalentBrowseView(
+            model: talent,
+            onHome: () => context.go(AppRoutes.clientHome),
+            onInvite: () => context.push(AppRoutes.talentInvite),
+            onCompare: () => context.push(AppRoutes.talentCompare),
+            onOpen: (id) => context.push(AppRoutes.talentProfile(id)),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.talentCompare,
+        name: 'talent.compare',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          TalentCompareView(
+            model: talent,
+            onBack: () => context.go(AppRoutes.talentBrowse),
+            onHome: () => context.go(AppRoutes.clientHome),
+            onChoose: (id) => context.push(AppRoutes.talentProfile(id)),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.talentInvite,
+        name: 'talent.invite',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          TalentInviteView(
+            model: talent,
+            onBack: () {
+              if (context.canPop()) {
+                context.pop();
+              } else {
+                context.go(AppRoutes.talentBrowse);
+              }
+            },
+            onHome: () => context.go(AppRoutes.clientHome),
+            onSent: () => context.go(AppRoutes.clientProject),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: '/talent/profile/:talentId',
+        name: 'talent.profile',
+        pageBuilder: (context, state) => CustomTransitionPage<void>(
+          key: state.pageKey,
+          opaque: false,
+          barrierDismissible: true,
+          barrierLabel: 'Đóng hồ sơ',
+          barrierColor: EmeraldColors.primary.withValues(alpha: .24),
+          transitionDuration: const Duration(milliseconds: 200),
+          child: ListenableBuilder(
+            listenable: talent,
+            builder: (context, _) {
+              final t = talent.find(state.pathParameters['talentId']!);
+              if (t == null) return const SizedBox.shrink();
+              return TalentQuickProfile(
+                talent: t,
+                onInvite: () {
+                  talent.preselect(t.id);
+                  context.push(AppRoutes.talentInvite);
+                },
+              );
+            },
+          ),
+          transitionsBuilder: (context, animation, secondary, child) =>
+              MediaQuery.disableAnimationsOf(context)
+              ? child
+              : SlideTransition(
+                  position: Tween(begin: const Offset(0, 1), end: Offset.zero)
+                      .animate(
+                        CurvedAnimation(
+                          parent: animation,
+                          curve: Curves.easeOut,
+                        ),
+                      ),
+                  child: child,
+                ),
+        ),
+      ),
+    ],
+    if (projects != null)
+      GoRoute(
+        path: AppRoutes.clientProject,
+        name: 'client.projects.detail',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          ClientProjectView(
+            model: projects,
+            sentInvites: talent?.sentCount ?? 0,
+            onHome: () => context.go(AppRoutes.clientHome),
+            onBack: () => context.go(AppRoutes.clientHome),
+          ),
+        ),
+      ),
+
     if (profile != null) ...[
       GoRoute(
         path: AppRoutes.freelancerProfile,
@@ -648,30 +767,43 @@ GoRouter createAppRouter(
                   user: session.session!,
                   repository: marketplace,
                 ),
-                onListing:
-                    projects == null ||
-                        session.session!.role != UserRole.freelancer
-                    ? null
-                    : (id) => context.push(AppRoutes.project(id)),
-                onSearch:
-                    discovery == null ||
-                        session.session!.role != UserRole.freelancer
-                    ? null
-                    : () => context.push(AppRoutes.jobSearch),
-                onFilter:
-                    discovery == null ||
-                        session.session!.role != UserRole.freelancer
-                    ? null
-                    : () => context.push(AppRoutes.jobFilter),
-                onExplore:
-                    discovery == null ||
-                        session.session!.role != UserRole.freelancer
-                    ? null
-                    : () => context.go(AppRoutes.jobs),
+                onListing: session.session!.role == UserRole.client
+                    ? (talent == null
+                          ? null
+                          : (id) => context.push(AppRoutes.talentProfile(id)))
+                    : (projects == null
+                          ? null
+                          : (id) => context.push(AppRoutes.project(id))),
+                onSearch: session.session!.role == UserRole.client
+                    ? (talent == null
+                          ? null
+                          : () => context.push(AppRoutes.talentBrowse))
+                    : (discovery == null
+                          ? null
+                          : () => context.push(AppRoutes.jobSearch)),
+                onFilter: session.session!.role == UserRole.client
+                    ? (talent == null
+                          ? null
+                          : () => context.push(AppRoutes.talentBrowse))
+                    : (discovery == null
+                          ? null
+                          : () => context.push(AppRoutes.jobFilter)),
+                onExplore: session.session!.role == UserRole.client
+                    ? (talent == null
+                          ? null
+                          : () => context.go(AppRoutes.talentBrowse))
+                    : (discovery == null
+                          ? null
+                          : () => context.go(AppRoutes.jobs)),
                 onCategory:
                     discovery == null ||
                         session.session!.role != UserRole.freelancer
-                    ? null
+                    ? (talent == null
+                          ? null
+                          : (value) {
+                              talent.selectCategory('Tất cả');
+                              context.go(AppRoutes.talentBrowse);
+                            })
                     : (value) {
                         if ([
                           'React',
@@ -692,7 +824,14 @@ GoRouter createAppRouter(
                 onTab:
                     discovery == null ||
                         session.session!.role != UserRole.freelancer
-                    ? null
+                    ? (talent == null
+                          ? null
+                          : (index) {
+                              if (index == 0) context.go(AppRoutes.clientHome);
+                              if (index == 2) {
+                                context.go(AppRoutes.talentBrowse);
+                              }
+                            })
                     : (index) {
                         if (index == 0) {
                           context.go(AppRoutes.freelancerHome);

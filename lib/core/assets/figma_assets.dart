@@ -4,6 +4,67 @@ import 'package:flutter_svg/flutter_svg.dart';
 /// Exact local exports from approved page 579:228. See docs/frontend/assets.json.
 abstract final class FigmaAssets {
   static const slots = <String, String>{
+    '585:5196/imgEditorialRealPhotography':
+        'assets/talent/585-5196-imgEditorialRealPhotography.png',
+    '585:5196/imgEditorialRealPhotography1':
+        'assets/talent/585-5196-imgEditorialRealPhotography1.png',
+    '585:5196/imgLucideBack': 'assets/talent/585-5196-imgLucideBack.svg',
+    '585:5196/imgLucideSearch': 'assets/talent/585-5196-imgLucideSearch.svg',
+    '585:5196/imgEmerald2026NavigationIconHome':
+        'assets/talent/585-5196-imgEmerald2026NavigationIconHome.svg',
+    '585:5196/imgIcon': 'assets/talent/585-5196-imgIcon.svg',
+    '585:5196/imgIcon1': 'assets/talent/585-5196-imgIcon1.svg',
+    '585:5196/imgIcon2': 'assets/talent/585-5196-imgIcon2.svg',
+    '585:5196/imgIcon3': 'assets/talent/585-5196-imgIcon3.svg',
+    '585:5196/imgNavigationVectorSystemStatus':
+        'assets/talent/585-5196-imgNavigationVectorSystemStatus.svg',
+    '585:5252/imgAvatarReal': 'assets/talent/585-5252-imgAvatarReal.png',
+    '585:5252/imgAvatarReal1': 'assets/talent/585-5252-imgAvatarReal1.png',
+    '585:5252/imgLucideBack': 'assets/talent/585-5252-imgLucideBack.svg',
+    '585:5252/imgNavigationVectorSystemStatus':
+        'assets/talent/585-5252-imgNavigationVectorSystemStatus.svg',
+    '585:7952/imgProjectCoverThumbnail':
+        'assets/talent/585-7952-imgProjectCoverThumbnail.png',
+    '585:7952/imgTrngThaiThitB': 'assets/talent/585-7952-imgTrngThaiThitB.svg',
+    '585:7952/imgEmerald2026NavigationIconBack':
+        'assets/talent/585-7952-imgEmerald2026NavigationIconBack.svg',
+    '585:7952/imgEmerald2026NavigationIconHome':
+        'assets/talent/585-7952-imgEmerald2026NavigationIconHome.svg',
+    '585:8006/imgProjectCoverThumbnail':
+        'assets/talent/585-8006-imgProjectCoverThumbnail.png',
+    '585:8006/imgTrngThaiThitB': 'assets/talent/585-8006-imgTrngThaiThitB.svg',
+    '585:8006/imgEmerald2026NavigationIconBack':
+        'assets/talent/585-8006-imgEmerald2026NavigationIconBack.svg',
+    '585:8006/imgEmerald2026NavigationIconHome':
+        'assets/talent/585-8006-imgEmerald2026NavigationIconHome.svg',
+    '494:2841/imgProjectCoverThumbnail':
+        'assets/talent/494-2841-imgProjectCoverThumbnail.png',
+    '494:2841/imgProjectCoverThumbnail1':
+        'assets/talent/494-2841-imgProjectCoverThumbnail1.png',
+    '494:2841/imgProjectCoverThumbnail2':
+        'assets/talent/494-2841-imgProjectCoverThumbnail2.png',
+    '494:2841/imgProjectCoverThumbnail3':
+        'assets/talent/494-2841-imgProjectCoverThumbnail3.png',
+    '585:6319/imgProfileIconCheck':
+        'assets/talent/585-6319-imgProfileIconCheck.svg',
+    '585:6319/imgProfileTechnologyFigma':
+        'assets/talent/585-6319-imgProfileTechnologyFigma.svg',
+    '585:6319/imgEllipse': 'assets/talent/585-6319-imgEllipse.png',
+    '585:6319/imgProjectCoverManagementDetail':
+        'assets/talent/585-6319-imgProjectCoverManagementDetail.png',
+    '585:6319/imgCellularSignal':
+        'assets/talent/585-6319-imgCellularSignal.svg',
+    '585:6319/imgWiFiSignal': 'assets/talent/585-6319-imgWiFiSignal.svg',
+    '585:6319/imgBatteryStatus': 'assets/talent/585-6319-imgBatteryStatus.svg',
+    '585:6319/imgEmerald2026NavigationIconBack':
+        'assets/talent/585-6319-imgEmerald2026NavigationIconBack.svg',
+    '585:6319/imgEmerald2026NavigationIconHome':
+        'assets/talent/585-6319-imgEmerald2026NavigationIconHome.svg',
+    '585:6319/imgProfileIconLayers':
+        'assets/talent/585-6319-imgProfileIconLayers.svg',
+    '585:6319/imgProfileIconMobile':
+        'assets/talent/585-6319-imgProfileIconMobile.svg',
+
     '585:5092/imgEditorialRealPhotography':
         'assets/profiles/585-5092-imgEditorialRealPhotography.png',
     '585:5092/imgEditorialRealPhotography1':

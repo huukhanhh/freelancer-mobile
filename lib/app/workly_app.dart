@@ -1,3 +1,4 @@
+import 'package:workly/features/talent/presentation/view_models/talent_view_model.dart';
 import 'package:workly/features/profiles/presentation/view_models/profile_view_model.dart';
 import 'package:workly/features/projects/presentation/view_models/projects_view_model.dart';
 import 'package:workly/features/proposals/presentation/view_models/proposal_view_model.dart';
@@ -28,11 +29,13 @@ class _WorklyAppState extends State<WorklyApp> {
   late final ProjectsViewModel _projects;
   late final ProposalViewModel _proposals;
   late final ProfileViewModel _profile;
+  late final TalentViewModel _talent;
   void _sessionChanged() {
     if (_session.status == SessionStatus.ready) {
       _discovery.setViewer(_session.session?.userId ?? '');
       unawaited(_proposals.setViewer(_session.session?.userId ?? ''));
       unawaited(_profile.setViewer(_session.session?.userId ?? ''));
+      _talent.setViewer(_session.session?.userId ?? '');
     }
   }
 
@@ -45,6 +48,7 @@ class _WorklyAppState extends State<WorklyApp> {
     _projects = ProjectsViewModel(widget.dependencies.projectRepository);
     _proposals = ProposalViewModel(widget.dependencies.proposalRepository);
     _profile = ProfileViewModel(widget.dependencies.profileRepository);
+    _talent = TalentViewModel(widget.dependencies.talentRepository);
     _session.addListener(_sessionChanged);
     _router = createAppRouter(
       _session,
@@ -54,10 +58,12 @@ class _WorklyAppState extends State<WorklyApp> {
       projects: _projects,
       proposals: _proposals,
       profile: _profile,
+      talent: _talent,
     );
     unawaited(_session.initialize());
     unawaited(_discovery.initialize());
     unawaited(_projects.initialize());
+    unawaited(_talent.initialize());
   }
 
   @override
@@ -69,6 +75,7 @@ class _WorklyAppState extends State<WorklyApp> {
     _projects.dispose();
     _proposals.dispose();
     _profile.dispose();
+    _talent.dispose();
     _session.dispose();
     super.dispose();
   }

@@ -1,3 +1,5 @@
+import 'package:workly/features/talent/domain/talent_repository.dart';
+import 'package:workly/features/talent/data/mock_talent_repository.dart';
 import 'package:workly/features/profiles/domain/profile_repository.dart';
 import 'package:workly/features/profiles/data/mock_profile_repository.dart';
 import 'package:workly/features/projects/domain/project_repository.dart';
@@ -20,9 +22,11 @@ class AppDependencies {
     ProjectRepository? projectRepository,
     ProposalRepository? proposalRepository,
     ProfileRepository? profileRepository,
+    TalentRepository? talentRepository,
   }) : jobRepository = jobRepository ?? MockJobRepository(),
        proposalRepository = proposalRepository ?? MockProposalRepository(),
-       profileRepository = profileRepository ?? MockProfileRepository() {
+       profileRepository = profileRepository ?? MockProfileRepository(),
+       talentRepository = talentRepository ?? MockTalentRepository() {
     this.projectRepository =
         projectRepository ?? MockProjectRepository(this.jobRepository);
   }
@@ -35,4 +39,5 @@ class AppDependencies {
   late final ProjectRepository projectRepository;
   final ProposalRepository proposalRepository;
   final ProfileRepository profileRepository;
+  final TalentRepository talentRepository;
 }

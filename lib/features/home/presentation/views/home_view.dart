@@ -18,13 +18,14 @@ class HomeView extends StatelessWidget {
     this.onSearch,
     this.onFilter,
     this.onExplore,
+    this.onWorkspace,
     this.onCategory,
     this.onListing,
     this.onTab,
     super.key,
   });
   final HomeViewModel model;
-  final VoidCallback? onSearch, onFilter, onExplore;
+  final VoidCallback? onSearch, onFilter, onExplore, onWorkspace;
   final ValueChanged<String>? onCategory, onListing;
   final ValueChanged<int>? onTab;
   @override
@@ -316,7 +317,7 @@ class HomeView extends StatelessWidget {
                       ),
                     ),
                     child: InkWell(
-                      onTap: onExplore,
+                      onTap: client ? onWorkspace : onExplore,
                       child: Padding(
                         padding: const EdgeInsets.all(15),
                         child: Column(
@@ -354,7 +355,7 @@ class HomeView extends StatelessWidget {
               client: client,
               node: node,
               onTab: onTab,
-              enabledIndices: const {0, 1, 4},
+              enabledIndices: client ? const {0, 2} : const {0, 1, 4},
               preview: preview,
             ),
           ],

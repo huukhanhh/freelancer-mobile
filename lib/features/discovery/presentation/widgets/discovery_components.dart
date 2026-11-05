@@ -31,11 +31,16 @@ class DiscoveryScaffold extends StatelessWidget {
     this.search,
     this.onDiscover,
     this.onProfile,
+    this.client = false,
+    this.selectedIndex = 1,
+    this.showBottomBar = true,
     super.key,
   });
   final String node, title, subtitle;
   final VoidCallback onBack, onHome;
   final VoidCallback? onDiscover, onProfile;
+  final bool client, showBottomBar;
+  final int selectedIndex;
   final Widget child;
   final Widget? search;
   @override
@@ -124,22 +129,27 @@ class DiscoveryScaffold extends StatelessWidget {
                 child: search,
               ),
             Expanded(child: child),
-            RoleBottomBar(
-              client: false,
-              node: node,
-              preview: preview,
-              selectedIndex: 1,
-              onTab: (index) {
-                if (index == 0) onHome();
-                if (index == 1) onDiscover?.call();
-                if (index == 4) onProfile?.call();
-              },
-              enabledIndices: {
-                0,
-                if (onDiscover != null) 1,
-                if (onProfile != null) 4,
-              },
-            ),
+            if (showBottomBar)
+              RoleBottomBar(
+                client: client,
+                node: node,
+                preview: preview,
+                selectedIndex: selectedIndex,
+                onTab: (index) {
+                  if (index == 0) onHome();
+                  if (index == (client ? 2 : 1)) onDiscover?.call();
+                  if (index == 4) onProfile?.call();
+                },
+                enabledIndices: {
+                  0,
+                  if (onDiscover != null) (client ? 2 : 1),
+                  if (onProfile != null) 4,
+                },
+              ),
+            if (!showBottomBar)
+              SizedBox(
+                height: math.max(34, MediaQuery.viewPaddingOf(context).bottom),
+              ),
           ],
         ),
       ),

@@ -7,6 +7,33 @@ class MockProjectRepository implements ProjectRepository {
   const MockProjectRepository(this.jobs);
   final JobRepository jobs;
   @override
+  Future<ProjectManagement> fetchManagement() async => const ProjectManagement(
+    received: 8,
+    newProposals: 3,
+    candidates: [
+      (
+        'Nguyễn Hoàng Anh',
+        'UI/UX · Figma · Mobile App',
+        'Có 3 năm kinh nghiệm thiết kế ứng dụng cho các startup fintech.',
+        11500000,
+        28,
+        'NA',
+      ),
+      (
+        'Lê Minh Trang',
+        'UI/UX · Figma · Prototyping',
+        'Chuyên thiết kế sản phẩm fintech, nghiên cứu UX và kiểm thử với người dùng.',
+        13000000,
+        30,
+        'LT',
+      ),
+    ],
+    attachments: [
+      ('PDF', 'GreenPay-brief.pdf', '2,4 MB'),
+      ('ZIP', 'brand-assets.zip', '6,8 MB'),
+    ],
+  );
+  @override
   Future<List<Project>> fetchProjects() async {
     final listings = await jobs.fetchJobs();
     return List.unmodifiable(

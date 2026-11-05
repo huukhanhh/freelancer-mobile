@@ -22,6 +22,7 @@ flutter:
     - assets/discovery/
     - assets/projects/
     - assets/profiles/
+    - assets/talent/
   fonts:
     - family: Noto Sans Symbols 2
       fonts:

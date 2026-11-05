@@ -24,4 +24,17 @@ class Project {
 
 abstract interface class ProjectRepository {
   Future<List<Project>> fetchProjects();
+  Future<ProjectManagement> fetchManagement();
+}
+
+class ProjectManagement {
+  const ProjectManagement({
+    required this.received,
+    required this.newProposals,
+    required this.candidates,
+    required this.attachments,
+  });
+  final int received, newProposals;
+  final List<(String, String, String, int, int, String)> candidates;
+  final List<(String, String, String)> attachments;
 }
