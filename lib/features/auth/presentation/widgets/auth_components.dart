@@ -32,6 +32,8 @@ class AuthPage extends StatelessWidget {
   const AuthPage({
     required this.child,
     this.title,
+    this.trailing,
+    this.contextHeader = false,
     this.onBack,
     this.action,
     this.background,
@@ -41,6 +43,8 @@ class AuthPage extends StatelessWidget {
   });
   final Widget child;
   final String? title;
+  final Widget? trailing;
+  final bool contextHeader;
   final VoidCallback? onBack;
   final Widget? action;
   final Widget? background;
@@ -60,7 +64,7 @@ class AuthPage extends StatelessWidget {
           SizedBox(height: math.max(59, insets.top)),
         if (title != null)
           SizedBox(
-            height: 52,
+            height: contextHeader ? 44 : 52,
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 16),
               child: Row(
@@ -84,9 +88,18 @@ class AuthPage extends StatelessWidget {
                   Expanded(
                     child: Text(
                       title!,
-                      style: authText(18, weight: FontWeight.w700),
+                      style: authText(
+                        contextHeader ? 13 : 18,
+                        weight: contextHeader
+                            ? FontWeight.w500
+                            : FontWeight.w700,
+                        color: contextHeader
+                            ? EmeraldColors.textSecondary
+                            : EmeraldColors.textPrimary,
+                      ),
                     ),
                   ),
+                  ?trailing,
                 ],
               ),
             ),

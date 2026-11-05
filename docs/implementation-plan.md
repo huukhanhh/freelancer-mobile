@@ -40,3 +40,5 @@ Messaging primitives có thể được làm sớm khi proposal cần consumer, 
 
 Tiếp tục từ docs/frontend/progress.md và screen-inventory.md. Batch kế tiếp: F17 job detail/vị trí ứng tuyển 585:4950 → 813:6762, rồi Client talent 585:5196/comparison 585:5252, saved jobs 585:5092, Client entry F18 585:5031. Đọc context/screenshot và hotspot/guards gốc trước khi code. Không tính callback detail hoặc tab chưa nối là chức năng hoàn thành; source frame nhãn lặp phải dùng node ID.
 Backend dự kiến Firebase theo master task mới; hiện chỉ giữ repository interface sẵn sàng cho adapter tương lai, không cài Firebase SDK/kết nối production hoặc sửa backend/.
+
+Rapid UI override: triển khai trên develop tại D:/DANENTANG/freelancer-mobile; không thêm/chạy tests, ADB automation, PR/merge/CI. Format code sửa, analyze/build khi cần. Batch tiếp: saved jobs, Client discovery/comparison, portfolio picker.

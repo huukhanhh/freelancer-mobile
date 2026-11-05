@@ -17,10 +17,12 @@ class JobDiscoveryView extends StatefulWidget {
     required this.onSearch,
     required this.onFilter,
     required this.onResults,
+    this.onJob,
     super.key,
   });
   final DiscoveryViewModel model;
   final JobDiscoveryMode mode;
+  final ValueChanged<String>? onJob;
   final VoidCallback onBack, onHome, onSearch, onFilter, onResults;
   @override
   State<JobDiscoveryView> createState() => _JobDiscoveryViewState();
@@ -237,6 +239,9 @@ class _JobDiscoveryViewState extends State<JobDiscoveryView> {
                         padding: const EdgeInsets.only(bottom: 12),
                         child: DiscoveryJobCard(
                           job: job,
+                          onOpen: widget.onJob == null
+                              ? null
+                              : () => widget.onJob!(job.id),
                           saved: m.saved.contains(job.id),
                           onSave: () => m.toggleSaved(job.id),
                         ),

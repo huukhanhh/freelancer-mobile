@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:workly/core/theme/app_theme.dart';
 import 'package:workly/core/theme/design_tokens.dart';
 
-enum WorklyButtonStyle { primary, warm, secondary, dark }
+enum WorklyButtonStyle { primary, warm, secondary, dark, proposal }
 
 /// Figma 593:4119: four observed Default-state variants.
 /// Disabled/loading designs await source verification.
@@ -23,24 +23,30 @@ class WorklyButton extends StatelessWidget {
   Widget build(BuildContext context) {
     final colors = switch (style) {
       WorklyButtonStyle.primary => [EmeraldColors.primary, EmeraldColors.teal],
+      WorklyButtonStyle.proposal => [
+        const Color(0xFF059669),
+        const Color(0xFF087F8C),
+      ],
       WorklyButtonStyle.warm => [EmeraldColors.coral, EmeraldColors.amber],
       WorklyButtonStyle.dark => [EmeraldColors.deep, EmeraldColors.emerald600],
       WorklyButtonStyle.secondary => <Color>[],
     };
+    final proposal = style == WorklyButtonStyle.proposal;
+    final radius = proposal ? 12.0 : ButtonTokens.radius;
     final secondary = style == WorklyButtonStyle.secondary;
     return SizedBox(
       height: height,
       child: DecoratedBox(
         decoration: BoxDecoration(
           color: secondary ? EmeraldColors.surfaceSubtle : null,
-          borderRadius: BorderRadius.circular(ButtonTokens.radius),
+          borderRadius: BorderRadius.circular(radius),
           gradient: secondary
               ? null
               : LinearGradient(
                   begin: Alignment.centerLeft,
                   end: Alignment.centerRight,
                   colors: colors,
-                  transform: const _FigmaButtonGradient(),
+                  transform: _FigmaButtonGradient(proposal: proposal),
                 ),
         ),
         child: TextButton(
@@ -49,7 +55,7 @@ class WorklyButton extends StatelessWidget {
             minimumSize: Size(0, height),
             padding: EdgeInsets.zero,
             shape: RoundedRectangleBorder(
-              borderRadius: BorderRadius.circular(ButtonTokens.radius),
+              borderRadius: BorderRadius.circular(radius),
             ),
             foregroundColor: secondary
                 ? EmeraldColors.primaryDark
@@ -57,7 +63,7 @@ class WorklyButton extends StatelessWidget {
             textStyle: TextStyle(
               fontFamily: AppTheme.fontFamily,
               fontSize: labelSize,
-              fontWeight: FontWeight.w700,
+              fontWeight: proposal ? FontWeight.w500 : FontWeight.w700,
             ),
           ),
           child: Text(label),
@@ -70,33 +76,37 @@ class WorklyButton extends StatelessWidget {
 /// Figma normalized gradientTransform from component 593:4111.
 /// Convert it to pixel coordinates and invert for Flutter's shader transform.
 class _FigmaButtonGradient extends GradientTransform {
-  const _FigmaButtonGradient();
+  const _FigmaButtonGradient({this.proposal = false});
+  final bool proposal;
 
   @override
   Matrix4 transform(Rect bounds, {TextDirection? textDirection}) {
     final width = bounds.width;
     final height = bounds.height;
     if (width <= 0 || height <= 0) return Matrix4.identity();
-    final crossX = -0.7070000171661377 * width / height;
-    final crossY = 0.7070000171661377 * height / width;
+    final a = proposal ? .8 : 0.7070000171661377;
+    final b = proposal ? .6 : -0.7070000171661377;
+    final c = proposal ? -.6 : 0.7070000171661377;
+    final crossX = b * width / height;
+    final crossY = c * height / width;
     final matrix = Matrix4.identity()
-      ..setEntry(0, 0, 0.7070000171661377)
+      ..setEntry(0, 0, a)
       ..setEntry(0, 1, crossX)
       ..setEntry(
         0,
         3,
-        bounds.left * (1 - 0.7070000171661377) -
+        bounds.left * (1 - a) -
             crossX * bounds.top +
-            0.5 * width,
+            (proposal ? -.1 : .5) * width,
       )
       ..setEntry(1, 0, crossY)
-      ..setEntry(1, 1, 0.7070000171661377)
+      ..setEntry(1, 1, a)
       ..setEntry(
         1,
         3,
-        bounds.top * (1 - 0.7070000171661377) -
-            crossY * bounds.left -
-            0.20000000298023224 * height,
+        bounds.top * (1 - a) -
+            crossY * bounds.left +
+            (proposal ? .4 : -0.20000000298023224) * height,
       );
     matrix.invert();
     return matrix;

@@ -1,0 +1,38 @@
+<svg preserveAspectRatio="none" overflow="visible" style="display: block;" width="248" height="248" viewBox="0 0 248 248" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Projects / Success / Glowing Check">
+<g id="Soft emerald aura" opacity="0.22" filter="url(#filter0_f_0_291)">
+<circle cx="124" cy="118" r="84" fill="#10B981"/>
+</g>
+<path id="Outer halo ring" opacity="0.1" d="M196.5 118C196.5 158.041 164.041 190.5 124 190.5C83.9594 190.5 51.5 158.041 51.5 118C51.5 77.9594 83.9594 45.5 124 45.5C164.041 45.5 196.5 77.9594 196.5 118Z" stroke="#10B981"/>
+<path id="Inner halo ring" opacity="0.14" d="M184.5 118C184.5 151.413 157.413 178.5 124 178.5C90.5868 178.5 63.5 151.413 63.5 118C63.5 84.5868 90.5868 57.5 124 57.5C157.413 57.5 184.5 84.5868 184.5 118Z" stroke="#10B981"/>
+<g id="Luminous success disc" filter="url(#filter1_dd_0_291)">
+<circle cx="124" cy="118" r="48" fill="#10B981"/>
+</g>
+<g id="Profile / Icon / check">
+<path id="Vector" d="M110 118L118 126L138 106" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" stroke="white"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_f_0_291" x="18" y="12" width="212" height="212" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="11" result="effect1_foregroundBlur_0_291"/>
+</filter>
+<filter id="filter1_dd_0_291" x="0" y="0" width="248" height="248" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="8" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_0_291"/>
+<feOffset/>
+<feGaussianBlur stdDeviation="18"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0627451 0 0 0 0 0.72549 0 0 0 0 0.505882 0 0 0 0.28 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_0_291"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feMorphology radius="12" operator="dilate" in="SourceAlpha" result="effect2_dropShadow_0_291"/>
+<feOffset dy="6"/>
+<feGaussianBlur stdDeviation="32"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0627451 0 0 0 0 0.72549 0 0 0 0 0.505882 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="effect1_dropShadow_0_291" result="effect2_dropShadow_0_291"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect2_dropShadow_0_291" result="shape"/>
+</filter>
+</defs>
+</svg>

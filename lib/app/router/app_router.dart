@@ -1,3 +1,8 @@
+import 'package:workly/features/projects/presentation/view_models/projects_view_model.dart';
+import 'package:workly/features/projects/presentation/views/project_detail_view.dart';
+import 'package:workly/features/proposals/presentation/view_models/proposal_view_model.dart';
+import 'package:workly/features/proposals/presentation/views/proposal_flow_view.dart';
+import 'package:workly/features/proposals/presentation/views/my_proposals_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:workly/features/foundation/presentation/views/bootstrap_view.dart';
@@ -35,6 +40,12 @@ abstract final class AppRoutes {
       jobFilter = '/discovery/filter',
       jobResults = '/discovery/results',
       jobEmpty = '/discovery/empty';
+  static const myProposals = '/proposals/mine',
+      sentProposals = '/proposals/sent';
+  static String project(String id) => '/projects/jobs/$id';
+  static String vacancies(String id) => '/proposals/$id/positions';
+  static String proposal(String id, ProposalStage stage) =>
+      '/proposals/$id/${stage.name}';
   static String onboarding(int step) => '/auth/onboarding/$step';
 }
 
@@ -70,9 +81,11 @@ GoRouter createAppRouter(
   MarketplaceRepository marketplace, {
   String initialLocation = AppRoutes.splash,
   DiscoveryViewModel? discovery,
+  ProjectsViewModel? projects,
+  ProposalViewModel? proposals,
 }) => GoRouter(
   initialLocation: initialLocation,
-  refreshListenable: Listenable.merge([session, auth]),
+  refreshListenable: Listenable.merge([session, auth, ?projects]),
   redirect: (context, state) {
     final path = state.uri.path;
     if (path == AppRoutes.splash &&
@@ -85,7 +98,10 @@ GoRouter createAppRouter(
           : AppRoutes.onboarding(0);
     }
     final home = path.startsWith('/home/');
-    final jobRoute = path.startsWith('/discovery/');
+    final jobRoute =
+        path.startsWith('/discovery/') ||
+        path.startsWith('/projects/') ||
+        path.startsWith('/proposals/');
     final setup = path == AppRoutes.role || path == AppRoutes.profile;
     if ((home || setup || jobRoute) && session.status == SessionStatus.ready) {
       final user = session.session;
@@ -108,6 +124,159 @@ GoRouter createAppRouter(
     return null;
   },
   routes: [
+    if (projects != null && proposals != null) ...[
+      GoRoute(
+        path: '/projects/jobs/:jobId',
+        name: 'projects.detail',
+        redirect: (context, state) =>
+            projects.ready &&
+                projects.find(state.pathParameters['jobId']!) == null
+            ? AppRoutes.jobs
+            : null,
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          ListenableBuilder(
+            listenable: projects,
+            builder: (context, _) {
+              final p = projects.find(state.pathParameters['jobId']!);
+              if (p == null) return const SizedBox.shrink();
+              return ProjectDetailView(
+                project: p,
+                onBack: () {
+                  if (context.canPop()) {
+                    context.pop();
+                  } else {
+                    context.go(AppRoutes.jobs);
+                  }
+                },
+                onHome: () => context.go(AppRoutes.freelancerHome),
+                onApply: () => context.push(AppRoutes.vacancies(p.id)),
+              );
+            },
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.myProposals,
+        name: 'proposals.mine',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          MyProposalsView(
+            model: proposals,
+            onHome: () => context.go(AppRoutes.freelancerHome),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.sentProposals,
+        name: 'proposals.sent',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          SentProposalsView(
+            model: proposals,
+            onHome: () => context.go(AppRoutes.freelancerHome),
+            onMine: () => context.go(AppRoutes.myProposals),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: '/proposals/:jobId/positions',
+        name: 'proposals.positions',
+        redirect: (context, state) =>
+            projects.ready &&
+                projects.find(state.pathParameters['jobId']!) == null
+            ? AppRoutes.jobs
+            : null,
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          ListenableBuilder(
+            listenable: projects,
+            builder: (context, _) {
+              final p = projects.find(state.pathParameters['jobId']!);
+              if (p == null) return const SizedBox.shrink();
+              return VacancySelectionView(
+                project: p,
+                onBack: () => context.go(AppRoutes.project(p.id)),
+                onHome: () => context.go(AppRoutes.freelancerHome),
+                onSelect: (v) {
+                  proposals.begin(p, v);
+                  context.push(AppRoutes.proposal(p.id, ProposalStage.start));
+                },
+              );
+            },
+          ),
+        ),
+      ),
+      GoRoute(
+        path: '/proposals/:jobId/:stage',
+        name: 'proposals.flow',
+        redirect: (context, state) {
+          final id = state.pathParameters['jobId']!;
+          if (proposals.draft?.project.id != id) return AppRoutes.vacancies(id);
+          if (!ProposalStage.values.any(
+            (s) => s.name == state.pathParameters['stage'],
+          )) {
+            return AppRoutes.vacancies(id);
+          }
+          if (state.pathParameters['stage'] == 'success' &&
+              proposals.sent?.projectId != id) {
+            return AppRoutes.proposal(id, ProposalStage.preview);
+          }
+          return null;
+        },
+        pageBuilder: (context, state) {
+          final id = state.pathParameters['jobId']!;
+          final stage = ProposalStage.values.firstWhere(
+            (s) => s.name == state.pathParameters['stage'],
+          );
+          void go(ProposalStage to) => context.go(AppRoutes.proposal(id, to));
+          return _discoveryPage(
+            state,
+            ProposalFlowView(
+              model: proposals,
+              stage: stage,
+              onBack: () {
+                switch (stage) {
+                  case ProposalStage.start:
+                    context.go(AppRoutes.vacancies(id));
+                  case ProposalStage.screening:
+                    context.go(AppRoutes.myProposals);
+                  case ProposalStage.letter:
+                    go(ProposalStage.start);
+                  case ProposalStage.quote:
+                    go(ProposalStage.letter);
+                  case ProposalStage.preview:
+                    go(ProposalStage.quote);
+                  case ProposalStage.success:
+                    context.go(AppRoutes.myProposals);
+                }
+              },
+              onHome: () => context.go(AppRoutes.freelancerHome),
+              onMine: () => context.go(AppRoutes.myProposals),
+              onEdit: go,
+              onNext: () async {
+                switch (stage) {
+                  case ProposalStage.start:
+                    go(ProposalStage.screening);
+                  case ProposalStage.screening:
+                    go(ProposalStage.letter);
+                  case ProposalStage.letter:
+                    go(ProposalStage.quote);
+                  case ProposalStage.quote:
+                    go(ProposalStage.preview);
+                  case ProposalStage.preview:
+                    if (await proposals.submit() && context.mounted) {
+                      go(ProposalStage.success);
+                    }
+                  case ProposalStage.success:
+                    context.go(AppRoutes.sentProposals);
+                }
+              },
+            ),
+          );
+        },
+      ),
+    ],
     if (discovery != null) ...[
       for (final entry in [
         (AppRoutes.jobs, JobDiscoveryMode.browse),
@@ -121,6 +290,9 @@ GoRouter createAppRouter(
             state,
             JobDiscoveryView(
               model: discovery,
+              onJob: projects == null
+                  ? null
+                  : (id) => context.push(AppRoutes.project(id)),
               mode: entry.$2,
               onBack: () => context.go(
                 entry.$2 == JobDiscoveryMode.browse
@@ -334,6 +506,11 @@ GoRouter createAppRouter(
                   user: session.session!,
                   repository: marketplace,
                 ),
+                onListing:
+                    projects == null ||
+                        session.session!.role != UserRole.freelancer
+                    ? null
+                    : (id) => context.push(AppRoutes.project(id)),
                 onSearch:
                     discovery == null ||
                         session.session!.role != UserRole.freelancer

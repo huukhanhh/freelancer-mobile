@@ -179,3 +179,5 @@ debug APK build passed in 63.4s; ABI metadata was checked separately before deli
 - F13/F16 and both homes remain partial: card detail and most tab modules are
   absent. Overall: 16 connected frames, 4 partial, 123 unimplemented. Full FE is
   unfinished. Backend, Firebase, CI and the 157 original untracked files unchanged.
+
+2026-11-05 rapid UI checkpoint: project detail/vacancy and proposal creation/list/tracking added in D:; analyzer lib clean, Android debug build succeeded (34.6s). Four focused behavior tests had passed before the latest implementation-only override; no further tests will be added/run. New portfolio picker, proposal-detail/draft actions and historical list fixtures remain pending; phone acceptance belongs to the user.

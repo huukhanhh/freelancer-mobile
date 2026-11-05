@@ -20,6 +20,7 @@ flutter:
     - assets/auth/
     - assets/home/
     - assets/discovery/
+    - assets/projects/
   fonts:
     - family: Noto Sans Symbols 2
       fonts:

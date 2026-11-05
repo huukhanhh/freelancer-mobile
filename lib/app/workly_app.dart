@@ -1,3 +1,6 @@
+import 'package:workly/features/projects/presentation/view_models/projects_view_model.dart';
+import 'package:workly/features/proposals/presentation/view_models/proposal_view_model.dart';
+
 import 'dart:async';
 
 import 'package:flutter/material.dart';
@@ -21,9 +24,12 @@ class _WorklyAppState extends State<WorklyApp> {
   late final GoRouter _router;
   late final AuthFlowViewModel _auth;
   late final DiscoveryViewModel _discovery;
+  late final ProjectsViewModel _projects;
+  late final ProposalViewModel _proposals;
   void _sessionChanged() {
     if (_session.status == SessionStatus.ready) {
       _discovery.setViewer(_session.session?.userId ?? '');
+      unawaited(_proposals.setViewer(_session.session?.userId ?? ''));
     }
   }
 
@@ -33,15 +39,20 @@ class _WorklyAppState extends State<WorklyApp> {
     _session = SessionViewModel(widget.dependencies.sessionRepository);
     _auth = AuthFlowViewModel(widget.dependencies.sessionRepository, _session);
     _discovery = DiscoveryViewModel(widget.dependencies.jobRepository);
+    _projects = ProjectsViewModel(widget.dependencies.projectRepository);
+    _proposals = ProposalViewModel(widget.dependencies.proposalRepository);
     _session.addListener(_sessionChanged);
     _router = createAppRouter(
       _session,
       _auth,
       widget.dependencies.marketplaceRepository,
       discovery: _discovery,
+      projects: _projects,
+      proposals: _proposals,
     );
     unawaited(_session.initialize());
     unawaited(_discovery.initialize());
+    unawaited(_projects.initialize());
   }
 
   @override
@@ -50,6 +61,8 @@ class _WorklyAppState extends State<WorklyApp> {
     _auth.dispose();
     _session.removeListener(_sessionChanged);
     _discovery.dispose();
+    _projects.dispose();
+    _proposals.dispose();
     _session.dispose();
     super.dispose();
   }
