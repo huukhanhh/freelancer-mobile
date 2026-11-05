@@ -5,14 +5,14 @@
 Feature-first + MVVM. Mỗi feature phát sinh theo module gồm domain/, data/, presentation/views/, presentation/view_models/, presentation/widgets/ nếu cần. Không tạo hàng loạt thư mục rỗng, màn giả hoặc model chưa có thiết kế.
 
 Dependency: View → ViewModel → Repository interface; Mock/API repository → Repository interface. Composition root app/app_dependencies.dart tạo và inject implementation. Domain chứa Dart model/contract; không chứa widget hoặc dependency HTTP.
-ChangeNotifier/ListenableBuilder đủ cho phạm vi hiện tại. Chưa cần Riverpod/Bloc/provider/service locator/code generator. go_router là runtime package bổ sung duy nhất, sở hữu bởi WorklyApp và dispose cùng ViewModel. Không tạo router trong build().
+ChangeNotifier/ListenableBuilder đủ cho phạm vi hiện tại. Chưa cần Riverpod/Bloc/provider/service locator/code generator. go_router sở hữu routing; flutter_svg render SVG local từ Figma. WorklyApp sở hữu và dispose router cùng ViewModel. Không tạo router trong build().
 
-SessionViewModel có idle/loading/ready/failure, session nullable, chống response cũ ghi đè response mới và chống notify sau dispose. Mock trả dữ liệu xác định, không lưu token/password. Không diễn giải fixture như xác thực thật. Retry đang ở cấp ViewModel, chưa có UI mới.
+SessionViewModel có idle/loading/ready/failure, session nullable, chống response cũ ghi đè response mới và chống notify sau dispose. Mock trả dữ liệu xác định; chỉ giữ mật khẩu demo tổng hợp trong bộ nhớ, không lưu token hoặc dữ liệu thật. Không diễn giải fixture như xác thực thật. UI auth đã nối với command/validation và session owner chung.
 
 ## Routing
 
-Chỉ có / → /bootstrap và /bootstrap; host này nền trống, không thay thế F01. errorBuilder cũng nền trống tạm thời, phải thay bằng system screen đúng Figma khi module đó được phê duyệt. Chưa có role/auth guard vì chưa có product destination.
-Giai đoạn 5 thêm route theo feature (ví dụ /contracts/:contractId/milestones/:milestoneId) sau khi xác minh design, không dựa riêng Fxx. Với tab bar, dùng StatefulShellRoute/indexedStack và hai cấu hình tab đã xác minh trong handoff. Các ví dụ URL là convention kỹ thuật đề xuất, chưa phải flow đã triển khai.
+App bắt đầu /auth/splash → onboarding/login hoặc home theo session. AuthFlowViewModel phối hợp AuthenticationViewModel và SessionViewModel trên cùng repository. Router refresh theo hai owners, kiểm tra session/role/profile completion cho home/setup. Form chỉ gọi command ViewModel. Các state OTP success/new-password dùng lại view thay vì route trùng.
+Hai home theo role có composition/fixtures/carousel; callback tới discovery/tab chưa nối và được ghi partial. /bootstrap/errorBuilder còn là host kỹ thuật trống, phải thay errorBuilder bằng system screen Figma khi tới module; không tính là product UI.
 
 ## Theme/assets
 
@@ -26,4 +26,6 @@ Flutter giữ ở root; Backend modular monolith nằm trong backend/ với depe
 Master task FE sau đó nêu hướng Backend dự kiến là Firebase. Đây là hướng adapter cho data layer, chưa phải cấu hình triển khai: chưa kết nối/cài Firebase hoặc sửa backend/ trong task FE.
 Thêm API repository, DTO và mapping trong data khi có contract ở docs/api/. Inject client/cấu hình vào composition root. UI dùng model domain và state ViewModel; không truy cập database hoặc provider AI trực tiếp. AI server boundary ở backend/src/modules/ai/, UI theo use case ở lib/features/. Chưa cài dio/http, secure storage, auth provider, payment, KYC hoặc AI SDK.
 
-AuthenticationRepository mở rộng SessionRepository cho signIn/signOut; MockSessionRepository giữ một store in-memory chung cho cả hai contract. AppDependencies inject implementation qua interface; AuthenticationViewModel cung cấp command/validation trước khi nối login UI. Không tạo một store auth thứ hai hoặc dùng Firebase trong view. Các fixture demo và loading/error controls mô tả ở docs/frontend/demo.md.
+AuthenticationRepository mở rộng SessionRepository cho signIn/signOut; MockSessionRepository giữ một store in-memory chung cho cả hai contract. AppDependencies inject implementation qua interface; AuthenticationViewModel đã nối command/validation vào login UI. Không tạo store auth thứ hai hoặc dùng Firebase trong view. Các fixture demo và loading/error controls mô tả ở docs/frontend/demo.md. http chỉ có ở dependency transitive của công cụ vector graphics; ứng dụng không dùng HTTP client hay repository API.
+
+AccountSetupRepository mở rộng auth boundary cho register/OTP/resend/Google mock/profile/recovery. MockSessionRepository giữ account/session/profile chung; validation/flow đi qua AuthFlowViewModel, các view chỉ giữ form draft. AppDependencies inject marketplace và account repository; domain không import Flutter widgets/provider SDK. Toàn bộ assets auth/home lấy từ source MCP, dùng flutter_svg cho vector và decoder ảnh local; không HTTP tại runtime. Định nghĩa riêng AuthAction giữ đúng Material variant trong auth thay vì đổi gradient WorklyButton cũ.

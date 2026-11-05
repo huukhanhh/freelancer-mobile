@@ -1,70 +1,65 @@
-# Flutter FE master-task progress — 2026-11-05
+# Flutter FE checkpoint — 2026-11-05
 
-## Current checkpoint
+Branch develop, baseline 294b0e9. Active master task uses checked cohesive direct
+commits to origin/develop; no per-screen PR or main merge. backend/ and CI unchanged.
+The 157 pre-existing untracked Figma artifacts are preserved; never stage them.
 
-- Branch: develop. Last baseline: daf056d (monorepo PR #3).
-- Remote: https://github.com/huukhanhh/freelancer-mobile.
-- The master task supersedes the old PR policy: checked cohesive commits directly
-  to develop, no main merge, no per-screen PR. develop protection read as false.
-- Existing Flutter architecture, routing/state packages and passing tests retained.
-- backend/ and .github/workflows/ are unchanged by this FE task.
-- No Flutter create, Firebase/provider connection, mock backend service or real PII.
+## Implemented in this batch
 
-## Completed work in this checkpoint
+- Live Figma MCP works. Read all 13 auth frame contexts/screenshots, hidden
+  confirmation/new-password/company states, source actions/guards and motion.
+- Actual splash, three onboarding pages, signup, login, verification/success,
+  Google demo, role selection, both profile setup variants and recovery/success.
+- Startup opens /auth/splash instead of the technical /bootstrap host.
+- Editable forms, validation, consent, OTP paste/focus/resend/expiry, mock recovery,
+  local Google continuation, role guards and profile completion are connected.
+- AccountSetupRepository extends the existing auth/session boundary; one in-memory
+  mock owns accounts/session/profiles. AppDependencies is the future Firebase
+  adapter boundary. MarketplaceRepository supplies synthetic home listings.
+- Two source-based role home compositions and auto-slide banners are present.
+  Their downstream actions/tabs remain inactive until discovery modules are built.
+- flutter_svg is needed for exact Figma SVGs. No Firebase/provider SDK, backend
+  change, runtime asset URL or persistent system configuration change.
+- 108 exact local exports with hashes/metadata. Source React component corrects
+  an MCP instance-export mismatch. See auth-handoff.md and assets.json.
 
-1. Audited Git, entry point, composition root, theme/widgets/router, session code,
-   existing tests, handoff/inventory/architecture/plan and scripts/workflow.
-2. Created screen-inventory.md with all 143 visible product frame references,
-   feature, source URL, proposed route key, reuse/mock/interaction requirements
-   and explicit not-implemented statuses. Proposed route keys are not registered
-   routes, and state variants may share one eventual Flutter view.
-3. Extended the existing mock session store with AuthenticationRepository,
-   synthetic Client/Freelancer accounts, signIn/signOut, deterministic delay and
-   unavailability. No duplicated data store or new dependency.
-4. Added AuthenticationViewModel and validation for login/retry/logout, repeat
-   submit prevention, stale completion/disposal, and 8 meaningful tests.
-5. Documented synthetic inputs and the future Firebase adapter boundary in demo.md.
+## Scope accounting
 
-## Actual product completion
-
-**0/143 product screens complete.** /bootstrap remains the existing technical
-host, tested by the original widget test. Login commands are tested data/ViewModel
-behavior, not a completed login screen or connected application auth flow.
-No navigation, role shell or new visual UI is claimed. Do not mark a module
-complete merely because its mock repository exists.
-
-## Design access
-
-Figma file: LdYars6BFgIu9VdgWeP9dT; approved page 579:228 only.
-At the start Figma was not installed for this session. The user installed it;
-plugin discovery subsequently reported installed=true, and skill files exist.
-However, the current execution tool inventory still exposes no Figma MCP calls
-(including create_session/get_design_context/use_figma/get_screenshot). Thus live
-file access/permission, assets and exact layout could not yet be verified.
-Do not confuse installed plugin state with a successful file read.
-
-Saved handoff is sufficient for inventory/data boundaries, not exact screen UI.
-No draft page or old untracked workspace design artifact was used to invent UI.
-
-## Resume order
-
-1. Discover Figma tools in the refreshed/connected session. Read the Figma skill;
-   create a file session, get design context + screenshot for F01 (584:259),
-   F02 (585:4121), F02b (599:3985), F02c (599:4000). Read relevant source guards,
-   export the exact assets locally, preserve provenance and verify slots.
-2. Implement those real views, replace /bootstrap routing with the verified flow,
-   and render-check at 390x844 plus narrow/keyboard conditions.
-3. Continue auth F07/F04/F06/F03/F05/F05C/F08/F09/F10 and role home/shell in small
-   connected batches. Bind AuthenticationViewModel, and refresh the session owner
-   after successful commands; do not leave two independent auth sources of truth.
-4. Implement other modules in the dependency order in implementation-plan.md.
-5. Run checks/meaningful UI interactions, commit real progress to develop, push
-   groups, never merge main for this master task. Update this checkpoint honestly.
+143 product frames: **13 auth frames implemented and connected**, **2 home frames
+partially implemented**, **128 frames not implemented**. Device acceptance and
+fine typography remain open; the whole FE is unfinished. Parameterized views
+cover onboarding/forms/role-specific profiles without duplicate screens.
+No draft or hidden archive screen is counted. Actual routes: screen-inventory.md.
 
 ## Validation
 
-Flutter 3.47.9 / Dart 3.13.7. Format: 20 files, no changes on final gate.
-Analyze: no issues (39.9s). All 14 tests passed, including the original 6.
-One constructor lint on the first run was fixed; no analyzer rule was disabled.
-Android debug build and device status are recorded in docs/verification.md;
-do not assume a successful APK or a device run from the test results.
+- Final scripts/check.ps1 passed: 43 formatted files/0 changes, analyze no issues
+  (29.1s), all 28 tests passed (15s), including Google→Freelancer setup.
+- Rendered 13 auth references and two homes at 390x844, then inspected registration
+  success, new-password and company states. Reference OS chrome is QA-only.
+- Responsive widget coverage: 390x844 / 320x568, 250px keyboard inset, scrolling.
+  Fixed a wrapped identity-caption overflow; responsive checks then passed.
+- Widget flows cover both demo roles, wrong-role/unauthenticated deep links,
+  registration→OTP→first login→Client/company setup and recovery/login.
+- Final Android debug APK built (42.5s; 186190272 bytes). No physical phone test.
+  Pixel_3 initially opened black/offline. Cold boot/software GPU and the user's
+  Allow USB debugging approval restored connectivity. Flutter run installed and
+  launched the app on Android 16/API 36; an actual screenshot confirms login UI.
+  Full Android interaction/keyboard/role-flow acceptance remains open.
+- Computer-use initialization failed with a kernel-assets path error; no emulator
+  UI interaction has been verified through that tool.
+
+## Continue next
+
+1. Inspect explicit staged paths/diff/secrets, commit real work and push develop.
+   Android launch/login rendering is verified; no physical phone was tested.
+2. Complete section 02 discovery: F13 585:4648, search 585:4731, filter 585:4812,
+   results 585:4873, details 585:4950; Client talent 585:5196/profile 585:8006.
+   Read fresh high-fidelity contexts/screenshots and source guards/actions first.
+3. Wire categories/skills/listings/search/banners to these actual views. Implement
+   role tab stacks with their modules; do not route tabs to one fake placeholder.
+4. Continue profile/projects/proposals/contracts/finance/delivery/chat/settings
+   in docs/implementation-plan.md order. Substantial FE work remains.
+
+Local ignored evidence: .local/figma/*.json, 18 preview PNGs, auth_preview_test.dart
+and Pixel_3 logs. Do not commit these caches, APKs or old design artifacts.

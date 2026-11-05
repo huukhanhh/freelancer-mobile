@@ -1,6 +1,6 @@
 # Giai đoạn 5 — Kế hoạch frontend
 
-Trạng thái: master task mới cho phép triển khai toàn bộ FE mock theo batch; giữ nguyên backend/. Đã audit workspace, lập inventory 143 màn và triển khai mock authentication data/ViewModel; chưa có màn sản phẩm hoàn thành. Figma đã được cài lại nhưng các công cụ MCP đọc design chưa được cung cấp cho phiên đang chạy; không tự vẽ UI từ metadata.
+Trạng thái: live Figma MCP đã đọc thành công. Đã triển khai 13 frame auth/onboarding với navigation/mock và 2 home ở mức UI/fixtures/carousel. Còn 128 frame chưa triển khai; các đích search/filter/listing và tab nghiệp vụ trên home chưa nối. Xem docs/frontend/progress.md và auth-handoff.md; chưa hoàn thiện FE hoặc nghiệm thu Android.
 Màn chuẩn: docs/figma/screen-inventory.json, page 579:228; 143 màn sản phẩm hiển thị. Từng module chia batch nhỏ theo flow, mặc định 2–4 màn liên quan; đọc lại thiết kế trực tiếp trước mỗi batch.
 
 ## Branch và phụ thuộc
@@ -38,5 +38,5 @@ Messaging primitives có thể được làm sớm khi proposal cần consumer, 
 
 ## Checkpoint ngay sau lượt hiện tại
 
-Tiếp tục từ docs/frontend/progress.md và docs/frontend/screen-inventory.md. Khi Figma MCP có trong phiên: tạo session, đọc F01/F02/F02b/F02c và assets/screenshot, rồi xây UI thật và thay /bootstrap. Tiếp tục login/register/OTP/role/profile setup, home/role shell và các module theo phụ thuộc; không dừng sau màn đầu nếu công cụ và nguồn đủ.
+Tiếp tục từ docs/frontend/progress.md và docs/frontend/screen-inventory.md. Nhóm auth đã có UI/form/state/guards và 108 assets local. Batch tiếp theo hoàn thiện section 02 discovery: search/filter/results/detail, talent và tab stacks theo vai trò; đọc context/screenshot và hotspot gốc trước khi code. Chạy scripts/check.ps1, build Android và ghi kết quả thực tế trước commit/push develop. Không tính callback chưa nối là navigation đã hoạt động.
 Backend dự kiến Firebase theo master task mới; hiện chỉ giữ repository interface sẵn sàng cho adapter tương lai, không cài Firebase SDK/kết nối production hoặc sửa backend/.

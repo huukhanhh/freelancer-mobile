@@ -8,7 +8,11 @@ abstract interface class AuthenticationRepository implements SessionRepository {
   Future<void> signOut();
 }
 
-enum AuthenticationFailureCode { invalidCredentials, unavailable }
+enum AuthenticationFailureCode {
+  invalidCredentials,
+  unavailable,
+  unverifiedEmail,
+}
 
 class AuthenticationFailure implements Exception {
   const AuthenticationFailure(this.code);

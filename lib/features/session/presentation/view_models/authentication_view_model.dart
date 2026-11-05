@@ -15,6 +15,7 @@ class AuthenticationViewModel extends ChangeNotifier {
   String? _emailError;
   String? _passwordError;
   String? _message;
+  bool needsVerification = false;
   int _generation = 0;
   bool _disposed = false;
 
@@ -29,6 +30,7 @@ class AuthenticationViewModel extends ChangeNotifier {
     _emailError = AuthenticationValidation.email(email);
     _passwordError = AuthenticationValidation.password(password);
     _message = null;
+    needsVerification = false;
     if (_emailError != null || _passwordError != null) {
       _status = AuthenticationStatus.failure;
       notifyListeners();
@@ -49,11 +51,15 @@ class AuthenticationViewModel extends ChangeNotifier {
       return true;
     } on AuthenticationFailure catch (error) {
       if (_disposed || generation != _generation) return false;
+      needsVerification =
+          error.code == AuthenticationFailureCode.unverifiedEmail;
       _message = switch (error.code) {
         AuthenticationFailureCode.invalidCredentials =>
           'Email hoặc mật khẩu chưa đúng.',
         AuthenticationFailureCode.unavailable =>
           'Chưa thể đăng nhập. Vui lòng thử lại.',
+        AuthenticationFailureCode.unverifiedEmail =>
+          'Vui lòng xác minh email trước khi đăng nhập.',
       };
     } catch (_) {
       if (_disposed || generation != _generation) return false;

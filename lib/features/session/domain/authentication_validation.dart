@@ -11,4 +11,12 @@ abstract final class AuthenticationValidation {
 
   static String? password(String value) =>
       value.isEmpty ? 'Vui lòng nhập mật khẩu.' : null;
+
+  static String? newPassword(String value) =>
+      value.length < 8 ||
+          !RegExp('[A-Z]').hasMatch(value) ||
+          !RegExp('[a-z]').hasMatch(value) ||
+          !RegExp('[0-9]').hasMatch(value)
+      ? 'Ít nhất 8 ký tự, gồm chữ hoa, chữ thường và số.'
+      : null;
 }

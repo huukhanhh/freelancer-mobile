@@ -83,3 +83,62 @@ always-green placeholder job or artificial review approval is created.
 
 Continuation: docs/frontend/progress.md. Do not declare FE complete from this
 checkpoint, and do not commit the APK, SDK/Gradle caches or old design artifacts.
+
+## Live Figma auth/UI batch — 2026-11-05
+
+Supersedes earlier zero-product-screen/Figma-access status above.
+
+- Figma MCP live reads succeeded for all 13 auth frames and two role homes;
+  hidden success/recovery/company states, source hotspots and motion were read.
+- Implemented and connected 13 auth frames; two homes have partial UI/fixtures/
+  carousel, with downstream actions/tabs pending. 128 frames remain unimplemented.
+- 108 nonempty local exports validated against source slots, hash and intrinsic
+  metadata. Runtime references local paths only. React instance export mismatch
+  was fixed using the exact referenced source component 670:4711 and its insets.
+- Final scripts/check.ps1 passed: format 43 files/0 changes; flutter analyze
+  no issues (29.1s); all 28 unit/widget tests passed (15s).
+- Flow checks cover both demo roles, session/role deep-link guards, register/OTP/
+  first login/Client company profile, Google/Freelancer technology selection,
+  password reset/confirmation/login, invalid fields and existing lifecycle tests.
+- Responsive widget checks passed at 390x844 and 320x568, 0/250px keyboard insets,
+  and scrolling. A profile identity caption overflow was fixed. Google UI test
+  initially tapped below the visible viewport; it now scrolls before tapping.
+- Ignored visual QA harness completed successfully: 18 previews with the local
+  font, decoded image assets, source chrome and shadows. Reviewed all 13 auth
+  defaults, both homes and success/new-password/company states. This is widget
+  rendering, not Android screenshots or a pixel-perfect certification.
+- flutter build apk --debug --no-pub passed, assembleDebug 42.5s. Current artifact:
+  build/app/outputs/flutter-apk/app-debug.apk, 186190272 bytes; excluded from Git.
+- Pixel_3 AVD exists (Android 36 x86_64, 2GB RAM); launch opened a black window
+  with ADB offline. AEHD 2.2 acceleration check passed. Reconnect did not restore
+  device usability. Restarted only the task-launched Pixel_3 using temporary
+  -no-snapshot-load -no-snapshot-save -gpu software flags, without wiping data or
+  changing saved AVD/system settings. ADB then reported unauthorized.
+- Android authorization is pending user action. flutter run -d emulator-5554
+  --no-resident could not find a supported device. No app execution on Android,
+  successful emulator UI inspection or physical-phone testing is claimed yet.
+- Computer-use initialization failed with “failed to write kernel assets:
+  The system cannot find the path specified. (os error 3)”. No UI input was sent.
+- Existing Android cmdline-tools/license diagnostics and launcher template icon
+  remain open. Backend runtime, Firebase, payment/KYC and CI were not changed.
+
+Continuation and active limits: docs/frontend/progress.md and auth-handoff.md.
+
+### Android authorization resolved
+
+The user approved Allow USB debugging on Pixel_3. Flutter devices then identified
+emulator-5554 as Android 16/API 36 x86_64. flutter run -d emulator-5554 --no-resident
+succeeded: build 93.9s, APK install 4.4s, engine loaded normally with Impeller
+OpenGLES, files synced 388ms, command exited 0. Actual Flutter screenshot inspected:
+login UI, native status/navigation bars, both fields, Google/signup and fixed CTA
+are visible without observed overflow. Ignored screenshot: .local/android-login.png.
+
+This supersedes the pending-authorization/no-execution statements immediately
+above. Only launch/login rendering is verified on Android; interactive role flows,
+keyboard behavior, other auth states and carousel performance have widget evidence
+but have not all been exercised on the emulator. No physical-phone test.
+The computer-use helper still failed to initialize; the screenshot was obtained
+through Flutter's device screenshot command, not Windows UI automation.
+
+flutter run produced an x86_64-only APK for this emulator. A subsequent generic
+debug APK build passed in 63.4s; ABI metadata was checked separately before delivery.
