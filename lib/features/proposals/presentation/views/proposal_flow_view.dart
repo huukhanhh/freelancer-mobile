@@ -441,12 +441,14 @@ class ProposalProjectSummary extends StatelessWidget {
     this.code,
     this.budget,
     this.days,
+    this.action,
     super.key,
   });
   final Project project;
   final String node, slot;
   final String? status, code;
   final int? budget, days;
+  final Widget? action;
   @override
   Widget build(BuildContext context) => ProjectCard(
     children: [
@@ -520,6 +522,7 @@ class ProposalProjectSummary extends StatelessWidget {
             ),
           ],
         ),
+      ?action,
     ],
   );
 }

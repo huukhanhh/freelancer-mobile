@@ -95,7 +95,7 @@ class ProjectDetailView extends StatelessWidget {
               ),
             ),
             Text(
-              '${project.vacancies.length} vị trí · Hợp đồng và thanh toán riêng',
+              '${project.vacancies.fold<int>(0, (n, v) => n + v.count)} vị trí · Hợp đồng và thanh toán riêng',
               style: authText(13, weight: FontWeight.w500),
             ),
           ],
@@ -161,7 +161,7 @@ class VacancySelectionView extends StatelessWidget {
               child: ProjectCard(
                 children: [
                   Text(
-                    '${v.title} · 1 vị trí',
+                    '${v.title} · ${v.count} vị trí',
                     style: authText(18, weight: FontWeight.w700),
                   ),
                   Text(

@@ -11,6 +11,7 @@ class ClientProjectView extends StatelessWidget {
     required this.onHome,
     required this.onBack,
     this.sentInvites = 0,
+    this.projectId = "job-demo-4",
     this.onProposals,
     this.onEdit,
     this.onContracts,
@@ -20,11 +21,12 @@ class ClientProjectView extends StatelessWidget {
   final VoidCallback onHome, onBack;
   final VoidCallback? onProposals, onEdit, onContracts;
   final int sentInvites;
+  final String projectId;
   @override
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: model,
     builder: (context, _) {
-      final p = model.find('job-demo-4'), m = model.management;
+      final p = model.find(projectId), m = model.management;
       if (p == null || m == null) return const SizedBox.shrink();
       return ProjectPage(
         title: 'Quản lý dự án',
@@ -105,7 +107,7 @@ class ClientProjectView extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.stretch,
                 children: [
                   Text(
-                    '${p.vacancies.length} vị trí cần tuyển',
+                    '${p.vacancies.fold<int>(0, (n, v) => n + v.count)} vị trí cần tuyển',
                     style: authText(
                       13,
                       weight: FontWeight.w500,
@@ -246,13 +248,13 @@ class ClientProjectView extends StatelessWidget {
                   ],
                 ),
                 Text(
-                  'Tổng dự án · UI/UX 12tr · Frontend 18tr · Backend 20tr',
+                  'Tổng dự án · ${p.vacancies.map((v) => '${v.title} ${v.budget ~/ 1000000}tr').join(' · ')}',
                   style: authText(11, color: EmeraldColors.textSecondary),
                 ),
               ],
             ),
             Text(
-              '01/11/2026 – 30/11/2026 · Trọn gói',
+              '${p.startDate} – ${p.endDate} · ${p.billing}',
               style: authText(11, color: EmeraldColors.textSecondary),
             ),
             Text(
@@ -301,7 +303,7 @@ class ClientProjectView extends StatelessWidget {
               'Tài liệu dự án',
               style: authText(18, weight: FontWeight.w700),
             ),
-            for (final a in m.attachments)
+            for (final a in p.attachments)
               ProjectCard(
                 children: [
                   Row(

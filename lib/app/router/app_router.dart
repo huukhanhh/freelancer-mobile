@@ -1,3 +1,4 @@
+import 'package:workly/features/projects/presentation/views/project_creation_views.dart';
 import 'package:workly/features/talent/presentation/view_models/talent_view_model.dart';
 import 'package:workly/features/talent/presentation/views/talent_views.dart';
 import 'package:workly/features/projects/presentation/views/client_project_view.dart';
@@ -32,6 +33,12 @@ import 'package:workly/features/discovery/presentation/views/job_discovery_view.
 import 'package:workly/features/discovery/presentation/views/job_filter_view.dart';
 
 abstract final class AppRoutes {
+  static const clientProjects = '/client/projects',
+      postProject = '/client/post';
+  static String projectCreation(ProjectCreationStage stage) =>
+      '/client/create/${stage.name}';
+  static String clientProjectDetail(String id) =>
+      '$clientProject?id=${Uri.encodeComponent(id)}';
   static const talentBrowse = '/talent/browse',
       talentCompare = '/talent/compare',
       talentInvite = '/talent/invite',
@@ -154,6 +161,96 @@ GoRouter createAppRouter(
     return null;
   },
   routes: [
+    if (projects != null) ...[
+      GoRoute(
+        path: AppRoutes.postProject,
+        name: 'client.projects.entry',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          ProjectEntryView(
+            onHome: () => context.go(AppRoutes.clientHome),
+            onCreate: (category) {
+              projects.beginCreation();
+              if (category != null) projects.category(category);
+              context.push(
+                AppRoutes.projectCreation(ProjectCreationStage.basic),
+              );
+            },
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.clientProjects,
+        name: 'client.projects.list',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          ClientProjectsListView(
+            model: projects,
+            onCreate: () {
+              projects.beginCreation();
+              context.push(
+                AppRoutes.projectCreation(ProjectCreationStage.basic),
+              );
+            },
+            onOpen: (id) => context.push(AppRoutes.clientProjectDetail(id)),
+            onTab: (index) {
+              if (index == 0) context.go(AppRoutes.clientHome);
+              if (index == 2) context.go(AppRoutes.talentBrowse);
+            },
+          ),
+        ),
+      ),
+      GoRoute(
+        path: '/client/create/:stage',
+        name: 'client.projects.create',
+        redirect: (context, state) => projects.draft == null
+            ? AppRoutes.clientProjects
+            : !ProjectCreationStage.values.any(
+                (s) => s.name == state.pathParameters['stage'],
+              )
+            ? AppRoutes.clientProjects
+            : null,
+        pageBuilder: (context, state) {
+          final stage = ProjectCreationStage.values.firstWhere(
+            (s) => s.name == state.pathParameters['stage'],
+          );
+          void go(ProjectCreationStage s) =>
+              context.go(AppRoutes.projectCreation(s));
+          return _discoveryPage(
+            state,
+            ProjectCreationView(
+              model: projects,
+              stage: stage,
+              onBack: () {
+                if (stage == ProjectCreationStage.basic ||
+                    stage == ProjectCreationStage.success) {
+                  context.go(AppRoutes.clientProjects);
+                } else {
+                  go(ProjectCreationStage.values[stage.index - 1]);
+                }
+              },
+              onHome: () => context.go(AppRoutes.clientHome),
+              onMine: () => context.go(AppRoutes.clientProjects),
+              onEdit: go,
+              onNext: () async {
+                if (stage == ProjectCreationStage.success) {
+                  context.go(
+                    AppRoutes.clientProjectDetail(projects.published!.id),
+                  );
+                } else if (stage == ProjectCreationStage.preview) {
+                  if (await projects.publish() && context.mounted) {
+                    go(ProjectCreationStage.success);
+                  }
+                } else {
+                  go(ProjectCreationStage.values[stage.index + 1]);
+                }
+              },
+            ),
+          );
+        },
+      ),
+    ],
+
     if (talent != null) ...[
       GoRoute(
         path: AppRoutes.talentBrowse,
@@ -249,9 +346,16 @@ GoRouter createAppRouter(
           state,
           ClientProjectView(
             model: projects,
+            projectId: state.uri.queryParameters['id'] ?? 'job-demo-4',
+            onEdit: () {
+              projects.beginCreation(
+                id: state.uri.queryParameters['id'] ?? 'job-demo-4',
+              );
+              context.go(AppRoutes.projectCreation(ProjectCreationStage.basic));
+            },
             sentInvites: talent?.sentCount ?? 0,
             onHome: () => context.go(AppRoutes.clientHome),
-            onBack: () => context.go(AppRoutes.clientHome),
+            onBack: () => context.go(AppRoutes.clientProjects),
           ),
         ),
       ),
@@ -767,6 +871,9 @@ GoRouter createAppRouter(
                   user: session.session!,
                   repository: marketplace,
                 ),
+                onWorkspace: projects == null
+                    ? null
+                    : () => context.push(AppRoutes.postProject),
                 onListing: session.session!.role == UserRole.client
                     ? (talent == null
                           ? null
@@ -828,6 +935,9 @@ GoRouter createAppRouter(
                           ? null
                           : (index) {
                               if (index == 0) context.go(AppRoutes.clientHome);
+                              if (index == 1) {
+                                context.go(AppRoutes.clientProjects);
+                              }
                               if (index == 2) {
                                 context.go(AppRoutes.talentBrowse);
                               }

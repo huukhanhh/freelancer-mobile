@@ -36,6 +36,7 @@ class _WorklyAppState extends State<WorklyApp> {
       unawaited(_proposals.setViewer(_session.session?.userId ?? ''));
       unawaited(_profile.setViewer(_session.session?.userId ?? ''));
       _talent.setViewer(_session.session?.userId ?? '');
+      unawaited(_projects.setViewer(_session.session?.userId ?? ''));
     }
   }
 
