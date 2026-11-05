@@ -1,3 +1,6 @@
+import 'package:workly/features/profiles/presentation/view_models/profile_view_model.dart';
+import 'package:workly/features/profiles/presentation/views/profile_views.dart';
+import 'package:workly/features/discovery/presentation/views/saved_jobs_view.dart';
 import 'package:workly/features/projects/presentation/view_models/projects_view_model.dart';
 import 'package:workly/features/projects/presentation/views/project_detail_view.dart';
 import 'package:workly/features/proposals/presentation/view_models/proposal_view_model.dart';
@@ -25,6 +28,14 @@ import 'package:workly/features/discovery/presentation/views/job_discovery_view.
 import 'package:workly/features/discovery/presentation/views/job_filter_view.dart';
 
 abstract final class AppRoutes {
+  static const freelancerProfile = '/profiles/freelancer',
+      profileEdit = '/profiles/freelancer/edit',
+      profileSkills = '/profiles/freelancer/skills',
+      profilePreview = '/profiles/freelancer/preview',
+      portfolio = '/profiles/portfolio',
+      savedJobs = '/discovery/saved';
+  static String portfolioEdit(String? id) =>
+      '/profiles/portfolio/edit/${id ?? 'new'}';
   static const bootstrap = '/bootstrap';
   static const splash = '/auth/splash';
   static const login = '/auth/login',
@@ -83,6 +94,7 @@ GoRouter createAppRouter(
   DiscoveryViewModel? discovery,
   ProjectsViewModel? projects,
   ProposalViewModel? proposals,
+  ProfileViewModel? profile,
 }) => GoRouter(
   initialLocation: initialLocation,
   refreshListenable: Listenable.merge([session, auth, ?projects]),
@@ -101,7 +113,8 @@ GoRouter createAppRouter(
     final jobRoute =
         path.startsWith('/discovery/') ||
         path.startsWith('/projects/') ||
-        path.startsWith('/proposals/');
+        path.startsWith('/proposals/') ||
+        path.startsWith('/profiles/');
     final setup = path == AppRoutes.role || path == AppRoutes.profile;
     if ((home || setup || jobRoute) && session.status == SessionStatus.ready) {
       final user = session.session;
@@ -124,6 +137,129 @@ GoRouter createAppRouter(
     return null;
   },
   routes: [
+    if (profile != null) ...[
+      GoRoute(
+        path: AppRoutes.freelancerProfile,
+        name: 'profiles.freelancer',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          FreelancerProfileView(
+            model: profile,
+            onEdit: () {
+              profile.beginEdit();
+              context.push(AppRoutes.profileEdit);
+            },
+            onSkills: () {
+              profile.beginEdit();
+              context.push(AppRoutes.profileSkills);
+            },
+            onPortfolio: () => context.push(AppRoutes.portfolio),
+            onTab: (index) {
+              if (index == 0) context.go(AppRoutes.freelancerHome);
+              if (index == 1) context.go(AppRoutes.jobs);
+            },
+            onShortcut: (key) {
+              if (key == 'saved') context.push(AppRoutes.savedJobs);
+              if (key == 'proposals') context.push(AppRoutes.myProposals);
+            },
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.profileEdit,
+        name: 'profiles.edit',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          ProfileEditView(
+            model: profile,
+            onBack: () => context.go(AppRoutes.freelancerProfile),
+            onHome: () => context.go(AppRoutes.freelancerHome),
+            onSave: () => context.go(AppRoutes.freelancerProfile),
+            onSkills: () => context.push(AppRoutes.profileSkills),
+            onPreview: () => context.push(AppRoutes.profilePreview),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.profileSkills,
+        name: 'profiles.skills',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          ProfileSkillsView(
+            model: profile,
+            onBack: () => context.go(AppRoutes.freelancerProfile),
+            onHome: () => context.go(AppRoutes.freelancerHome),
+            onSave: () => context.go(AppRoutes.freelancerProfile),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.profilePreview,
+        name: 'profiles.preview',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          ProfilePreviewView(
+            model: profile,
+            onBack: () => context.go(AppRoutes.profileEdit),
+            onHome: () => context.go(AppRoutes.freelancerHome),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: AppRoutes.portfolio,
+        name: 'profiles.portfolio',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          PortfolioListView(
+            model: profile,
+            onBack: () {
+              if (context.canPop()) {
+                context.pop();
+              } else {
+                context.go(AppRoutes.freelancerProfile);
+              }
+            },
+            onHome: () => context.go(AppRoutes.freelancerHome),
+            onPreview: () => context.push(AppRoutes.profilePreview),
+            onEdit: (id) {
+              profile.editPortfolio(id);
+              context.push(AppRoutes.portfolioEdit(id));
+            },
+          ),
+        ),
+      ),
+      GoRoute(
+        path: '/profiles/portfolio/edit/:entryId',
+        name: 'profiles.portfolio.edit',
+        redirect: (context, state) =>
+            profile.portfolioDraft == null ? AppRoutes.portfolio : null,
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          PortfolioEditView(
+            model: profile,
+            onBack: () => context.go(AppRoutes.portfolio),
+            onHome: () => context.go(AppRoutes.freelancerHome),
+            onSaved: () => context.go(AppRoutes.portfolio),
+          ),
+        ),
+      ),
+    ],
+    if (discovery != null)
+      GoRoute(
+        path: AppRoutes.savedJobs,
+        name: 'discovery.saved',
+        pageBuilder: (context, state) => _discoveryPage(
+          state,
+          SavedJobsView(
+            model: discovery,
+            onHome: () => context.go(AppRoutes.freelancerHome),
+            onDiscover: () => context.go(AppRoutes.jobs),
+            onProfile: () => context.go(AppRoutes.freelancerProfile),
+            onJob: (id) => context.push(AppRoutes.project(id)),
+          ),
+        ),
+      ),
+
     if (projects != null && proposals != null) ...[
       GoRoute(
         path: '/projects/jobs/:jobId',
@@ -254,6 +390,9 @@ GoRouter createAppRouter(
               onHome: () => context.go(AppRoutes.freelancerHome),
               onMine: () => context.go(AppRoutes.myProposals),
               onEdit: go,
+              onPortfolio: profile == null
+                  ? null
+                  : () => context.push(AppRoutes.portfolio),
               onNext: () async {
                 switch (stage) {
                   case ProposalStage.start:
@@ -290,6 +429,9 @@ GoRouter createAppRouter(
             state,
             JobDiscoveryView(
               model: discovery,
+              onProfile: profile == null
+                  ? null
+                  : () => context.go(AppRoutes.freelancerProfile),
               onJob: projects == null
                   ? null
                   : (id) => context.push(AppRoutes.project(id)),
@@ -556,6 +698,8 @@ GoRouter createAppRouter(
                           context.go(AppRoutes.freelancerHome);
                         } else if (index == 1) {
                           context.go(AppRoutes.jobs);
+                        } else if (index == 4 && profile != null) {
+                          context.go(AppRoutes.freelancerProfile);
                         }
                       },
               ),

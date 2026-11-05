@@ -18,12 +18,14 @@ class ProposalFlowView extends StatelessWidget {
     required this.onNext,
     required this.onMine,
     required this.onEdit,
+    this.onPortfolio,
     super.key,
   });
   final ProposalViewModel model;
   final ProposalStage stage;
   final VoidCallback onBack, onHome, onNext, onMine;
   final ValueChanged<ProposalStage> onEdit;
+  final VoidCallback? onPortfolio;
   @override
   Widget build(BuildContext context) => ListenableBuilder(
     listenable: model,
@@ -161,7 +163,7 @@ class ProposalFlowView extends StatelessWidget {
     const ProposalPortfolio(),
     ProjectAction(
       label: 'Chọn thêm từ portfolio',
-      onPressed: null,
+      onPressed: onPortfolio,
       outline: true,
     ),
   ]);

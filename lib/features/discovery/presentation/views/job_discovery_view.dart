@@ -18,11 +18,13 @@ class JobDiscoveryView extends StatefulWidget {
     required this.onFilter,
     required this.onResults,
     this.onJob,
+    this.onProfile,
     super.key,
   });
   final DiscoveryViewModel model;
   final JobDiscoveryMode mode;
   final ValueChanged<String>? onJob;
+  final VoidCallback? onProfile;
   final VoidCallback onBack, onHome, onSearch, onFilter, onResults;
   @override
   State<JobDiscoveryView> createState() => _JobDiscoveryViewState();
@@ -54,6 +56,7 @@ class _JobDiscoveryViewState extends State<JobDiscoveryView> {
       };
       return DiscoveryScaffold(
         node: node,
+        onProfile: widget.onProfile,
         title: switch (mode) {
           JobDiscoveryMode.browse => 'Khám phá công việc',
           JobDiscoveryMode.search => 'Tìm kiếm công việc',

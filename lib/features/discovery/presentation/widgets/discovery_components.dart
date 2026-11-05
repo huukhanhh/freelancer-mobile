@@ -29,10 +29,13 @@ class DiscoveryScaffold extends StatelessWidget {
     required this.child,
     required this.onHome,
     this.search,
+    this.onDiscover,
+    this.onProfile,
     super.key,
   });
   final String node, title, subtitle;
   final VoidCallback onBack, onHome;
+  final VoidCallback? onDiscover, onProfile;
   final Widget child;
   final Widget? search;
   @override
@@ -128,8 +131,14 @@ class DiscoveryScaffold extends StatelessWidget {
               selectedIndex: 1,
               onTab: (index) {
                 if (index == 0) onHome();
+                if (index == 1) onDiscover?.call();
+                if (index == 4) onProfile?.call();
               },
-              enabledIndices: const {0},
+              enabledIndices: {
+                0,
+                if (onDiscover != null) 1,
+                if (onProfile != null) 4,
+              },
             ),
           ],
         ),

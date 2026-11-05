@@ -354,6 +354,7 @@ class HomeView extends StatelessWidget {
               client: client,
               node: node,
               onTab: onTab,
+              enabledIndices: const {0, 1, 4},
               preview: preview,
             ),
           ],

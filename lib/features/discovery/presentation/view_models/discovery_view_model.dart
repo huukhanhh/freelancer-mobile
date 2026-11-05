@@ -45,6 +45,16 @@ class DiscoveryViewModel extends ChangeNotifier {
   ];
   List<String> get history => List.unmodifiable(_history);
   Set<String> get saved => Set.unmodifiable(_saved);
+  List<Job> savedJobs(String category) => [
+    for (final id in _saved.toList().reversed)
+      for (final job in _jobs)
+        if (job.id == id &&
+            (category == 'Tất cả' ||
+                (category == 'UI/UX'
+                    ? job.category == 'Thiết kế'
+                    : job.category == 'Web')))
+          job,
+  ];
   List<Job> get featured => List.unmodifiable(
     _jobs.where(
       (j) => ['job-demo-4', 'job-demo-5', 'job-demo-6'].contains(j.id),

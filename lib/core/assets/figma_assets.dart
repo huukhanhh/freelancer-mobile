@@ -4,73 +4,248 @@ import 'package:flutter_svg/flutter_svg.dart';
 /// Exact local exports from approved page 579:228. See docs/frontend/assets.json.
 abstract final class FigmaAssets {
   static const slots = <String, String>{
-    '585:7496/imgProfileIconCheck': 'assets/projects/585-7496-imgProfileIconCheck.svg',
-    '585:7496/imgPortfolioCover': 'assets/projects/585-7496-imgPortfolioCover.png',
-    '585:7496/imgEllipse': 'assets/projects/585-7496-imgEllipse.png',
-    '585:7496/imgCellularSignal': 'assets/projects/585-7496-imgCellularSignal.svg',
-    '585:7496/imgWiFiSignal': 'assets/projects/585-7496-imgWiFiSignal.svg',
-    '585:7496/imgBatteryStatus': 'assets/projects/585-7496-imgBatteryStatus.svg',
-    '585:7496/imgEmerald2026NavigationIconBack': 'assets/projects/585-7496-imgEmerald2026NavigationIconBack.svg',
-    '585:7496/imgEmerald2026NavigationIconHome': 'assets/projects/585-7496-imgEmerald2026NavigationIconHome.svg',
-    '585:7537/imgProfileIconCheck': 'assets/projects/585-7537-imgProfileIconCheck.svg',
-    '585:7537/imgProjectsSuccessGlowingCheck': 'assets/projects/585-7537-imgProjectsSuccessGlowingCheck.svg',
-    '585:7537/imgProjectCoverThumbnail': 'assets/projects/585-7537-imgProjectCoverThumbnail.png',
-    '585:7537/imgCellularSignal': 'assets/projects/585-7537-imgCellularSignal.svg',
-    '585:7537/imgWiFiSignal': 'assets/projects/585-7537-imgWiFiSignal.svg',
-    '585:7537/imgBatteryStatus': 'assets/projects/585-7537-imgBatteryStatus.svg',
-    '585:7537/imgEmerald2026NavigationIconBack': 'assets/projects/585-7537-imgEmerald2026NavigationIconBack.svg',
-    '585:7537/imgEmerald2026NavigationIconHome': 'assets/projects/585-7537-imgEmerald2026NavigationIconHome.svg',
-    '585:7572/imgProjectCoverThumbnail': 'assets/projects/585-7572-imgProjectCoverThumbnail.png',
-    '585:7572/imgProjectCoverThumbnail1': 'assets/projects/585-7572-imgProjectCoverThumbnail1.png',
-    '585:7572/imgProjectCoverThumbnail2': 'assets/projects/585-7572-imgProjectCoverThumbnail2.png',
-    '585:7572/imgCellularSignal': 'assets/projects/585-7572-imgCellularSignal.svg',
-    '585:7572/imgWiFiSignal': 'assets/projects/585-7572-imgWiFiSignal.svg',
-    '585:7572/imgBatteryStatus': 'assets/projects/585-7572-imgBatteryStatus.svg',
-    '585:7572/imgEmerald2026NavigationIconBack': 'assets/projects/585-7572-imgEmerald2026NavigationIconBack.svg',
-    '585:7572/imgEmerald2026NavigationIconHome': 'assets/projects/585-7572-imgEmerald2026NavigationIconHome.svg',
+    '585:5092/imgEditorialRealPhotography':
+        'assets/profiles/585-5092-imgEditorialRealPhotography.png',
+    '585:5092/imgEditorialRealPhotography1':
+        'assets/profiles/585-5092-imgEditorialRealPhotography1.png',
+    '585:5092/imgEditorialRealPhotography2':
+        'assets/profiles/585-5092-imgEditorialRealPhotography2.png',
+    '585:5092/imgLucideBack': 'assets/profiles/585-5092-imgLucideBack.svg',
+    '585:5092/imgEmerald2026NavigationIconHome':
+        'assets/profiles/585-5092-imgEmerald2026NavigationIconHome.svg',
+    '585:5092/imgIcon': 'assets/profiles/585-5092-imgIcon.svg',
+    '585:5092/imgIcon1': 'assets/profiles/585-5092-imgIcon1.svg',
+    '585:5092/imgIcon2': 'assets/profiles/585-5092-imgIcon2.svg',
+    '585:5092/imgIcon3': 'assets/profiles/585-5092-imgIcon3.svg',
+    '585:5092/imgNavigationVectorSystemStatus':
+        'assets/profiles/585-5092-imgNavigationVectorSystemStatus.svg',
+    '585:5527/imgProjectImage': 'assets/profiles/585-5527-imgProjectImage.png',
+    '585:5527/imgProjectImage1':
+        'assets/profiles/585-5527-imgProjectImage1.png',
+    '585:5527/imgCellularSignal':
+        'assets/profiles/585-5527-imgCellularSignal.svg',
+    '585:5527/imgWiFiSignal': 'assets/profiles/585-5527-imgWiFiSignal.svg',
+    '585:5527/imgBatteryStatus':
+        'assets/profiles/585-5527-imgBatteryStatus.svg',
+    '585:5527/imgEmerald2026NavigationIconBack':
+        'assets/profiles/585-5527-imgEmerald2026NavigationIconBack.svg',
+    '585:5527/imgEmerald2026NavigationIconHome':
+        'assets/profiles/585-5527-imgEmerald2026NavigationIconHome.svg',
+    '585:5527/imgProfileTechnologyFigma':
+        'assets/profiles/585-5527-imgProfileTechnologyFigma.svg',
+    '585:5316/imgProfileTechnologyFigma':
+        'assets/profiles/585-5316-imgProfileTechnologyFigma.svg',
+    '585:5316/imgProjectImage': 'assets/profiles/585-5316-imgProjectImage.png',
+    '585:5316/imgPortraitPhotograph':
+        'assets/profiles/585-5316-imgPortraitPhotograph.png',
+    '585:5316/imgCoverPhotograph':
+        'assets/profiles/585-5316-imgCoverPhotograph.png',
+    '585:5316/imgProjectImage1':
+        'assets/profiles/585-5316-imgProjectImage1.png',
+    '585:5316/imgEmerald2026NavigationIconHome':
+        'assets/profiles/585-5316-imgEmerald2026NavigationIconHome.svg',
+    '585:5316/imgIcon': 'assets/profiles/585-5316-imgIcon.svg',
+    '585:5316/imgIcon1': 'assets/profiles/585-5316-imgIcon1.svg',
+    '585:5316/imgIcon2': 'assets/profiles/585-5316-imgIcon2.svg',
+    '585:5316/imgIcon3': 'assets/profiles/585-5316-imgIcon3.svg',
+    '585:5316/imgCellularSignal':
+        'assets/profiles/585-5316-imgCellularSignal.svg',
+    '585:5316/imgWiFiSignal': 'assets/profiles/585-5316-imgWiFiSignal.svg',
+    '585:5316/imgBatteryStatus':
+        'assets/profiles/585-5316-imgBatteryStatus.svg',
+    '585:5411/imgCoverPreview': 'assets/profiles/585-5411-imgCoverPreview.png',
+    '585:5411/imgPortraitPhotograph':
+        'assets/profiles/585-5411-imgPortraitPhotograph.png',
+    '585:5411/imgCellularSignal':
+        'assets/profiles/585-5411-imgCellularSignal.svg',
+    '585:5411/imgWiFiSignal': 'assets/profiles/585-5411-imgWiFiSignal.svg',
+    '585:5411/imgBatteryStatus':
+        'assets/profiles/585-5411-imgBatteryStatus.svg',
+    '585:5411/imgEmerald2026NavigationIconBack':
+        'assets/profiles/585-5411-imgEmerald2026NavigationIconBack.svg',
+    '585:5411/imgEmerald2026NavigationIconHome':
+        'assets/profiles/585-5411-imgEmerald2026NavigationIconHome.svg',
+    '585:5470/imgTrngThaiThitB':
+        'assets/profiles/585-5470-imgTrngThaiThitB.svg',
+    '585:5470/imgEmerald2026NavigationIconBack':
+        'assets/profiles/585-5470-imgEmerald2026NavigationIconBack.svg',
+    '585:5470/imgEmerald2026NavigationIconHome':
+        'assets/profiles/585-5470-imgEmerald2026NavigationIconHome.svg',
+    '585:5470/imgProfileTechnologyFigma':
+        'assets/profiles/585-5470-imgProfileTechnologyFigma.svg',
+    '585:5470/imgProfileTechnologyReact':
+        'assets/profiles/585-5470-imgProfileTechnologyReact.svg',
+    '585:5470/imgProfileTechnologyJava':
+        'assets/profiles/585-5470-imgProfileTechnologyJava.svg',
+    '585:5470/imgProfileTechnologyPhp':
+        'assets/profiles/585-5470-imgProfileTechnologyPhp.svg',
+    '585:5470/imgProfileTechnologyFlutter':
+        'assets/profiles/585-5470-imgProfileTechnologyFlutter.svg',
+    '585:5470/imgProfileTechnologyJavascript':
+        'assets/profiles/585-5470-imgProfileTechnologyJavascript.svg',
+    '585:5470/imgMessagingIconMore':
+        'assets/profiles/585-5470-imgMessagingIconMore.svg',
+    '585:5606/imgProfileIconMobile':
+        'assets/profiles/585-5606-imgProfileIconMobile.svg',
+    '585:5606/imgProfileIconLayers':
+        'assets/profiles/585-5606-imgProfileIconLayers.svg',
+    '585:5606/imgProfileTechnologyFigma':
+        'assets/profiles/585-5606-imgProfileTechnologyFigma.svg',
+    '585:5606/imgPortfolioCover':
+        'assets/profiles/585-5606-imgPortfolioCover.png',
+    '585:5606/imgWorkspaceView':
+        'assets/profiles/585-5606-imgWorkspaceView.png',
+    '585:5606/imgProcessView': 'assets/profiles/585-5606-imgProcessView.png',
+    '585:5606/imgCellularSignal':
+        'assets/profiles/585-5606-imgCellularSignal.svg',
+    '585:5606/imgWiFiSignal': 'assets/profiles/585-5606-imgWiFiSignal.svg',
+    '585:5606/imgBatteryStatus':
+        'assets/profiles/585-5606-imgBatteryStatus.svg',
+    '585:5606/imgEmerald2026NavigationIconBack':
+        'assets/profiles/585-5606-imgEmerald2026NavigationIconBack.svg',
+    '585:5606/imgEmerald2026NavigationIconHome':
+        'assets/profiles/585-5606-imgEmerald2026NavigationIconHome.svg',
+    '585:5659/imgProfileTechnologyFigma':
+        'assets/profiles/585-5659-imgProfileTechnologyFigma.svg',
+    '585:5659/imgProjectImage': 'assets/profiles/585-5659-imgProjectImage.png',
+    '585:5659/imgPortraitPhotograph':
+        'assets/profiles/585-5659-imgPortraitPhotograph.png',
+    '585:5659/imgProjectImage1':
+        'assets/profiles/585-5659-imgProjectImage1.png',
+    '585:5659/imgCellularSignal':
+        'assets/profiles/585-5659-imgCellularSignal.svg',
+    '585:5659/imgWiFiSignal': 'assets/profiles/585-5659-imgWiFiSignal.svg',
+    '585:5659/imgBatteryStatus':
+        'assets/profiles/585-5659-imgBatteryStatus.svg',
+    '585:5659/imgEmerald2026NavigationIconBack':
+        'assets/profiles/585-5659-imgEmerald2026NavigationIconBack.svg',
+    '585:5659/imgEmerald2026NavigationIconHome':
+        'assets/profiles/585-5659-imgEmerald2026NavigationIconHome.svg',
 
-    '585:4950/imgProfileIconCheck': 'assets/projects/585-4950-imgProfileIconCheck.svg',
+    '585:7496/imgProfileIconCheck':
+        'assets/projects/585-7496-imgProfileIconCheck.svg',
+    '585:7496/imgPortfolioCover':
+        'assets/projects/585-7496-imgPortfolioCover.png',
+    '585:7496/imgEllipse': 'assets/projects/585-7496-imgEllipse.png',
+    '585:7496/imgCellularSignal':
+        'assets/projects/585-7496-imgCellularSignal.svg',
+    '585:7496/imgWiFiSignal': 'assets/projects/585-7496-imgWiFiSignal.svg',
+    '585:7496/imgBatteryStatus':
+        'assets/projects/585-7496-imgBatteryStatus.svg',
+    '585:7496/imgEmerald2026NavigationIconBack':
+        'assets/projects/585-7496-imgEmerald2026NavigationIconBack.svg',
+    '585:7496/imgEmerald2026NavigationIconHome':
+        'assets/projects/585-7496-imgEmerald2026NavigationIconHome.svg',
+    '585:7537/imgProfileIconCheck':
+        'assets/projects/585-7537-imgProfileIconCheck.svg',
+    '585:7537/imgProjectsSuccessGlowingCheck':
+        'assets/projects/585-7537-imgProjectsSuccessGlowingCheck.svg',
+    '585:7537/imgProjectCoverThumbnail':
+        'assets/projects/585-7537-imgProjectCoverThumbnail.png',
+    '585:7537/imgCellularSignal':
+        'assets/projects/585-7537-imgCellularSignal.svg',
+    '585:7537/imgWiFiSignal': 'assets/projects/585-7537-imgWiFiSignal.svg',
+    '585:7537/imgBatteryStatus':
+        'assets/projects/585-7537-imgBatteryStatus.svg',
+    '585:7537/imgEmerald2026NavigationIconBack':
+        'assets/projects/585-7537-imgEmerald2026NavigationIconBack.svg',
+    '585:7537/imgEmerald2026NavigationIconHome':
+        'assets/projects/585-7537-imgEmerald2026NavigationIconHome.svg',
+    '585:7572/imgProjectCoverThumbnail':
+        'assets/projects/585-7572-imgProjectCoverThumbnail.png',
+    '585:7572/imgProjectCoverThumbnail1':
+        'assets/projects/585-7572-imgProjectCoverThumbnail1.png',
+    '585:7572/imgProjectCoverThumbnail2':
+        'assets/projects/585-7572-imgProjectCoverThumbnail2.png',
+    '585:7572/imgCellularSignal':
+        'assets/projects/585-7572-imgCellularSignal.svg',
+    '585:7572/imgWiFiSignal': 'assets/projects/585-7572-imgWiFiSignal.svg',
+    '585:7572/imgBatteryStatus':
+        'assets/projects/585-7572-imgBatteryStatus.svg',
+    '585:7572/imgEmerald2026NavigationIconBack':
+        'assets/projects/585-7572-imgEmerald2026NavigationIconBack.svg',
+    '585:7572/imgEmerald2026NavigationIconHome':
+        'assets/projects/585-7572-imgEmerald2026NavigationIconHome.svg',
+
+    '585:4950/imgProfileIconCheck':
+        'assets/projects/585-4950-imgProfileIconCheck.svg',
     '585:4950/imgEllipse': 'assets/projects/585-4950-imgEllipse.png',
     '585:4950/imgProjectCover': 'assets/projects/585-4950-imgProjectCover.png',
-    '585:4950/imgTrngThaiThitB': 'assets/projects/585-4950-imgTrngThaiThitB.svg',
-    '585:4950/imgEmerald2026NavigationIconBack': 'assets/projects/585-4950-imgEmerald2026NavigationIconBack.svg',
-    '585:4950/imgEmerald2026NavigationIconHome': 'assets/projects/585-4950-imgEmerald2026NavigationIconHome.svg',
-    '813:6762/imgProfileIconCheck': 'assets/projects/813-6762-imgProfileIconCheck.svg',
-    '813:6762/imgProjectCoverThumbnail': 'assets/projects/813-6762-imgProjectCoverThumbnail.png',
-    '813:6762/imgTrngThaiThitB': 'assets/projects/813-6762-imgTrngThaiThitB.svg',
-    '813:6762/imgEmerald2026NavigationIconBack': 'assets/projects/813-6762-imgEmerald2026NavigationIconBack.svg',
-    '813:6762/imgEmerald2026NavigationIconHome': 'assets/projects/813-6762-imgEmerald2026NavigationIconHome.svg',
-    '585:7372/imgProfileIconCheck': 'assets/projects/585-7372-imgProfileIconCheck.svg',
-    '585:7372/imgProjectCoverThumbnail': 'assets/projects/585-7372-imgProjectCoverThumbnail.png',
-    '585:7372/imgCellularSignal': 'assets/projects/585-7372-imgCellularSignal.svg',
+    '585:4950/imgTrngThaiThitB':
+        'assets/projects/585-4950-imgTrngThaiThitB.svg',
+    '585:4950/imgEmerald2026NavigationIconBack':
+        'assets/projects/585-4950-imgEmerald2026NavigationIconBack.svg',
+    '585:4950/imgEmerald2026NavigationIconHome':
+        'assets/projects/585-4950-imgEmerald2026NavigationIconHome.svg',
+    '813:6762/imgProfileIconCheck':
+        'assets/projects/813-6762-imgProfileIconCheck.svg',
+    '813:6762/imgProjectCoverThumbnail':
+        'assets/projects/813-6762-imgProjectCoverThumbnail.png',
+    '813:6762/imgTrngThaiThitB':
+        'assets/projects/813-6762-imgTrngThaiThitB.svg',
+    '813:6762/imgEmerald2026NavigationIconBack':
+        'assets/projects/813-6762-imgEmerald2026NavigationIconBack.svg',
+    '813:6762/imgEmerald2026NavigationIconHome':
+        'assets/projects/813-6762-imgEmerald2026NavigationIconHome.svg',
+    '585:7372/imgProfileIconCheck':
+        'assets/projects/585-7372-imgProfileIconCheck.svg',
+    '585:7372/imgProjectCoverThumbnail':
+        'assets/projects/585-7372-imgProjectCoverThumbnail.png',
+    '585:7372/imgCellularSignal':
+        'assets/projects/585-7372-imgCellularSignal.svg',
     '585:7372/imgWiFiSignal': 'assets/projects/585-7372-imgWiFiSignal.svg',
-    '585:7372/imgBatteryStatus': 'assets/projects/585-7372-imgBatteryStatus.svg',
-    '585:7372/imgEmerald2026NavigationIconBack': 'assets/projects/585-7372-imgEmerald2026NavigationIconBack.svg',
-    '585:7372/imgEmerald2026NavigationIconHome': 'assets/projects/585-7372-imgEmerald2026NavigationIconHome.svg',
-    '585:7424/imgProfileIconCheck': 'assets/projects/585-7424-imgProfileIconCheck.svg',
-    '585:7424/imgPortfolioCover': 'assets/projects/585-7424-imgPortfolioCover.png',
-    '585:7424/imgCellularSignal': 'assets/projects/585-7424-imgCellularSignal.svg',
+    '585:7372/imgBatteryStatus':
+        'assets/projects/585-7372-imgBatteryStatus.svg',
+    '585:7372/imgEmerald2026NavigationIconBack':
+        'assets/projects/585-7372-imgEmerald2026NavigationIconBack.svg',
+    '585:7372/imgEmerald2026NavigationIconHome':
+        'assets/projects/585-7372-imgEmerald2026NavigationIconHome.svg',
+    '585:7424/imgProfileIconCheck':
+        'assets/projects/585-7424-imgProfileIconCheck.svg',
+    '585:7424/imgPortfolioCover':
+        'assets/projects/585-7424-imgPortfolioCover.png',
+    '585:7424/imgCellularSignal':
+        'assets/projects/585-7424-imgCellularSignal.svg',
     '585:7424/imgWiFiSignal': 'assets/projects/585-7424-imgWiFiSignal.svg',
-    '585:7424/imgBatteryStatus': 'assets/projects/585-7424-imgBatteryStatus.svg',
-    '585:7424/imgEmerald2026NavigationIconBack': 'assets/projects/585-7424-imgEmerald2026NavigationIconBack.svg',
-    '585:7424/imgEmerald2026NavigationIconHome': 'assets/projects/585-7424-imgEmerald2026NavigationIconHome.svg',
-    '585:7456/imgProfileIconCheck': 'assets/projects/585-7456-imgProfileIconCheck.svg',
-    '585:7456/imgProjectCoverThumbnail': 'assets/projects/585-7456-imgProjectCoverThumbnail.png',
-    '585:7456/imgCellularSignal': 'assets/projects/585-7456-imgCellularSignal.svg',
+    '585:7424/imgBatteryStatus':
+        'assets/projects/585-7424-imgBatteryStatus.svg',
+    '585:7424/imgEmerald2026NavigationIconBack':
+        'assets/projects/585-7424-imgEmerald2026NavigationIconBack.svg',
+    '585:7424/imgEmerald2026NavigationIconHome':
+        'assets/projects/585-7424-imgEmerald2026NavigationIconHome.svg',
+    '585:7456/imgProfileIconCheck':
+        'assets/projects/585-7456-imgProfileIconCheck.svg',
+    '585:7456/imgProjectCoverThumbnail':
+        'assets/projects/585-7456-imgProjectCoverThumbnail.png',
+    '585:7456/imgCellularSignal':
+        'assets/projects/585-7456-imgCellularSignal.svg',
     '585:7456/imgWiFiSignal': 'assets/projects/585-7456-imgWiFiSignal.svg',
-    '585:7456/imgBatteryStatus': 'assets/projects/585-7456-imgBatteryStatus.svg',
-    '585:7456/imgEmerald2026NavigationIconBack': 'assets/projects/585-7456-imgEmerald2026NavigationIconBack.svg',
-    '585:7456/imgEmerald2026NavigationIconHome': 'assets/projects/585-7456-imgEmerald2026NavigationIconHome.svg',
-    '585:7830/imgProjectCoverThumbnail': 'assets/projects/585-7830-imgProjectCoverThumbnail.png',
-    '585:7830/imgTrngThaiThitB': 'assets/projects/585-7830-imgTrngThaiThitB.svg',
-    '585:7830/imgEmerald2026NavigationIconBack': 'assets/projects/585-7830-imgEmerald2026NavigationIconBack.svg',
-    '585:7830/imgEmerald2026NavigationIconHome': 'assets/projects/585-7830-imgEmerald2026NavigationIconHome.svg',
-    '585:7841/imgProjectCoverThumbnail': 'assets/projects/585-7841-imgProjectCoverThumbnail.png',
-    '585:7841/imgProjectCoverThumbnail1': 'assets/projects/585-7841-imgProjectCoverThumbnail1.png',
-    '585:7841/imgProjectCoverThumbnail2': 'assets/projects/585-7841-imgProjectCoverThumbnail2.png',
-    '585:7841/imgTrngThaiThitB': 'assets/projects/585-7841-imgTrngThaiThitB.svg',
-    '585:7841/imgEmerald2026NavigationIconBack': 'assets/projects/585-7841-imgEmerald2026NavigationIconBack.svg',
-    '585:7841/imgEmerald2026NavigationIconHome': 'assets/projects/585-7841-imgEmerald2026NavigationIconHome.svg',
+    '585:7456/imgBatteryStatus':
+        'assets/projects/585-7456-imgBatteryStatus.svg',
+    '585:7456/imgEmerald2026NavigationIconBack':
+        'assets/projects/585-7456-imgEmerald2026NavigationIconBack.svg',
+    '585:7456/imgEmerald2026NavigationIconHome':
+        'assets/projects/585-7456-imgEmerald2026NavigationIconHome.svg',
+    '585:7830/imgProjectCoverThumbnail':
+        'assets/projects/585-7830-imgProjectCoverThumbnail.png',
+    '585:7830/imgTrngThaiThitB':
+        'assets/projects/585-7830-imgTrngThaiThitB.svg',
+    '585:7830/imgEmerald2026NavigationIconBack':
+        'assets/projects/585-7830-imgEmerald2026NavigationIconBack.svg',
+    '585:7830/imgEmerald2026NavigationIconHome':
+        'assets/projects/585-7830-imgEmerald2026NavigationIconHome.svg',
+    '585:7841/imgProjectCoverThumbnail':
+        'assets/projects/585-7841-imgProjectCoverThumbnail.png',
+    '585:7841/imgProjectCoverThumbnail1':
+        'assets/projects/585-7841-imgProjectCoverThumbnail1.png',
+    '585:7841/imgProjectCoverThumbnail2':
+        'assets/projects/585-7841-imgProjectCoverThumbnail2.png',
+    '585:7841/imgTrngThaiThitB':
+        'assets/projects/585-7841-imgTrngThaiThitB.svg',
+    '585:7841/imgEmerald2026NavigationIconBack':
+        'assets/projects/585-7841-imgEmerald2026NavigationIconBack.svg',
+    '585:7841/imgEmerald2026NavigationIconHome':
+        'assets/projects/585-7841-imgEmerald2026NavigationIconHome.svg',
 
     '585:5144/imgEditorialRealPhotography':
         'assets/discovery/585-5144-imgEditorialRealPhotography.png',
